@@ -1,0 +1,11 @@
+.bg-image {
+  background-image: url(https://exeed-uae.com/wp-content/uploads/2023/07/banner-txl.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 105%;
+  height: 105%;
+  transform: translateX(var(--translateX)) translateY(var(--translateY));
+  --translateX: -2.7610612991765784px;
+  --translateY: -21.856941737288118px;
+}
