@@ -165,6 +165,28 @@
   bottom: 0;
 }
 
+
+
+
+.elementor-widget-container-font{
+  font-size: 1.1em;
+  font-family: "Calibri", Sans-serif;
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 1.1rem;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 0.9rem;
+  }
+  @media (min-width: 10px) and (max-width: 1200px) {
+    font-size: 0.8rem;
+  }
+}
+
+
+
 /* 
 border-style: solid;
 border-width: 0px 0px 0.2px 0px;

@@ -1,46 +1,44 @@
 import React from "react";
-import "../../common/styles/styles.css";
+import "../../common/styles/headerStyles.css";
 
 const CarTile = ({ img }) => {
   return (
-    <>
-      <div class="d-flex justify-content-start ps-4 pb-2 pt-2">
-        <div class="" data-id="ba7709e" data-element_type="column">
-          <div class="">
-            <div
-              class=""
-              data-id="7a5023e"
-              data-element_type="widget"
-              data-widget_type="image.default"
-            >
-              <div class="">
-                <img
-                  width="178"
-                  height="88"
-                  src={img}
-                  class="attachment-full size-full wp-image-2993"
-                  alt="Exeed TXL cars in UAE"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="" data-id="347633e" data-element_type="column">
-          <div class="ps-3 car-tile-font">
-            <div
-              class=""
-              data-id="0858de8"
-              data-element_type="widget"
-              data-widget_type="text-editor.default"
-            >
-              <div class="elementor-widget-container">
-                <p>EXEED TXL</p>{" "}
-              </div>
+    <div class="d-flex justify-content-start ps-4 pb-2 pt-2">
+      <div class="" data-id="ba7709e" data-element_type="column">
+        <div class="">
+          <div
+            class=""
+            data-id="7a5023e"
+            data-element_type="widget"
+            data-widget_type="image.default"
+          >
+            <div class="">
+              <img
+                width="178"
+                height="88"
+                src={img}
+                class="attachment-full size-full wp-image-2993"
+                alt="Exeed TXL cars in UAE"
+              />
             </div>
           </div>
         </div>
       </div>
-    </>
+      <div class="align-self-center" data-id="347633e" data-element_type="column">
+        <div class="ps-3 car-tile-font">
+          <div
+            class=""
+            data-id="0858de8"
+            data-element_type="widget"
+            data-widget_type="text-editor.default"
+          >
+            <div class="elementor-widget-container">
+              <p class="elementor-widget-container-font m-0 mb-1">EXEED TXL</p>{" "}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
