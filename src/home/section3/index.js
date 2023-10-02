@@ -4,28 +4,27 @@ export const Section3 = () => {
   return (
     <>
       <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-e356b8a elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+        class="elementor-section app-bg-black container pt-5 pb-5"
         data-id="e356b8a"
         data-element_type="section"
       >
-        <div class="elementor-container elementor-column-gap-no">
+        <div class="row pt-5 pb-5">
           <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e5985fc"
+            class="col-md-4 col-sm-12 d-flex justify-content-center"
             data-id="e5985fc"
             data-element_type="column"
           >
-            <div class="elementor-widget-wrap elementor-element-populated">
+            <div class="">
               <div
-                class="elementor-element elementor-element-27dd804 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                data-id="27dd804"
+                class=""
                 data-element_type="widget"
                 data-widget_type="icon-box.default"
               >
-                <div class="elementor-widget-container">
-                  <div class="elementor-icon-box-wrapper">
-                    <div class="elementor-icon-box-icon">
+                <div class="">
+                  <div class="">
+                    <div class="elementor-icon-box-icon d-flex justify-content-center">
                       <a
-                        class="elementor-icon elementor-animation-"
+                        class=""
                         href="https://exeed-uae.com/request-a-test-drive/"
                       >
                         <svg
@@ -34,6 +33,7 @@ export const Section3 = () => {
                           width="124.051"
                           height="123.805"
                           viewBox="0 0 124.051 123.805"
+                          class="svg-home-page"
                         >
                           <defs>
                             <linearGradient
@@ -72,11 +72,14 @@ export const Section3 = () => {
                     </div>
                     <div class="elementor-icon-box-content">
                       <h3 class="elementor-icon-box-title">
-                        <a href="https://exeed-uae.com/request-a-test-drive/">
+                        <a
+                          class="banner-link-no-underline"
+                          href="https://exeed-uae.com/request-a-test-drive/"
+                        >
                           Book test drive{" "}
                         </a>
                       </h3>
-                      <p class="elementor-icon-box-description">
+                      <p class="banner-link-no-underline-sub-text">
                         Contact us for a test drive today{" "}
                       </p>
                     </div>
@@ -86,30 +89,26 @@ export const Section3 = () => {
             </div>
           </div>
           <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ace7245"
+            class="col-md-4 col-sm-12 d-flex justify-content-center"
             data-id="ace7245"
             data-element_type="column"
           >
-            <div class="elementor-widget-wrap elementor-element-populated">
+            <div class="">
               <div
-                class="elementor-element elementor-element-44796bb elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                class=""
                 data-id="44796bb"
                 data-element_type="widget"
                 data-widget_type="icon-box.default"
               >
-                <div class="elementor-widget-container">
-                  <div class="elementor-icon-box-wrapper">
-                    <div class="elementor-icon-box-icon">
-                      <a
-                        class="elementor-icon elementor-animation-"
-                        href="https://exeed-uae.com/book-a-service/"
-                      >
+                <div class="">
+                  <div class="">
+                    <div class="icon-style-home-page d-flex flex-column">
+                      <a class="" href="https://exeed-uae.com/book-a-service/">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           xlink="http://www.w3.org/1999/xlink"
-                          width="150.982"
-                          height="107.84"
                           viewBox="0 0 150.982 107.84"
+                          class="svg-home-page"
                         >
                           <defs>
                             <linearGradient
@@ -141,12 +140,15 @@ export const Section3 = () => {
                     </div>
                     <div class="elementor-icon-box-content">
                       <h3 class="elementor-icon-box-title">
-                        <a href="https://exeed-uae.com/book-a-service/">
-                          Book A Service{" "}
+                        <a
+                          class="banner-link-no-underline"
+                          href="https://exeed-uae.com/book-a-service/"
+                        >
+                          {"Book A Service"}
                         </a>
                       </h3>
-                      <p class="elementor-icon-box-description">
-                        Schedule an appointment{" "}
+                      <p class="banner-link-no-underline-sub-text">
+                        {"Schedule an appointment "}
                       </p>
                     </div>
                   </div>
@@ -155,30 +157,28 @@ export const Section3 = () => {
             </div>
           </div>
           <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a8950dc"
+            class="col-md-4 col-sm-12 d-flex justify-content-center"
             data-id="a8950dc"
             data-element_type="column"
           >
-            <div class="elementor-widget-wrap elementor-element-populated">
+            <div class="">
               <div
-                class="elementor-element elementor-element-9e76823 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                class=""
                 data-id="9e76823"
                 data-element_type="widget"
                 data-widget_type="icon-box.default"
               >
-                <div class="elementor-widget-container">
-                  <div class="elementor-icon-box-wrapper">
-                    <div class="elementor-icon-box-icon">
-                      <a
-                        class="elementor-icon elementor-animation-"
-                        href="https://exeed-uae.com/request-a-quote/"
-                      >
+                <div class="">
+                  <div class="">
+                    <div class="icon-style-home-page d-flex flex-column">
+                      <a class="" href="https://exeed-uae.com/request-a-quote/">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           xlink="http://www.w3.org/1999/xlink"
                           width="114.101"
                           height="136.32"
                           viewBox="0 0 114.101 136.32"
+                          class="svg-home-page"
                         >
                           <defs>
                             <linearGradient
@@ -244,12 +244,15 @@ export const Section3 = () => {
                       </a>
                     </div>
                     <div class="elementor-icon-box-content">
-                      <h3 class="elementor-icon-box-title">
-                        <a href="https://exeed-uae.com/request-a-quote/">
-                          Request a quote{" "}
+                      <h3 class="elementor-icon-box-title d-flex justify-content-center">
+                        <a
+                          class="banner-link-no-underline"
+                          href="https://exeed-uae.com/request-a-quote/"
+                        >
+                          {"Request a quote"}
                         </a>
                       </h3>
-                      <p class="elementor-icon-box-description">
+                      <p class="banner-link-no-underline-sub-text">
                         Contact us to have a quote today{" "}
                       </p>
                     </div>
