@@ -165,10 +165,7 @@
   bottom: 0;
 }
 
-
-
-
-.elementor-widget-container-font{
+.elementor-widget-container-font {
   font-size: 1.1em;
   font-family: "Calibri", Sans-serif;
   @media (min-width: 1800px) and (max-width: 3800px) {
@@ -185,9 +182,271 @@
   }
 }
 
+.elementor-background-video-hosted {
+  width: 100%;
+  height: 100%;
+}
 
+/* <div class="elementor-background-video-container">
+<div class="elementor-background-overlay"> */
 
+/* .elementor-background-overlay {
+  background-image: linear-gradient(180deg, #ff808000 58%, #0c0b0b 84%);
+  z-index: 1;
+  position: inherit;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 500px !important;
+} */
+.video-container {
+  width: 100%;
+  /* display: none; */
+}
+
+.elementor-background-video-container {
+  width: 100%;
+  /* display: none; */
+  z-index: -10;
+}
+.banner-title-style {
+  color: #c28a6c;
+  font-size: 1.2em;
+  font-weight: 800;
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 2.6em;
+    padding-bottom: 0.4em;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 2.4em;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 2.3em;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 1.7em;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    font-size: 1.1em;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    font-size: 1em;
+  }
+}
+
+.banner-title-style-btn {
+  @media screen and (-webkit-min-device-pixel-ratio: 1),
+    (min-width: 1800px) and (max-width: 3800px) {
+    padding-left: 10%;
+    padding-bottom: 22%;
+    .elementor-button-text-span {
+      font-size: 1.6em;
+    }
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    padding-left: 10%;
+    padding-bottom: 29%;
+    .elementor-button-text-span {
+      font-size: 1.4em;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    padding-left: 10%;
+    padding-bottom: 20%;
+    .elementor-button-text-span {
+      font-size: 1.3em;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    padding-left: 10%;
+    padding-bottom: 20%;
+    .elementor-button-text-span {
+      font-size: 1.1em;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    padding-left: 10%;
+    padding-bottom: 10%;
+    .elementor-button-text-span {
+      font-size: 0.9em;
+    }
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    padding-left: 5%;
+    padding-bottom: 10%;
+    .elementor-button-text-span {
+      font-size: 0.8em;
+    }
+  }
+}
+.section-title-wrapper {
+}
+.section-title {
+}
+.section-sub-title {
+}
+
+.section-black {
+  background-color: #0c0b0b;
+}
+
+.video-container-text {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+}
+.section1-home {
+  position: relative;
+}
+.inner-text-overlay {
+}
+
+.text-overlay-on-video {
+  bottom: 0;
+}
+
+.linkButton {
+  padding: 7px 24px;
+  font-size: 15px;
+  fill: #c28a6c;
+  color: #c28a6c;
+  background-color: #ffffff00;
+  border-color: #c28a6c;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 3px;
+  &:hover {
+    color: white;
+    background-color: #c28a6c;
+    border-color: white;
+  }
+}
 /* 
 border-style: solid;
 border-width: 0px 0px 0.2px 0px;
 border-color: #C1886D7A; */
+
+.elementor-background-overlay::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(180deg, #ff808000 58%, #0c0b0b 84%);
+  /* z-index: 1; */
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+}
+
+.title-white {
+  color: #c28a6c;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #c0c0c0;
+  -webkit-font-smoothing: antialiased;
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 1.5em;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 1.3rem;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 1.2rem;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 1.1rem;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    font-size: 1rem;
+  }
+}
+.title-white-wrapper {
+}
+
+.title-orange {
+  color: #c28a6c;
+  font-size: 1.2em;
+  font-weight: 800;
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 2.6em;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 2.4em;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 2.3em;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 2.3em;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    font-size: 1.8em;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    font-size: 1.5em;
+  }
+}
+.p-row-white {
+  color: #c0c0c0;
+  font-size: 1.15vw;
+  weight: normal;
+}
+
+.out-line-btn-large {
+  @media screen and (-webkit-min-device-pixel-ratio: 1),
+    (min-width: 1800px) and (max-width: 3800px) {
+    .elementor-button-text-span {
+      font-size: 1.5em;
+    }
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    .elementor-button-text-span {
+      font-size: 1.4em;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .elementor-button-text-span {
+      font-size: 1.3em;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    .elementor-button-text-span {
+      font-size: 1.1em;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    .elementor-button-text-span {
+      font-size: 0.9em;
+    }
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    .elementor-button-text-span {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.app-bg-black {
+  background-color: #0c0b0b;
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  border-style: solid;
+  border-width: 0px 0px 0.2px 0px;
+  border-color: #c1886d7a;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.nav-link {
+  text-transform: uppercase;
+}

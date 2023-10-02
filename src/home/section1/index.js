@@ -4,234 +4,124 @@ export const Section1 = () => {
   return (
     <>
       <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-f2f58b7 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-        data-id="f2f58b7"
+        class="section1-home row app-bg-black"
+        data-id="fa7abd1"
         data-element_type="section"
-        id="secondSection2"
+        data-settings=""
       >
-        <div class="elementor-container elementor-column-gap-no">
-          <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-22164cb"
-            data-id="22164cb"
-            data-element_type="column"
-          >
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-b6199de elementor-widget elementor-widget-heading"
-                data-id="b6199de"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              >
-                <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">
-                    ABOUT US
-                  </h2>{" "}
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-5746d83 elementor-widget elementor-widget-heading"
-                data-id="5746d83"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              >
-                <div class="elementor-widget-container">
-                  <h1 class="elementor-heading-title elementor-size-default">
-                    Welcome to EXEED in UAE
-                  </h1>{" "}
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-7e4cb53 elementor-widget elementor-widget-image"
-                data-id="7e4cb53"
-                data-element_type="widget"
-                data-widget_type="image.default"
-              >
-                <div class="elementor-widget-container">
-                  <img
-                    decoding="async"
-                    loading="lazy"
-                    width="726"
-                    height="472"
-                    src="https://exeed-uae.com/wp-content/uploads/2023/09/TXL-Reality-images-12.webp"
-                    class="attachment-large size-large wp-image-3843"
-                    alt=""
-                    srcset="https://exeed-uae.com/wp-content/uploads/2023/09/TXL-Reality-images-12.webp 726w, https://exeed-uae.com/wp-content/uploads/2023/09/TXL-Reality-images-12-300x195.webp 300w"
-                    sizes="(max-width: 726px) 100vw, 726px"
-                  />
-                </div>
-              </div>
+        <div class="elementor-background-video-container-section position-relative">
+          <div class="elementor-background-overlay position-relative">
+            <div class="video-container ">
+              <video
+                playsinline
+                controls
+                autoPlay
+                name
+                muted
+                class="elementor-background-video-hosted elementor-html5-video"
+                loop
+                src="https://exeed-uae.com/wp-content/uploads/2023/07/hero-section-homepage-v-1_compressed.mp4"
+              ></video>
             </div>
-          </div>
-          <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9da682c"
-            data-id="9da682c"
-            data-element_type="column"
-          >
-            <div class="elementor-widget-wrap elementor-element-populated">
+            <div class="video-container-text top-0">
               <div
-                class="elementor-element elementor-element-5fd6a93 elementor-widget elementor-widget-text-editor"
-                data-id="5fd6a93"
-                data-element_type="widget"
-                data-widget_type="text-editor.default"
+                class="container-fluid h-100 align-items-end d-flex justify-content-between"
+                data-id="730e81c"
+                data-element_type="column"
               >
-                <div class="elementor-widget-container">
-                  <p>
-                    Our world is experiencing an unmatched surge in the
-                    automobile industry and Exeed by Al Ghurair in the UAE has
-                    been committed to introducing groundbreaking technologies
-                    that propel you into the Future with a world of luxury. By
-                    affiliating with us, you gain access to premium quality
-                    products and cutting-edge services and unprecedented luxury
-                    that redefines e<strong>xcellence</strong>.
-                  </p>{" "}
-                </div>
-              </div>
-              <section
-                class="elementor-section elementor-inner-section elementor-element elementor-element-3cec40f elementor-section-height-min-height elementor-section-boxed elementor-section-height-default"
-                data-id="3cec40f"
-                data-element_type="section"
-                data-settings='{"background_background":"classic"}'
-              >
-                <div class="elementor-container elementor-column-gap-no">
+                <div class="text-overlay-on-video banner-title-style-btn">
+                  <h2 class="banner-title-style">
+                    EXEED Performance!
+                    <br />
+                    Hello Open Roads
+                  </h2>
                   <div
-                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1fd5a6f"
-                    data-id="1fd5a6f"
-                    data-element_type="column"
+                    class="elementor-element elementor-element-33993eb elementor-widget elementor-widget-button"
+                    data-id="33993eb"
+                    data-element_type="widget"
+                    data-widget_type="button.default"
                   >
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                      <div
-                        class="elementor-element elementor-element-5f5a0c0 elementor-widget__width-auto elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-heading"
-                        data-id="5f5a0c0"
-                        data-element_type="widget"
-                        data-widget_type="heading.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <h2 class="elementor-heading-title elementor-size-default">
-                            <a href="https://exeed-uae.com/contact/">
-                              CALL US NOW
-                            </a>
-                          </h2>{" "}
-                        </div>
-                      </div>
-                      <div
-                        class="elementor-element elementor-element-050a6b7 elementor-widget__width-auto elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-view-default elementor-widget elementor-widget-icon"
-                        data-id="050a6b7"
-                        data-element_type="widget"
-                        data-widget_type="icon.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-icon-wrapper">
-                            <a
-                              class="elementor-icon"
-                              href="https://exeed-uae.com/contact/"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="83.95"
-                                height="36.9"
-                                viewBox="0 0 83.95 36.9"
-                              >
-                                <g
-                                  id="_4213481_arrow_direction_forward_next_right_icon"
-                                  data-name="4213481_arrow_direction_forward_next_right_icon"
-                                  transform="translate(29.387 -29.1)"
-                                >
-                                  <path
-                                    id="Path_1"
-                                    data-name="Path 1"
-                                    d="M59.208,66l18.45-18.45L59.208,29.1l-3.013,3.013L69.57,45.435H36v4.229H69.57L56.195,62.987Z"
-                                    transform="translate(-23.095)"
-                                    fill="#bcbdc0"
-                                  ></path>
-                                  <rect
-                                    id="Rectangle_13"
-                                    data-name="Rectangle 13"
-                                    width="4.229"
-                                    height="4.229"
-                                    transform="translate(2.332 45.435)"
-                                    fill="#bcbdc0"
-                                  ></rect>
-                                  <rect
-                                    id="Rectangle_14"
-                                    data-name="Rectangle 14"
-                                    width="4.229"
-                                    height="4.229"
-                                    transform="translate(-8.241 45.435)"
-                                    fill="#bcbdc0"
-                                  ></rect>
-                                  <rect
-                                    id="Rectangle_28"
-                                    data-name="Rectangle 28"
-                                    width="4.229"
-                                    height="4.229"
-                                    transform="translate(-18.814 45.435)"
-                                    fill="#bcbdc0"
-                                  ></rect>
-                                  <rect
-                                    id="Rectangle_29"
-                                    data-name="Rectangle 29"
-                                    width="4.229"
-                                    height="4.229"
-                                    transform="translate(-29.387 45.435)"
-                                    fill="#bcbdc0"
-                                  ></rect>
-                                </g>
-                              </svg>{" "}
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="elementor-element elementor-element-aaf3ac8 elementor-mobile-align-center elementor-widget elementor-widget-button"
-                        data-id="aaf3ac8"
-                        data-element_type="widget"
-                        data-widget_type="button.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-button-wrapper">
-                            <a
-                              class="elementor-button elementor-button-link elementor-size-sm"
-                              href="https://exeed-uae.com/contact/"
-                            >
-                              <span class="elementor-button-content-wrapper">
-                                <span class="elementor-button-text">
-                                  CONTACT US
-                                </span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
+                    <div class="elementor-widget-container">
+                      <div class="elementor-button-wrapper">
+                        <a
+                          class="btn btn-outline-primary linkButton"
+                          href="https://exeed-uae.com/about/"
+                        >
+                          <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-text-span">
+                              DISCOVER MORE
+                            </span>
+                          </span>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
-            </div>
-          </div>
-          <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-84afca5"
-            data-id="84afca5"
-            data-element_type="column"
-          >
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-7d272be elementor-widget elementor-widget-image"
-                data-id="7d272be"
-                data-element_type="widget"
-                data-widget_type="image.default"
-              >
-                <div class="elementor-widget-container">
-                  <img
-                    decoding="async"
-                    loading="lazy"
-                    width="640"
-                    height="714"
-                    src="https://exeed-uae.com/wp-content/uploads/2023/09/TXL-Reality-images-1-2.webp"
-                    class="attachment-large size-large wp-image-3844"
-                    alt=""
-                    srcset="https://exeed-uae.com/wp-content/uploads/2023/09/TXL-Reality-images-1-2.webp 640w, https://exeed-uae.com/wp-content/uploads/2023/09/TXL-Reality-images-1-2-269x300.webp 269w"
-                    sizes="(max-width: 640px) 100vw, 640px"
-                  />
+                <div class="" data-id="9becd0b" data-element_type="column">
+                  <div class="">
+                    <div
+                      class=""
+                      data-id="982dbb5"
+                      data-element_type="widget"
+                      data-widget_type="icon.default"
+                    >
+                      <div class="">
+                        <div class="elementor-icon-wrapper">
+                          <a class="elementor-icon" href="#secondSection2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="171"
+                              viewBox="0 0 24 171"
+                            >
+                              <g
+                                id="scroll_dow"
+                                data-name="scroll dow"
+                                transform="translate(-953.041 -937.107)"
+                              >
+                                <text
+                                  id="SCROLL"
+                                  transform="translate(972.041 978.107) rotate(-90)"
+                                  fill="#bcbdc0"
+                                  font-size="20"
+                                  font-family="Calibri-Bold, Calibri"
+                                  font-weight="700"
+                                >
+                                  <tspan x="-40.771" y="0">
+                                    SCROLL
+                                  </tspan>
+                                </text>
+                                <rect
+                                  id="Rectangle_24"
+                                  data-name="Rectangle 24"
+                                  width="10.509"
+                                  height="10.509"
+                                  transform="translate(970.214 1097.598) rotate(90)"
+                                  fill="#57595b"
+                                ></rect>
+                                <rect
+                                  id="Rectangle_25"
+                                  data-name="Rectangle 25"
+                                  width="10.509"
+                                  height="10.509"
+                                  transform="translate(970.672 1071.33) rotate(90)"
+                                  fill="#97999a"
+                                ></rect>
+                                <rect
+                                  id="Rectangle_26"
+                                  data-name="Rectangle 26"
+                                  width="10.509"
+                                  height="10.509"
+                                  transform="translate(971.131 1045.061) rotate(90)"
+                                  fill="#bcbdc0"
+                                ></rect>
+                              </g>
+                            </svg>{" "}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
