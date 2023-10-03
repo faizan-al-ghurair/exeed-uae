@@ -480,3 +480,410 @@ body {
   justify-content: center;
   display: flex;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+.bg-primary {
+  background-color: #0c0b0b !important;
+}
+.header {
+  min-height: 100px;
+}
+
+.navbar-toggler {
+  display: flex;
+  justify-content: flex-end;
+}
+.padding-right-sm {
+  padding-right: 1em;
+}
+
+.nav-link {
+  color: #c28a6c;
+  font-size: 1.1em;
+  font-family: "Calibri", Sans-serif;
+  font-weight: 700;
+  &:hover {
+    color: #707070;
+    font-weight: 700;
+  }
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 1.1em;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 1em;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 0.9em;
+  }
+  @media (min-width: 10px) and (max-width: 1200px) {
+    font-size: 0.8em;
+  }
+}
+
+.mVW-5 {
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  @media (min-width: 10px) and (max-width: 1200px) {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+
+.cars-dropdown {
+  border: 0px;
+  left: 0%;
+  position: fixed !important;
+  padding-top: 1.3vw;
+  background-color: transparent;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  @media (min-width: 1800px) and (max-width: 5000px) {
+    width: 100%;
+  }
+  @media (min-width: 700px) and (max-width: 1800px) {
+    width: 100%;
+  }
+  @media (min-width: 370px) and (max-width: 700px) {
+    width: 100%;
+  }
+  @media (min-width: 10px) and (max-width: 370px) {
+    width: 100%;
+  }
+}
+
+.other-dropdown {
+  border: 0px;
+  left: 0%;
+  /* position: fixed !important; */
+  padding-top: 1.3vw;
+  background-color: transparent;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.nav-font-color {
+  color: #c28a6c;
+  &:hover {
+    background-color: #0c0b0b !important;
+    color: #707070;
+  }
+}
+
+.bg-app-black {
+  background-color: #0c0b0b !important;
+}
+
+.cars-header-modal {
+  background-color: #0c0b0b;
+  padding-top: 1vw;
+}
+
+.attachment-large {
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    height: 33px;
+  }
+  @media (min-width: 700px) and (max-width: 1800px) {
+    height: 28px;
+  }
+  @media (min-width: 370px) and (max-width: 700px) {
+    height: 20px;
+  }
+  @media (min-width: 10px) and (max-width: 370px) {
+    height: 18px;
+  }
+}
+.car-img-widget {
+  background-image: url("https://exeed-uae.com/wp-content/uploads/2023/07/vx-im.png");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.faizan {
+  background-color: red;
+}
+.border-bottom-bold {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #c0c0c0;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.car-tile-font {
+  color: #c0c0c0;
+  font-family: "Calibri", Sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+}
+.car-specification-widget {
+  max-width: 100%;
+  height: auto;
+}
+.absolute-details-car {
+  position: absolute;
+  bottom: 0;
+}
+
+.elementor-widget-container-font {
+  font-size: 1.1em;
+  font-family: "Calibri", Sans-serif;
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 1.1rem;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 0.9rem;
+  }
+  @media (min-width: 10px) and (max-width: 1200px) {
+    font-size: 0.8rem;
+  }
+}
+
+/* 
+border-style: solid;
+border-width: 0px 0px 0.2px 0px;
+border-color: #C1886D7A; */
+
+/* Khadija Code Footer ans Newsletter */
+a {
+  text-decoration: none;
+  color: #c0c0c0;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+.footer-container {
+  background-color: #121212;
+  min-height: 100px;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer-section {
+  color: #c0c0c0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section:first-child {
+  margin-right: 5rem;
+}
+.footer-container-middle {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  @media (min-width: 10px) and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.footer-section-titles {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.footer-section ul li {
+  line-height: 2rem;
+}
+
+.footer-logo-img {
+  height: 33px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-column {
+  @media (min-width: 10px) and (max-width: 1200px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  margin-bottom: 1.5rem;
+}
+
+/* .footer-column p {
+  color: #c0c0c0;
+} */
+
+.footer-lower {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  @media (min-width: 10px) and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.footer-lower p {
+  margin: 0;
+}
+
+.footer-lower a {
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 10px) and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.socialmedia img {
+  width: 25px;
+}
+
+.socialmedia ul {
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 1200px) and (max-width: 3000px) {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  margin-bottom: 0;
+  gap: 2rem;
+  padding: 0;
+}
+
+.socialmedia ul li {
+  list-style: none;
+}
+.copyright,
+.footer-policy {
+  text-align: left;
+  @media (min-width: 10px) and (max-width: 1200px) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.newsletter {
+  background-color: #0c0b0b;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.newsletter-inner {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #121212;
+
+  @media (min-width: 10px) and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.newsletter-email {
+  @media (min-width: 10px) and (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.newsletter-email form {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 10px) and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.newsletter-text {
+  color: #c28a6c;
+
+  @media (min-width: 10px) and (max-width: 1200px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.newsletter-email input,
+.newsletter-btn {
+  background-color: rgb(255, 255, 255, 0);
+  height: 4rem;
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  @media (min-width: 10px) and (max-width: 1200px) {
+    margin: 0 0 1rem 0;
+  }
+}
+
+.newsletter-email input {
+  width: 60%;
+  margin-right: 0.5rem;
+  color: #fff;
+  border: 1px solid #fff;
+  @media (min-width: 10px) and (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.newsletter-btn {
+  width: 20%;
+  margin-left: 0.5rem;
+  color: #c28a6c;
+  border: 1px solid #c28a6c;
+  @media (min-width: 10px) and (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.newsletter-btn:hover {
+  background-color: #c28a6c;
+  color: #fff;
+}
