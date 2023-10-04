@@ -16,12 +16,12 @@ export const Section2 = () => {
         >
           <div class="col-md-12 w-100 d-flex justify-content-center flex-column">
             <div class="row d-flex flex-column align-items-end">
-              <div class="col-md-9">
+              <div class="col-md-9 col-sm-11 col-10">
                 <div class="title-white-wrapper">
                   <h2 class="title-white">{"ABOUT US"}</h2>
                 </div>
               </div>
-              <div class="col-md-9 pb-5">
+              <div class="col-md-9 pb-5 col-sm-11 col-10">
                 <div class="">
                   <h1 class="title-orange">{"Welcome to EXEED in UAE"}</h1>
                 </div>
@@ -61,7 +61,7 @@ export const Section2 = () => {
                   us, you gain access to premium quality products and
                   cutting-edge services and unprecedented luxury that redefines
                   e<strong>xcellence</strong>.
-                </p>{" "}
+                </p>
               </div>
             </div>
             <div
@@ -71,13 +71,13 @@ export const Section2 = () => {
               data-widget_type="button.default"
             >
               <div class="">
-                <div class="out-line-btn-large">
+                <div class="out-line-btn-large ">
                   <a
                     class="btn btn-outline-primary linkButton"
-                    href="https://exeed-uae.com/contact/"
+                    href="https://exeed-uae.com/exeed-txl/"
                   >
-                    <span class="">
-                      <span class="elementor-button-text-span">CONTACT US</span>
+                    <span class="p-3">
+                      <span class="elementor-button-text">CONTACT US</span>
                     </span>
                   </a>
                 </div>
@@ -103,7 +103,7 @@ export const Section2 = () => {
                   loading="lazy"
                   src="https://exeed-uae.com/wp-content/uploads/2023/09/TXL-Reality-images-1-2.webp"
                   alt=""
-                  class='w-100'
+                  class="w-100"
                 />
               </div>
             </div>

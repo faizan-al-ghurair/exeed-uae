@@ -42,17 +42,20 @@ export const Section1 = () => {
                     data-widget_type="button.default"
                   >
                     <div class="elementor-widget-container">
-                      <div class="elementor-button-wrapper">
-                        <a
-                          class="btn btn-outline-primary linkButton"
-                          href="https://exeed-uae.com/about/"
-                        >
-                          <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text-span">
-                              DISCOVER MORE
+                      <div class="">
+                        <div class="out-line-btn-large ">
+                          <a
+                            class="btn btn-outline-primary linkButton"
+                            href="https://exeed-uae.com/exeed-txl/"
+                          >
+                            <span class="p-3">
+                              <span class="elementor-button-text">
+                                {" "}
+                                DISCOVER MORE
+                              </span>
                             </span>
-                          </span>
-                        </a>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

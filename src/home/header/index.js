@@ -68,10 +68,10 @@ export const Header = () => {
           </button>
         </div>
         <div
-          class="collapse navbar-collapse justify-content-end "
+          class="collapse navbar-collapse justify-content-end"
           id="main_nav"
         >
-          <ul class="navbar-nav mVW-5">
+          <ul class="navbar-nav mVW-5 header-nav-link">
             <li class="nav-item px-1 dropdown">
               <a
                 class="nav-link dropdown-toggle"
