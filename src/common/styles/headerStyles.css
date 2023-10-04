@@ -481,7 +481,7 @@ body {
   background-color: #0c0b0b;
 }
 .bg-app-black {
-  background-color: #0c0b0b;
+  background-color: #0c0b0b !important;
 }
 
 .svg-home-page {
