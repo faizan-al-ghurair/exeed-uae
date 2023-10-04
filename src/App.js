@@ -13,6 +13,9 @@ function App() {
         <Route path="exeed-txl" element={<Page2exeedvx />} />
         <Route path="exeed-lx" element={<Page2exeedvx />} />
         <Route path="exeed-rx" element={<Page2exeedvx />} />
+
+        <Route path="abu-dhabi-showroom" element={<Page2exeedvx />} />
+
       </Routes>
     </BrowserRouter>
   );
