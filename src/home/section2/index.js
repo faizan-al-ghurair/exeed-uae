@@ -110,6 +110,7 @@ export const Section2 = () => {
           </div>
         </div>
       </section>
+      
     </>
   );
 };

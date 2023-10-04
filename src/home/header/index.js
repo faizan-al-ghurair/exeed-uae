@@ -1,9 +1,9 @@
 import React from "react";
 import "../../common/styles/headerStyles.css";
 
-const CarTile = ({ img }) => {
+const CarTile = ({ img,url }) => {
   return (
-    <div class="d-flex justify-content-start ps-4 pb-2 pt-2">
+    <a href={url} class="d-flex justify-content-start ps-4 pb-2 pt-2">
       <div class="" data-id="ba7709e" data-element_type="column">
         <div class="">
           <div
@@ -24,7 +24,11 @@ const CarTile = ({ img }) => {
           </div>
         </div>
       </div>
-      <div class="align-self-center" data-id="347633e" data-element_type="column">
+      <div
+        class="align-self-center"
+        data-id="347633e"
+        data-element_type="column"
+      >
         <div class="ps-3 car-tile-font">
           <div
             class=""
@@ -33,12 +37,14 @@ const CarTile = ({ img }) => {
             data-widget_type="text-editor.default"
           >
             <div class="elementor-widget-container">
-              <p class="elementor-widget-container-font m-0 mb-1">EXEED TXL</p>{" "}
+              <p class="elementor-widget-container-font m-0 mb-1">
+                {"EXEED TXL"}
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
@@ -47,7 +53,7 @@ export const Header = () => {
     <>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary header ">
         <div class="ms-5">
-          <a href="https://exeed-uae.com">
+          <a href="/">
             <img
               src="https://exeed-uae.com/wp-content/uploads/2023/07/Exeed.png"
               class="attachment-large size-large wp-image-41 padding-right-sm"
@@ -67,10 +73,7 @@ export const Header = () => {
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="main_nav"
-        >
+        <div class="collapse navbar-collapse justify-content-end" id="main_nav">
           <ul class="navbar-nav mVW-5 header-nav-link">
             <li class="nav-item px-1 dropdown">
               <a
@@ -90,24 +93,28 @@ export const Header = () => {
                   >
                     <div class="col-md-4">
                       <CarTile
+                        url="/exeed-vx/"
                         img={
                           "https://exeed-uae.com/wp-content/uploads/2023/07/VX-P.png"
                         }
                       />
                       <div class="border-bottom-bold"></div>
                       <CarTile
+                        url="/exeed-txl/"
                         img={
                           "https://exeed-uae.com/wp-content/uploads/2023/07/TXL.png"
                         }
                       />
                       <div class="border-bottom-bold"></div>
                       <CarTile
+                        url="/exeed-lx/"
                         img={
                           "https://exeed-uae.com/wp-content/uploads/2023/07/LX-Bule.png"
                         }
                       />
                       <div class="border-bottom-bold"></div>
                       <CarTile
+                        url="/exeed-rx/"
                         img={
                           "https://exeed-uae.com/wp-content/uploads/2023/07/RX-45°-green-NEW-1-Recovered-1.png"
                         }

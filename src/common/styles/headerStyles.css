@@ -53,7 +53,7 @@
   }
 }
 
-.header-nav-link  a {
+.header-nav-link a {
   @media (min-width: 1800px) and (max-width: 5000px) {
     font-size: 1em !important;
   }
@@ -500,6 +500,17 @@ body {
   color: #e0e0e0;
   text-decoration: none;
 }
+
+.banner-link-no-underline-font {
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #e0e0e0;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
 .banner-link-no-underline-sub-text {
   color: #c0c0c0;
 }
@@ -570,8 +581,7 @@ body {
   font-size: 1em;
   font-weight: normal;
   color: #c0c0c0;
-  @media screen and (-webkit-min-device-pixel-ratio: 1),
-    (min-width: 1800px) and (max-width: 3800px) {
+  @media (min-width: 1800px) and (max-width: 3800px) {
     font-size: 1em;
   }
   @media (min-width: 1500px) and (max-width: 1800px) {
@@ -580,8 +590,11 @@ body {
   @media (min-width: 1200px) and (max-width: 1500px) {
     font-size: 0.9em;
   }
-  @media (min-width: 10px) and (max-width: 1200px) {
-    font-size: 0.8em;
+  @media (min-width: 920px) and (max-width: 1200px) {
+    font-size: 0.7em;
+  }
+  @media (min-width: 100px) and (max-width: 920px) {
+    font-size: 0.6em;
   }
 }
 
@@ -787,7 +800,7 @@ button:hover {
     font-size: 1.6em;
   }
   @media (min-width: 1200px) and (max-width: 1500px) {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   @media (min-width: 800px) and (max-width: 1200px) {
     font-size: 1.2em;
@@ -829,8 +842,8 @@ button:hover {
 .section-spacing {
   @media screen and (-webkit-min-device-pixel-ratio: 1),
     (min-width: 1800px) and (max-width: 3800px) {
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 8%;
+    padding-right: 8%;
   }
   @media (min-width: 1500px) and (max-width: 1800px) {
     padding-left: 4%;
@@ -855,7 +868,26 @@ button:hover {
 }
 
 .information-svg {
-  height: 3vw;
+  height: 3rem;
+  @media screen and (-webkit-min-device-pixel-ratio: 1),
+    (min-width: 1800px) and (max-width: 3800px) {
+    height: 3rem;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    height: 3rem;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    height: 3rem;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    height: 2.6rem;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    height: 2.4rem;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    height: 2rem;
+  }
 }
 
 .elementor-background-overlay-gradient {
@@ -1075,4 +1107,55 @@ button:hover {
 }
 .bg-color-black {
   background-color: #121212;
+}
+
+.modelHeader-section {
+  background-position: bottom center;
+}
+
+.img-1-background-about-section {
+  height: 35vh;
+  width: 100%;
+  background-image: url("https://exeed-uae.com/wp-content/uploads/2023/08/vx-h.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-2-background-about-section {
+  height: 35vh;
+  width: 100%;
+  background-image: url("https://exeed-uae.com/wp-content/uploads/2023/07/photo-highlights-22.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-3-background-about-section {
+  height: 35vh;
+  width: 100%;
+  background-image: url("https://exeed-uae.com/wp-content/uploads/2023/07/photo-highlights-23.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dynamic-tabs {
+  .nav-link {
+    color: white;
+    background-color: transparent;
+    &:hover {
+      border-color: transparent;
+      color: #c28a6c;
+    }
+  }
+  .nav-item .active {
+    background-color: transparent;
+    border-color: transparent;
+    color: #c28a6c;
+  }
+  .nav-tabs {
+    font-size: 1.3em;
+    background-color: transparent;
+    border: 0;
+    justify-content: center;
+  }
 }

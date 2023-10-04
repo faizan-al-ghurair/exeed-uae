@@ -4,30 +4,31 @@ export const Section2 = () => {
   return (
     <>
       <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-83e2e07 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+        class="elementor-section section-spacing"
         data-id="83e2e07"
         data-element_type="section"
       >
-        <div class="elementor-container elementor-column-gap-no">
-          <div
-            class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f2dc371"
-            data-id="f2dc371"
-            data-element_type="column"
-          >
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-626d902 elementor-widget elementor-widget-heading"
-                data-id="626d902"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              >
-                <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">
-                    Starting From AED 129,999
-                  </h2>{" "}
+        <div class="">
+          <div class="" data-id="f2dc371" data-element_type="column">
+            <section
+              class="pb-5 pt-5"
+              data-id="80b2f29"
+              data-element_type="section"
+            >
+              <div class="container-fluid">
+                <div class="row d-flex">
+                  <div class="col-md-5">
+                    <div class="">
+                      <div class="">
+                        <h1 class="title-orange">
+                          {" Starting From AED 129,999"}
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
           <div
             class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-13955ed"
@@ -35,6 +36,26 @@ export const Section2 = () => {
             data-element_type="column"
           >
             <div class="elementor-widget-wrap"></div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="elementor-section section-spacing pt-3 pb-5"
+        data-id="83e2e07"
+        data-element_type="section"
+      >
+        <div class="container-fluid">
+          <div class="row d-flex">
+            <div class="col-md-12">
+              <div class="">
+                <div class="">
+                  <h1 class="title-orange">{"ABOUT EXEED VX"}</h1>
+                </div>
+              </div>
+            </div>
+            <div class="title-white-wrapper">
+              <h2 class="title-white">{"The VX is an affordable SUV powered by a 2.0-cc Turbo engine.  The Exeed VX comes with features such as an Acoustic Hood, Center Armrest, 360-Degree Camera, ABS (Anti-lock Brake System), LKA (Lane-Keep Assist System), among others."}</h2>
+            </div>
           </div>
         </div>
       </section>
