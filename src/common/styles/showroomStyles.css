@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.showroom-heading-title{
+  color: #c28a6c;
+  text-align: center;
+  font-family: "Calibri", Sans-serif;
+  font-size: 7em;
+  font-weight: 700;
+}
