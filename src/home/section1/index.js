@@ -46,11 +46,10 @@ export const Section1 = () => {
                         <div class="out-line-btn-large ">
                           <a
                             class="btn btn-outline-primary linkButton"
-                            href="https://exeed-uae.com/exeed-txl/"
+                            href=""
                           >
                             <span class="p-3">
                               <span class="elementor-button-text">
-                                {" "}
                                 DISCOVER MORE
                               </span>
                             </span>

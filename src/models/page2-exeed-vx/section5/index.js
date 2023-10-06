@@ -1,78 +1,149 @@
+
 import React from "react";
+
+const CarouselItem = ({ active, id }) => {
+  return (
+    <div class={`carousel-item ${active}`}>
+      <div>
+        <img
+          class="position-relative w-100"
+          src="https://exeed-uae.com/wp-content/uploads/2023/07/photo-INTERIOR-22.png"
+          alt="..."
+        />
+      </div>
+      <div class="position-relative top-0 row d-flex w-100 h-100 justify-content-center align-items-center elementor-background-overlay-gradient">
+        <div
+          class="section-spacing col-md-12 h-100 d-flex align-items-end  justify-content-center"
+          data-id="788e685a"
+          data-element_type="column"
+        >
+          <div
+            class="w-100"
+            data-id="5d7c2b4f"
+            data-element_type="widget"
+            data-widget_type="icon-box.default"
+          ></div>
+        </div>
+      </div>
+      <div class="z-index-max section-spacing col-md-12 row justify-content-center align-items-center">
+        <div class="elementor-icon-box-content col-md-12 ">
+          <div class="justify-content-center">
+            <h3 class="justify-content-start">
+              <p class="white-banner-text-label">{`1/${id}`}</p>
+              <p class="white-banner-text-label">Leather seats</p>
+              <p class="white-banner-text-label">
+                The interior of the EXEED VX offers exclusive comfort for
+                everyone, thanks to premium materials and LEAR’s unique
+                anatomically shaped leather seats.
+              </p>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const CarousalComponent = ({ id, active }) => {
+  return (
+    <div class={`tab-pane fade show ${active}`} id={id}>
+      <section
+        class="elementor-section"
+        data-id="7934254d"
+        data-element_type="section"
+        data-settings=""
+      >
+        <div class="">
+          <div
+            data-bs-interval="false"
+            id={`carouselExampleControlsModal-${id}`}
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-pause="hover"
+          >
+            <div class="carousel-inner">
+              <CarouselItem active={"active"} id={1} />
+              <CarouselItem active={""} id={2} />
+              <CarouselItem active={""} id={3} />
+              <CarouselItem active={""} id={4} />
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target={`#carouselExampleControlsModal-${id}`}
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target={`#carouselExampleControlsModal-${id}`}
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
 
 export const Section5 = () => {
   return (
     <>
-      {/* <section
-        class="elementor-section section-spacing"
-        data-id="83e2e07"
+      <section
+        class="dynamic-tabs"
+        data-id="d27ecd7"
         data-element_type="section"
       >
-        <div class="">
-          <div class="" data-id="f2dc371" data-element_type="column">
-            <section
-              class="pb-5 pt-5"
-              data-id="80b2f29"
-              data-element_type="section"
-            >
-              <div class="container-fluid">
-                <div class="row d-flex">
-                  <div class="col-md-5">
-                    <div class="">
-                      <div class="">
-                        <h1 class="title-orange">{"About EXEED VX"}</h1>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+        <div class="m-4">
+          <ul class="nav nav-tabs" id="myTab">
+            <li class="nav-item px-1">
+              <a href="#INTERIOR" class="nav-link active" data-bs-toggle="tab">
+                INTERIOR
+              </a>
+            </li>
+            <li class="nav-item px-1">
+              <a href="#EXTERIOR" class="nav-link" data-bs-toggle="tab">
+                EXTERIOR
+              </a>
+            </li>
+            <li class="nav-item px-1">
+              <a href="#PERFORMANCE" class="nav-link" data-bs-toggle="tab">
+                PERFORMANCE
+              </a>
+            </li>
+            <li class="nav-item px-1">
+              <a href="#SAFETY" class="nav-link" data-bs-toggle="tab">
+                SAFETY
+              </a>
+            </li>
+            <li class="nav-item px-1">
+              <a href="#TECHNOLOGY" class="nav-link" data-bs-toggle="tab">
+                TECHNOLOGY
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <CarousalComponent id="INTERIOR" active="active" />
+            <CarousalComponent id="EXTERIOR" active="" />
+            <CarousalComponent id="PERFORMANCE" active="" />
+            <CarousalComponent id="SAFETY" active="" />
+            <CarousalComponent id="TECHNOLOGY" active="" />
           </div>
         </div>
       </section>
-
-      <section
-        class="elementor-section section-spacing"
-        data-id="83e2e07"
-        data-element_type="section"
-      >
-        <div class="row" data-id="13955ed" data-element_type="column">
-          <div class="col-md-4 pb-5">
-            <div class="img-1-background-about-section d-flex justify-content-center align-items-end">
-              <div class="justify-content-center">
-                <h3 class="elementor-icon-box-title d-flex justify-content-center">
-                  <a class="banner-link-no-underline-font px-5 pb-3">
-                    All WHEEL DRIVE
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 pb-5">
-            <div class="img-2-background-about-section d-flex justify-content-center align-items-end">
-              <div class="justify-content-center">
-                <h3 class="elementor-icon-box-title d-flex justify-content-center">
-                  <a class="banner-link-no-underline-font px-5 pb-3">
-                    7 SEATER
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 pb-5">
-            <div class="img-3-background-about-section d-flex justify-content-center align-items-end">
-              <div class="justify-content-center">
-                <h3 class="elementor-icon-box-title d-flex justify-content-center">
-                  <a class="banner-link-no-underline-font px-5 pb-3 text-center">
-                    DUAL 12.3-INCH HIGH-DEFINITION LCD SCREENS
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="elementor-widget-wrap"></div>
-        </div>
-      </section> */}
     </>
   );
 };

@@ -382,7 +382,7 @@ export const Section4 = () => {
               <CarouselItem active={""} />
             </div>
             <button
-              class="carousel-control-prev carousal-arrow-left"
+              class="carousel-control-prev"
               type="button"
               data-bs-target="#carouselExampleControls"
               data-bs-slide="prev"

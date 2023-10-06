@@ -5,6 +5,8 @@ import { Section2 } from "./section2";
 import { Section3 } from "./section3";
 import { Section4 } from "./section4";
 import { Section5 } from "./section5";
+import { Section6 } from "./section6";
+import { Section6 as Footer} from "../../home/section6";
 
 export const Page2exeedvx = () => {
   return (
@@ -15,6 +17,8 @@ export const Page2exeedvx = () => {
       <Section3 />
       <Section4 />
       <Section5/>
+      <Section6/>
+      <Footer/>
     </>
   );
 };
