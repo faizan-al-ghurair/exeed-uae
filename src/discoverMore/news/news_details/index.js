@@ -1,17 +1,18 @@
 import React from "react";
-import "./styles.css";
+import "../../../common/styles/headerStyles.css";
+import "../../../common/styles/commonStyle.css";
+import { Header } from "../../../home/header";
+import { Footer } from "../../../home/section6";
+import newsImage from "../../../newsimage.png";
+import banner from "../../../banner.webp";
 
 const CarouselItem = ({ active }) => {
   return (
     <div class={`carousel-item ${active}`}>
-      <div>
-        <img
-          class="position-relative w-100"
-          src="https://exeed-uae.com/wp-content/uploads/2023/07/banner-txl.webp"
-          alt="..."
-        />
+      <div class="banner-placeholder">
+        <img class="position-relative w-100" src={banner} alt="..." />
       </div>
-      <div class="position-absolute top-0 row d-flex w-100 h-100 justify-content-center align-items-center elementor-background-overlay-gradient">
+      {/* <div class="position-absolute top-0 row d-flex w-100 h-100 justify-content-center align-items-center elementor-background-overlay-gradient">
         <div
           class="col-md-3 h-100 d-flex align-items-end pb-5 justify-content-center"
           data-id="134ccbbe"
@@ -139,7 +140,8 @@ const CarouselItem = ({ active }) => {
               <div class="elementor-icon-box-wrapper col-md-2">
                 <div class="w-100">
                   <span class="">
-                    <svg US
+                    <svg
+                      US
                       class="information-svg"
                       xmlns="http://www.w3.org/2000/svg"
                       xlink="http://www.w3.org/1999/xlink"
@@ -354,61 +356,163 @@ const CarouselItem = ({ active }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
-export const Section4 = () => {
+
+export const NewsDetails = () => {
   return (
     <>
+      <Header></Header>
       <section
-        class="elementor-section"
-        data-id="7934254d"
+        class="section-black row news-details"
+        data-id="f2f58b7"
         data-element_type="section"
-        data-settings=""
+        id="secondSection2"
       >
-        <div class="">
-          <div
-            data-bs-interval="false"
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            data-pause="hover"
-          >
-            <div class="carousel-inner">
-              <CarouselItem active={"active"} />
-              <CarouselItem active={""} />
-              <CarouselItem active={""} />
-              <CarouselItem active={""} />
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
+        <div
+          class="col-md-12 d-flex pt-5"
+          data-id="22164cb"
+          data-element_type="column"
+        >
+          <div class="col-md-12 w-100 d-flex justify-content-center flex-column">
+            <div class="details-head row d-flex flex-column align-items-center ">
+              <div class="col-md-10 col-sm-10 col-10">
+                <div class="title-white-wrapper">
+                  <h2 class="title-white">{"01 April, 2023"}</h2>
+                  <h1 class="title-orange">
+                    {
+                      "Unveiling The Teaser Of Exeed’s First Electric Sedan, New EXLANTIX Series Will Come Soon!"
+                    }
+                  </h1>
+                </div>
+              </div>
 
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <div class="col-md-10 col-sm-10 col-10 pb-3">
+                <div class="">
+                  <div class="">
+                    <div
+                      data-bs-interval="false"
+                      id="carouselExampleControls"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                      data-pause="hover"
+                    >
+                      <div class="carousel-inner">
+                        <CarouselItem active={"active"} />
+                        <CarouselItem active={""} />
+                        <CarouselItem active={""} />
+                        <CarouselItem active={""} />
+                      </div>
+                      <button
+                        class="carousel-control-prev carousal-arrow-left"
+                        type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="details-description row d-flex flex-column align-items-center ">
+              <div class="col-md-10 col-sm-10 col-10 pb-3">
+                <div class="">
+                  <p>
+                    On March 28, EXEED Officially Released A Teaser Post Of Its
+                    First Sedan That Is Long Expected By Global Users, Which
+                    Demonstrates That EXEED Has Preliminarily Built A Full-
+                    Range Product Matrix Including Sedan And SUV. On April 10,
+                    EXEED Released A Teaser Through Its Official Social Media
+                    Account Again, Further Unveiling The Mystery Of The Sedan.
+                  </p>
+                  <p>
+                    This New Vehicle, Integrating High Performance And Green And
+                    Environmental Protection, Is The First Electric Sedan
+                    Created By EXEED, As Well As The First Model That Will Be
+                    Under A New Series – EXLANTIX, Derived From The
+                    Pronunciation Of “Atlantis”. EXLANTIX Not Only Represents
+                    The High-End Electric Product Of EXEED, But Also Shoulder
+                    The Important Mission Of Creating Ideal Mobility Modes.
+                  </p>
+                  <p>
+                    As The First Sedan Under The EXLANTIX Series, The Vehicle
+                    Features Clean Lines, A Slender Body. Looking From The Front
+                    Particularly, The Vehicle Shows People A Swooping Feeling
+                    Through A Forward-Prostrating Design From The Middle Of The
+                    Engine Hood; While For The Rear, It Adopts A Sportback
+                    Styling With A Small And Slightly Upward Rear Wing.
+                  </p>
+                  <p>
+                    These Design Elements, Which Are Usually Adopted For
+                    High-Performance Vehicles, Indicate That This New Vehicle
+                    Will Pay Equal Attention To Its Sporty Performance.
+                  </p>
+
+                  <img
+                    src={newsImage}
+                    alt="News description Image"
+                    width="100%"
+                  />
+
+                  <p>
+                    The EXEED Team Has Subtly Designed The Teaser To Give
+                    Prominence To Its Positioning As A Electric Vehicle.
+                    Firstly, It Takes Green As Its The Dominant Color, Echoing
+                    The Theme Of Green And Environmental Protection; Secondly,
+                    The Body Is Covered With Hexagonal Geometric Patterns, Which
+                    Are Derived From The Hexagonal Lattice Of Carbon; Moreover,
+                    The Light And Shadow On The Road Are Reminiscent Of Electric
+                    Currents, Further Highlighting The Feature As The First
+                    Electric Sedan.
+                  </p>
+
+                  <img
+                    src={newsImage}
+                    alt="News description image"
+                    width="100%"
+                  />
+
+                  <p>
+                    Currently, It Is Common For High-End Users To Pursue The
+                    Sporty Performance And Green Mobility. Exeed’s First Sedan
+                    Perfectly Combines These Two Qualities, Which Positions The
+                    Sedan As An Ideal Vehicle For Users, And Also Ushers In A
+                    New Series Of High-End Electric Products.
+                  </p>
+
+                  <p>
+                    The Naming Of EXLANTIX Also Foreshadows That This Series
+                    Will Be As Desirable And Worth Exploring As The Atlantis
+                    Described By Plato.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <Footer></Footer>
     </>
   );
 };

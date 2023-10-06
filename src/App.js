@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
 import { Page2exeedvx } from "./models/page2-exeed-vx";
 import { AbuDhabi } from "./showRoom/abuDhabi";
 import { TermsAndConditions } from "./models/termsAndConditions";
+import { NewsDetails } from "./discoverMore/news/news_details";
+import { HeaderAboutUs } from "./discoverMore/aboutUs";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="exeed-rx" element={<Page2exeedvx />} />
         <Route path="abu-dhabi-showroom" element={<AbuDhabi />} />
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/newsdetails" element={<NewsDetails />} />
+        <Route path="/aboutus" element={<HeaderAboutUs />} />
       </Routes>
     </BrowserRouter>
   );

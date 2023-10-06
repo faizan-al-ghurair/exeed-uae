@@ -2,12 +2,12 @@ import React from "react";
 import "./styles.css";
 import linkedinLogo from "../../linkedin white.svg";
 
-export const Section6 = () => {
+export const Footer = () => {
   return (
     <>
-      <div class="newsletter">
-        <div class="newsletter-inner d-flex align-items-center justify-content-between">
-          <div class="newsletter-text col-sm-3">
+      <div class="newsletter fluid-container">
+        <div class="newsletter-inner col-md-10 col-sm-10 col-10 d-flex align-items-center justify-content-between">
+          <div class="newsletter-text col-sm-4">
             <h2>Subscribe for Exclusive Updates!</h2>
           </div>
           <div class="newsletter-email col-sm-8">

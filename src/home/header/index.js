@@ -238,12 +238,12 @@ export const Header = () => {
               </a>
               <ul class="dropdown-menu other-dropdown bg-app-black">
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="/aboutus">
                     {"ABOUT US"}
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="/newsdetails">
                     {"NEWS"}
                   </a>
                 </li>
