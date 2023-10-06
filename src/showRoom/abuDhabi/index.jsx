@@ -14,8 +14,9 @@ import { Section6 } from "./section6";
 */
 
 export const AbuDhabi = () => {
-  return (
+  return (    
     <div className="App">
+  
       <Header />
       <Section1 />
       
