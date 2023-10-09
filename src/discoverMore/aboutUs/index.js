@@ -3,8 +3,6 @@ import "../../common/styles/headerStyles.css";
 import "../../common/styles/commonStyle.css";
 import { Header } from "../../home/header";
 import { Footer } from "../../home/section6";
-import banner from "../../aboutusbanner.png";
-import img1 from "../../TXL-Reality-images-1-2-1.jpg";
 import { Section1 } from "./section1";
 import { Section2 } from "./section2";
 import { Section3 } from "./section3";
