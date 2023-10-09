@@ -10,17 +10,19 @@ import { Section2 } from "./section2";
 import { Section3 } from "./section3";
 import { Section4 } from "./section4";
 import { Section5 } from "./section5";
+import { Section6 } from "./section6";
 
 export const HeaderAboutUs = () => {
   return (
     <>
       <Header></Header>
-      <div class="aboutus-content fluid-container py-5">
+      <div class="aboutus-content fluid-container pb-5">
         <Section1 />
         <Section2 />
         <Section3 />
         <Section4 />
         <Section5 />
+        <Section6 />
       </div>
       <Footer></Footer>
     </>
