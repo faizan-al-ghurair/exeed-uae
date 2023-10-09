@@ -7,6 +7,9 @@ import { AbuDhabi } from "./showRoom/abuDhabi";
 import { TermsAndConditions } from "./models/termsAndConditions";
 import { NewsDetails } from "./discoverMore/news/news_details";
 import { HeaderAboutUs } from "./discoverMore/aboutUs";
+import { ServiceCalculator } from "./services/serviceCalculator";
+import { BookService } from "./services/bookService";
+import { SpareParts } from "./services/spareParts";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/newsdetails" element={<NewsDetails />} />
         <Route path="/aboutus" element={<HeaderAboutUs />} />
+        <Route path="service-calculator" element={<ServiceCalculator />} />
+        <Route path="book-service" element={<BookService />} />
+        <Route path="spare-parts" element={<SpareParts />} />
       </Routes>
     </BrowserRouter>
   );
