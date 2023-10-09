@@ -5,6 +5,7 @@ import { Header } from "../../../home/header";
 import { Footer } from "../../../home/section6";
 import newsImage from "../../../newsimage.png";
 import banner from "../../../banner.webp";
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" />;
 
 const CarouselItem = ({ active }) => {
   return (
@@ -365,17 +366,8 @@ export const NewsDetails = () => {
   return (
     <>
       <Header></Header>
-      <section
-        class="section-black row news-details"
-        data-id="f2f58b7"
-        data-element_type="section"
-        id="secondSection2"
-      >
-        <div
-          class="col-md-12 d-flex pt-5"
-          data-id="22164cb"
-          data-element_type="column"
-        >
+      <section class="section-black row news-details">
+        <div class="col-md-12 d-flex pt-5">
           <div class="col-md-12 w-100 d-flex justify-content-center flex-column">
             <div class="details-head row d-flex flex-column align-items-center ">
               <div class="col-md-10 col-sm-10 col-10">
@@ -390,7 +382,7 @@ export const NewsDetails = () => {
               </div>
 
               <div class="col-md-10 col-sm-10 col-10 pb-3">
-                <div class="">
+                {/* <div class="">
                   <div class="">
                     <div
                       data-bs-interval="false"
@@ -432,6 +424,21 @@ export const NewsDetails = () => {
                       </button>
                     </div>
                   </div>
+                </div> */}
+                <div class="carousel-container">
+                  <ul class="carousel">
+                    <li>
+                      <img src={banner} alt="Image 1" />
+                    </li>
+                    <li>
+                      <img src={banner} alt="Image 2" />
+                    </li>
+                    <li>
+                      <img src={banner} alt="Image 3" />
+                    </li>
+                  </ul>
+                  <button class="prev">Previous</button>
+                  <button class="next">Next</button>
                 </div>
               </div>
             </div>
