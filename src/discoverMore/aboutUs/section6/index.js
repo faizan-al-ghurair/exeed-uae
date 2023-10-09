@@ -28,9 +28,6 @@ export const Section6 = () => {
                   Future Of Mobility.
                 </p>
                 <img src={img1} alt="img section" />
-                {/* <div class="aboutus-sec6-img">
-                  <img src={img1} alt="img section" />
-                </div> */}
               </div>
             </div>
           </div>
