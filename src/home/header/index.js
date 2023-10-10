@@ -1,7 +1,7 @@
 import React from "react";
 import "../../common/styles/headerStyles.css";
 
-const CarTile = ({ img,url }) => {
+const CarTile = ({ img, url }) => {
   return (
     <a href={url} class="d-flex justify-content-start ps-4 pb-2 pt-2">
       <div class="" data-id="ba7709e" data-element_type="column">
@@ -248,7 +248,7 @@ export const Header = () => {
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="/contact">
                     {"CONTACT"}
                   </a>
                 </li>
@@ -258,7 +258,7 @@ export const Header = () => {
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="/promotion">
                     {"PROMOTION"}
                   </a>
                 </li>

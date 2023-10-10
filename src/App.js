@@ -7,6 +7,8 @@ import { AbuDhabi } from "./showRoom/abuDhabi";
 import { TermsAndConditions } from "./models/termsAndConditions";
 import { NewsDetails } from "./discoverMore/news/news_details";
 import { HeaderAboutUs } from "./discoverMore/aboutUs";
+import { Promotion } from "./discoverMore/promotion";
+import { Contact } from "./discoverMore/contact";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Route path="abu-dhabi-showroom" element={<AbuDhabi />} />
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/newsdetails" element={<NewsDetails />} />
+        <Route path="/promotion" element={<Promotion />} />
         <Route path="/aboutus" element={<HeaderAboutUs />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

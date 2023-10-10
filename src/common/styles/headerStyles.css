@@ -269,6 +269,25 @@
 
 .section-black {
   background-color: #0c0b0b;
+  color: #c0c0c0;
+  font-size: 0.95rem;
+
+  @media (min-width: 1800px) and (max-width: 3000px) {
+    font-size: 1.3rem;
+  }
+  @media (min-width: 1200px) and (max-width: 1800px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    font-size: 0.85rem;
+  }
+  @media (min-width: 400px) and (max-width: 992px) {
+    font-size: 0.95rem;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    font-size: 0.95rem;
+  }
 }
 
 .video-container-text {
@@ -841,8 +860,8 @@ button:hover {
 .section-spacing {
   @media screen and (-webkit-min-device-pixel-ratio: 1),
     (min-width: 1800px) and (max-width: 3800px) {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
   @media (min-width: 1500px) and (max-width: 1800px) {
     padding-left: 4%;
@@ -1168,13 +1187,13 @@ button:hover {
     color: #c0c0c0;
     @media screen and (-webkit-min-device-pixel-ratio: 1),
       (min-width: 1800px) and (max-width: 3800px) {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
     @media (min-width: 1500px) and (max-width: 1800px) {
-      font-size: 1.4em;
+      font-size: 1.2;
     }
     @media (min-width: 1200px) and (max-width: 1500px) {
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
     @media (min-width: 800px) and (max-width: 1200px) {
       font-size: 1.2em;
