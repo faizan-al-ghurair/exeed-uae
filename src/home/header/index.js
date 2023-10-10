@@ -158,17 +158,20 @@ export const Header = () => {
               </a>
               <ul class="dropdown-menu other-dropdown bg-app-black ">
                 <li class="p-2 ">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a
+                    class="dropdown-item nav-font-color"
+                    href="service-calculator"
+                  >
                     {"SERVICE CALCULATOR"}
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="book-service">
                     {"BOOK SERVICE"}
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a base class="dropdown-item nav-font-color" href="spare-parts">
                     {"SPARE PARTS"}
                   </a>
                 </li>
@@ -194,12 +197,12 @@ export const Header = () => {
               </a>
               <ul class="dropdown-menu other-dropdown bg-app-black">
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="dubai-showroom">
                     {"DUBAI"}
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="abu-dhabi-showroom">
                     {"ABU DHABI "}
                   </a>
                 </li>

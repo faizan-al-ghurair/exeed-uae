@@ -91,12 +91,12 @@ export const Contact = () => {
 
                       <div class="col-lg-6 col-sm-12 col-12">
                         <div class="form-group pb-3 px-2">
-                          <label class="text-inverse" for="select-menu">
+                          <label class="text-inverse" for="carModelSelect">
                             Car Model
                           </label>
                           <select
                             class="custom-select d-block form-control"
-                            id="carModel-contact"
+                            id="carModelSelect"
                             required
                           >
                             <option value="1">EXEED TXL</option>
@@ -110,17 +110,19 @@ export const Contact = () => {
                       </div>
                       <div class="col-lg-6 col-sm-12 col-12">
                         <div class="form-group pb-3 px-2">
-                          <label class="text-inverse" for="select-menu">
+                          <label class="text-inverse" for="selectInquiryType">
                             Inquiry Type
                           </label>
                           <select
                             class="custom-select d-block form-control"
-                            id="image"
+                            id="selectInquiryType"
                             required
                           >
-                            <option value="1">PRESS INQUIRY</option>
-                            <option value="2">INFLUENCER INQUIRY</option>
-                            <option value="3">OTHER INQUIRY</option>
+                            <option value="PRESS INQUIRY">PRESS INQUIRY</option>
+                            <option value="INFLUENCER INQUIRY">
+                              INFLUENCER INQUIRY
+                            </option>
+                            <option value="OTHER INQUIRY">OTHER INQUIRY</option>
                           </select>
                           <div class="invalid-feedback">
                             Please selected any option.
@@ -130,22 +132,27 @@ export const Contact = () => {
 
                       <div class="col-lg-12 col-sm-12 col-12">
                         <div class="form-group pb-3 px-2">
-                          <label class="text-inverse" for="select-menu">
+                          <label class="text-inverse" for="userMessage">
                             Leave A Message
                           </label>
                           <textarea
                             class="form-control"
                             rows="4"
+                            id="userMessage"
                             required
                           ></textarea>
                         </div>
                       </div>
                       <div class="col-lg-6 col-sm-6 col-12">
                         <div class="form-group pb-3 px-2">
-                          <label class="text-inverse">
+                          <label
+                            class="text-inverse"
+                            for="termAndConditionsAgree"
+                          >
                             <input
                               type="checkbox"
                               class="custom-control-input"
+                              id="termAndConditionsAgree"
                               required
                             />
                             <span class="custom-control-indicator"></span>
