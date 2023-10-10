@@ -1,12 +1,15 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Calibri", Sans-serif;
 }
+
+/***********  CSS for Abu Dhabi Showroom Page *********/
+
 
 .showroom-heading-title{
   color: #c28a6c;
   text-align: center;
-  font-family: "Calibri", Sans-serif;
   font-size: 2em;
   font-weight: 700;
   padding-top: 4rem;
@@ -35,4 +38,104 @@
   @media (min-width: 1281px) { 
     font-size: 7em;
   } 
+}
+
+
+/***********  CSS for Dubai  Showroom Page *********/
+
+.findshowroom-container{
+  padding: 4% 10% 0% 10%;
+}
+
+.showroom-findinfo-title{
+  font-size: 14px;
+  color: #c0c0c0;
+  margin-bottom:0px;
+  font-family: Calibri;
+}
+
+.showroom-findinfo-description{
+  font-size: 22px;
+  color: #c28a6c;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-family: Calibri;
+}
+
+.findshowroom-contactdetails{
+  padding: 2% 10% 0% 10%;
+}
+
+.findshowroom-contactdetails .contactdetails-text{
+  color: #c0c0c0;   
+  display: inline-block;
+  font-size: 15px;
+}
+
+
+@media (min-width: 1024px) { 
+
+  .showroom-findinfo-description{
+    font-size: 40px;
+  }
+
+  .showroom-findinfo-title{
+    font-size: 18px;
+  }
+
+  .contt1{
+    width: 25%;
+  }
+  
+  .contt2{
+    width: 49.333%;
+  }
+  
+  .contt3{
+    width: 25%;
+  }
+} 
+
+.findshowroom-maps{
+  padding: 2% 10% 0% 10%;
+}
+
+.findshowroom-maps iframe{
+  width: 100%;
+  height: 43vh;
+}
+
+.findshowroom-maps-getdirection{
+  padding-top: 24px;
+}
+
+
+.findshowroom-cars-photos{
+  padding: 2% 10% 0% 10%;
+}
+
+.findshowroom-cars-photos .container-fluid{ 
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.fs-carImage img{
+  width: 100%;
+}
+
+.carImg01{
+  margin: 0px 10px 10px 0px;
+}
+
+.carImg02{
+  margin: 10px 10px 10px 0px;
+}
+
+
+.carImg03{
+  margin: 10px 10px 10px 0px;
+}
+
+.carImg04{
+  margin: 0px 0px 10px 10px;
 }
