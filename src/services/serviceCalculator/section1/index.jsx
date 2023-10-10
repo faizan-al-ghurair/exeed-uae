@@ -1,5 +1,5 @@
 import React from "react";
-import { Section6 } from "../../../home/section6";
+import { Footer } from "../../../home/section6";
 export const Section1 = () => {
   return (
     <>
@@ -490,7 +490,7 @@ export const Section1 = () => {
           </div>
         </div>
       </section>
-      <Section6 />
+      <Footer />
     </>
   );
 };
