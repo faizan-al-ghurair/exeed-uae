@@ -13,6 +13,8 @@ import { ServiceCalculator } from "./services/serviceCalculator";
 import { BookService } from "./services/bookService";
 import { SpareParts } from "./services/spareParts";
 import { DubaiShowroom } from "./showRoom/dubai";
+import { Page5EceedRX } from "./models/page5-exeed-rx";
+
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
         <Route path="exeed-vx" element={<Page2exeedvx />} />
         <Route path="exeed-txl" element={<Page2exeedvx />} />
         <Route path="exeed-lx" element={<Page2exeedvx />} />
-        <Route path="exeed-rx" element={<Page2exeedvx />} />
+        <Route path="exeed-rx" element={<Page5EceedRX />} />
         <Route path="abu-dhabi-showroom" element={<AbuDhabi />} />
         <Route path="dubai-showroom" element={<DubaiShowroom />} />
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />
