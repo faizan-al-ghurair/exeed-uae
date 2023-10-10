@@ -251,7 +251,7 @@ export const Header = () => {
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="/contact">
                     {"CONTACT"}
                   </a>
                 </li>
@@ -261,7 +261,7 @@ export const Header = () => {
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="/promotion">
                     {"PROMOTION"}
                   </a>
                 </li>
