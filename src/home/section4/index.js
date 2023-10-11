@@ -139,7 +139,8 @@ const CarouselItem = ({ active }) => {
               <div class="elementor-icon-box-wrapper col-md-2">
                 <div class="w-100">
                   <span class="">
-                    <svg US
+                    <svg
+                      US
                       class="information-svg"
                       xmlns="http://www.w3.org/2000/svg"
                       xlink="http://www.w3.org/1999/xlink"

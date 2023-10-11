@@ -12,6 +12,7 @@ import { Contact } from "./discoverMore/contact";
 import { ServiceCalculator } from "./services/serviceCalculator";
 import { BookService } from "./services/bookService";
 import { SpareParts } from "./services/spareParts";
+import { Warranty } from "./services/warranty";
 import { DubaiShowroom } from "./showRoom/dubai";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="service-calculator" element={<ServiceCalculator />} />
         <Route path="book-service" element={<BookService />} />
         <Route path="spare-parts" element={<SpareParts />} />
+        <Route path="/warranty" element={<Warranty />} />
       </Routes>
     </BrowserRouter>
   );

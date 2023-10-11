@@ -21,6 +21,18 @@ export const NewsDetails = () => {
     const totalSlides = $carousel.find("li").length;
     let isAnimating = false;
 
+    function toggleSlides() {
+      if (totalSlides < 2) {
+        $prevBtn.hide();
+        $nextBtn.hide();
+      } else {
+        $prevBtn.show();
+        $nextBtn.show();
+      }
+    }
+
+    toggleSlides();
+
     $prevBtn.on("click", function () {
       if (!isAnimating) {
         isAnimating = true;
