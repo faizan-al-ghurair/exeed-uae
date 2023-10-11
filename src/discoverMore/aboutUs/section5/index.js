@@ -1,6 +1,8 @@
 import React from "react";
 import "../../../common/styles/headerStyles.css";
 import "../../../common/styles/commonStyle.css";
+import img1 from "../../../TXL-Reality-images-1.png";
+import img2 from "../../../TXL-Reality-images-1-2.png";
 
 export const Section5 = () => {
   return (
@@ -13,8 +15,8 @@ export const Section5 = () => {
                 class="col-md-10 col-sm-10 col-10 abtus-section5-flex d-flex flex-column
                 justify-content-center"
               >
-                <div class="aboutus-sec5-tab d-flex fluid-container align-items-center ">
-                  <div class="aboutus-sec5-tab-text col-md-6">
+                <div class="aboutus-sec5-tab d-flex fluid-container  ">
+                  <div class="warranty-sec1-text col-md-6">
                     <h1 class="title-orange">{"Brand Mission"}</h1>
                     <p>
                       At EXEED, We Combine Ingenuity, Intelligent Technology,
@@ -26,10 +28,12 @@ export const Section5 = () => {
                     </p>
                   </div>
 
-                  <div class="aboutus-sec5-tab-img1 col-md-6"></div>
+                  <div class="warranty-sec1-img col-md-6">
+                    <img src={img1} />
+                  </div>
                 </div>
-                <div class="aboutus-sec5-tab d-flex fluid-container align-items-center  section-reverse">
-                  <div class="aboutus-sec5-tab-text col-md-6">
+                <div class="aboutus-sec5-tab d-flex fluid-container section-reverse">
+                  <div class="warranty-sec1-text col-md-6">
                     <h1 class="title-orange">{"Brand Vision"}</h1>
                     <p>
                       EXEED Is Driven By Continuous Exploration And
@@ -41,7 +45,9 @@ export const Section5 = () => {
                     </p>
                   </div>
 
-                  <div class="aboutus-sec5-tab-img2 col-md-6"></div>
+                  <div class="warranty-sec1-img col-md-6">
+                    <img src={img2} />
+                  </div>
                 </div>
               </div>
             </div>

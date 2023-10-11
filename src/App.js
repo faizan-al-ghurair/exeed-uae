@@ -12,6 +12,7 @@ import { Contact } from "./discoverMore/contact";
 import { ServiceCalculator } from "./services/serviceCalculator";
 import { BookService } from "./services/bookService";
 import { SpareParts } from "./services/spareParts";
+import { Warranty } from "./services/warranty";
 import { DubaiShowroom } from "./showRoom/dubai";
 import { Page5EceedRX } from "./models/page5-exeed-rx";
 import { LeaseRate } from "./financial/leaserate";
@@ -37,6 +38,7 @@ function App() {
         <Route path="service-calculator" element={<ServiceCalculator />} />
         <Route path="book-service" element={<BookService />} />
         <Route path="spare-parts" element={<SpareParts />} />
+        <Route path="/warranty" element={<Warranty />} />
         <Route path="/news-home" element={<NewsHome />} />
         <Route path="*" element={<Home />} />
         <Route path="lease-rate" element={<LeaseRate />} />

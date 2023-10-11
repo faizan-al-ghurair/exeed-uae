@@ -24,6 +24,18 @@ export const Promotion = () => {
     const totalSlides = $carousel.find("li").length;
     let isAnimating = false;
 
+    function toggleSlides() {
+      if (totalSlides < 2) {
+        $prevBtn.hide();
+        $nextBtn.hide();
+      } else {
+        $prevBtn.show();
+        $nextBtn.show();
+      }
+    }
+
+    toggleSlides();
+
     $prevBtn.on("click", function () {
       if (!isAnimating) {
         isAnimating = true;
@@ -77,7 +89,6 @@ export const Promotion = () => {
               <div class="col-md-10 col-sm-10 col-10">
                 <div class="title-white-wrapper">
                   <h1 class="title-orange">{"Our Promotion"}</h1>
-                  <img src={logo} />
                 </div>
               </div>
 

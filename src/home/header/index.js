@@ -171,12 +171,16 @@ export const Header = () => {
                   </a>
                 </li>
                 <li class="p-3">
-                  <a base class="dropdown-item nav-font-color" href="spare-parts">
+                  <a
+                    base
+                    class="dropdown-item nav-font-color"
+                    href="spare-parts"
+                  >
                     {"SPARE PARTS"}
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="/warranty">
                     {"WARRANTY"}
                   </a>
                 </li>
@@ -202,7 +206,10 @@ export const Header = () => {
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="abu-dhabi-showroom">
+                  <a
+                    class="dropdown-item nav-font-color"
+                    href="abu-dhabi-showroom"
+                  >
                     {"ABU DHABI "}
                   </a>
                 </li>
