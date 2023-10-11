@@ -6,7 +6,7 @@ import { Header } from "../../home/header";
 // import { Section4 } from "./section4";
 // import { Section5 } from "./section5";
 // import { Section6 } from "./section6";
-import { Footer } from "../../home/section6";
+import { Footer} from "../../home/section6";
 
 export const BookService = () => {
   return (

@@ -35,6 +35,7 @@ function App() {
         <Route path="service-calculator" element={<ServiceCalculator />} />
         <Route path="book-service" element={<BookService />} />
         <Route path="spare-parts" element={<SpareParts />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

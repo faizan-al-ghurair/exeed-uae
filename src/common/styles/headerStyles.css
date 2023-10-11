@@ -382,7 +382,7 @@ border-color: #C1886D7A; */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-size: 1.5em;
+  font-size: 1.5em;
   font-weight: 400;
   line-height: 1.5;
   color: #c0c0c0;
@@ -458,36 +458,35 @@ border-color: #C1886D7A; */
 }
 
 .out-line-btn-large {
-  font-size: 1.5em;
   @media screen and (-webkit-min-device-pixel-ratio: 1),
     (min-width: 1800px) and (max-width: 3800px) {
     .elementor-button-text-span {
-      font-size: 1.5em;
+      /* font-size: 1.5em; */
     }
   }
   @media (min-width: 1500px) and (max-width: 1800px) {
     .elementor-button-text-span {
-      font-size: 1.4em;
+      /* font-size: 1.4em; */
     }
   }
   @media (min-width: 1200px) and (max-width: 1500px) {
     .elementor-button-text-span {
-      font-size: 1.3em;
+      /* font-size: 1.3em; */
     }
   }
   @media (min-width: 800px) and (max-width: 1200px) {
     .elementor-button-text-span {
-      font-size: 1.1em;
+      /* font-size: 1.1em; */
     }
   }
   @media (min-width: 400px) and (max-width: 800px) {
     .elementor-button-text-span {
-      font-size: 0.9em;
+      /* font-size: 0.9em; */
     }
   }
   @media (min-width: 40px) and (max-width: 400px) {
     .elementor-button-text-span {
-      font-size: 0.8em;
+      /* font-size: 0.8em; */
     }
   }
 }
@@ -1231,22 +1230,22 @@ button:hover {
     border-color: #c0c0c0;
     @media screen and (-webkit-min-device-pixel-ratio: 1),
       (min-width: 1800px) and (max-width: 3800px) {
-      font-size: 1.5em;
+      font-size: 1.2em !important;
     }
     @media (min-width: 1500px) and (max-width: 1800px) {
-      font-size: 1.4em;
+      font-size: 1.1em !important;
     }
     @media (min-width: 1200px) and (max-width: 1500px) {
-      font-size: 1.4em;
+      font-size: 1.1em !important;
     }
     @media (min-width: 800px) and (max-width: 1200px) {
-      font-size: 1.2em;
+      font-size: 1em !important;
     }
     @media (min-width: 400px) and (max-width: 800px) {
-      font-size: 1.1em;
+      font-size: 0.9em !important;
     }
     @media (min-width: 40px) and (max-width: 400px) {
-      font-size: 0.8em;
+      font-size: 0.8em !important;
     }
   }
   background-color: #121212;
@@ -1293,10 +1292,13 @@ input[type="checkbox"] {
     }
   }
 }
+/* *************************************************************************************************************************** */
 
 .img-section-calculator {
   /* background-image: url("https://exeed-uae.com/wp-content/uploads/2023/07/vx-im.png"); */
-
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("https://exeed-uae.com/wp-content/uploads/2023/07/VX-1-1.png");
 }
 .min-height-45 {
@@ -1309,4 +1311,122 @@ input[type="checkbox"] {
   font-family: "Calibri", Sans-serif;
   font-size: 1.68vw;
   font-weight: bold;
+}
+
+.service-cal {
+}
+
+/* background-image: url(https://exeed-uae.com/wp-content/uploads/2023/07/VX-1-1.png);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover; */
+
+
+.form-background-black {
+  .text-inverse {
+    color: #c0c0c0;
+    @media screen and (-webkit-min-device-pixel-ratio: 1),
+      (min-width: 1800px) and (max-width: 3800px) {
+      font-size: 1.2em;
+    }
+    @media (min-width: 1500px) and (max-width: 1800px) {
+      font-size: 1.2;
+    }
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      font-size: 1.2em;
+    }
+    @media (min-width: 800px) and (max-width: 1200px) {
+      font-size: 1.2em;
+    }
+    @media (min-width: 400px) and (max-width: 800px) {
+      font-size: 1.1em;
+    }
+    @media (min-width: 40px) and (max-width: 400px) {
+      font-size: 0.8em;
+    }
+  }
+  .form-control {
+    background-color: #121212 !important;
+    border-radius: 0px;
+    color: #c0c0c0;
+    border-color: #c0c0c0;
+    @media screen and (-webkit-min-device-pixel-ratio: 1),
+      (min-width: 1800px) and (max-width: 3800px) {
+      font-size: 1.2em !important;
+    }
+    @media (min-width: 1500px) and (max-width: 1800px) {
+      font-size: 1.1em !important;
+    }
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      font-size: 1.1em !important;
+    }
+    @media (min-width: 800px) and (max-width: 1200px) {
+      font-size: 1em !important;
+    }
+    @media (min-width: 400px) and (max-width: 800px) {
+      font-size: 0.9em !important;
+    }
+    @media (min-width: 40px) and (max-width: 400px) {
+      font-size: 0.8em !important;
+    }
+  }
+}
+
+
+.title-white-bold {
+  color: #c28a6c;
+  line-height: 1.5;
+  color: #c0c0c0;
+
+
+    font-family: "Calibri", Sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+
+
+  -webkit-font-smoothing: antialiased;
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 1.8em;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 1.7rem;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 1.6rem;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    font-size: 1.2rem;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    font-size: 1rem;
+  }
+}
+
+.w-85{
+  width: 85%;
+}
+.text-inverse {
+  color: #c0c0c0;
+  @media screen and (-webkit-min-device-pixel-ratio: 1),
+    (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 1.2em;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 1.2;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 1.2em;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 1.2em;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    font-size: 1.1em;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    font-size: 0.8em;
+  }
 }
