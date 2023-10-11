@@ -253,7 +253,7 @@ export const Header = () => {
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="/newsdetails">
+                  <a class="dropdown-item nav-font-color" href="/news-home">
                     {"NEWS"}
                   </a>
                 </li>

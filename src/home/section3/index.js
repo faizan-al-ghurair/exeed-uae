@@ -263,21 +263,24 @@ export const Section3 = () => {
           </div>
         </div>
       </section>
-      <iframe
-        src="https://www.exeedinternational.com/data/tms/website/html/360deg/VX/index.html"
-        // src="https://www.exeedinternational.com/data/tms/website/html/360deg/TXL/index.html"
-        // src="https://www.exeedinternational.com/data/tms/website/html/360deg/LX/index.html"
-        frameborder="0"
-        class="frame w-100 h-100"
-        id="car360"
-        scrolling="no"
-        allow="autoplay"
-        webkitallowfullscreen="true"
-
-        mozallowFullScreen="true"
-        allowFullScreen="true"
-        allowvr=""
-      ></iframe>
+   
     </>
   );
 };
+
+
+// <iframe
+// src="https://www.exeedinternational.com/data/tms/website/html/360deg/VX/index.html"
+// // src="https://www.exeedinternational.com/data/tms/website/html/360deg/TXL/index.html"
+// // src="https://www.exeedinternational.com/data/tms/website/html/360deg/LX/index.html"
+// frameborder="0"
+// class="frame w-100 h-100"
+// id="car360"
+// scrolling="no"
+// allow="autoplay"
+// webkitallowfullscreen="true"
+
+// mozallowFullScreen="true"
+// allowFullScreen="true"
+// allowvr=""
+// ></iframe>

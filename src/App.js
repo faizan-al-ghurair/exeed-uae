@@ -14,6 +14,10 @@ import { BookService } from "./services/bookService";
 import { SpareParts } from "./services/spareParts";
 import { Warranty } from "./services/warranty";
 import { DubaiShowroom } from "./showRoom/dubai";
+import { Page5EceedRX } from "./models/page5-exeed-rx";
+import { LeaseRate } from "./financial/leaserate";
+import { NewsHome } from "./discoverMore/news/news_home";
+
 
 function App() {
   return (
@@ -23,7 +27,7 @@ function App() {
         <Route path="exeed-vx" element={<Page2exeedvx />} />
         <Route path="exeed-txl" element={<Page2exeedvx />} />
         <Route path="exeed-lx" element={<Page2exeedvx />} />
-        <Route path="exeed-rx" element={<Page2exeedvx />} />
+        <Route path="exeed-rx" element={<Page5EceedRX />} />
         <Route path="abu-dhabi-showroom" element={<AbuDhabi />} />
         <Route path="dubai-showroom" element={<DubaiShowroom />} />
         <Route path="terms-and-conditions" element={<TermsAndConditions />} />
@@ -35,6 +39,9 @@ function App() {
         <Route path="book-service" element={<BookService />} />
         <Route path="spare-parts" element={<SpareParts />} />
         <Route path="/warranty" element={<Warranty />} />
+        <Route path="/news-home" element={<NewsHome />} />
+        <Route path="*" element={<Home />} />
+        <Route path="lease-rate" element={<LeaseRate />} />
       </Routes>
     </BrowserRouter>
   );

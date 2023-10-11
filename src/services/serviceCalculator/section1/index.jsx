@@ -20,7 +20,7 @@ export const Section1 = () => {
         </div>
       </section>
       <section
-        class="elementor-section section-spacing"
+        class="elementor-section section-spacing mb-5"
         data-id="570be65"
         data-element_type="section"
       >
@@ -30,7 +30,7 @@ export const Section1 = () => {
             data-id="103eea8"
             data-element_type="column"
           >
-            <div class="row w-75 form-background">
+            <div class="row w-75 form-background-black">
               <div
                 class="col-lg-6 col-md-6 col-sm-12"
                 data-id="e231492"
@@ -53,7 +53,7 @@ export const Section1 = () => {
                     </div>
                     <div class="row">
                       <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column  px-2">
-                        <label class="financialCalculator">Car</label>
+                        <label class="text-inverse ">Car</label>
                         <select class="form-control" id="carModelY">
                           <option value="lx5" selected="">
                             LX 1.5
@@ -62,10 +62,10 @@ export const Section1 = () => {
                           <option value="txl6">TXL 1.6</option>
                           <option value="txl2">TXL 2</option>
                           <option value="vx">VX</option>
-                        </select>{" "}
+                        </select>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column  px-2">
-                        <label class="financialCalculator">Year</label>
+                        <label class="text-inverse ">Year</label>
                         <select class="form-control" id="yearY">
                           <option value="1" selected="">
                             1
@@ -80,7 +80,7 @@ export const Section1 = () => {
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="col-lg-6 col-md-6 col-sm-12 pt-4">
                         <div
                           class=""
                           data-id="0f11065"
@@ -94,14 +94,15 @@ export const Section1 = () => {
                             <span class="p-3">
                               <span class="elementor-button-text">
                                 CALCULATE
-                              </span>
+                              </span> 
+                              
                             </span>
                           </a>
                         </div>
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-12">
-                        <span class="p-3">
-                          <span class="elementor-button-text">CALCULATE</span>
+                      <div class="col-lg-6 col-md-6 col-sm-12 pt-4">
+                        <span class="p-3 text-align-center">
+                          <span class="text-inverse">AED</span>
                         </span>
                       </div>
                     </div>
@@ -129,14 +130,9 @@ export const Section1 = () => {
                         </h2>
                       </div>
                     </div>
-                    <div
-                      class="row"
-                      data-id="f53e8fc"
-                      data-element_type="widget"
-                      data-widget_type="html.default"
-                    >
+                    <div class="row">
                       <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column px-2">
-                        <label class="financialCalculator">Car</label>
+                        <label class="text-inverse ">Car</label>
                         <select class="form-control" id="carModelY">
                           <option value="lx5" selected="">
                             LX 1.5
@@ -145,11 +141,11 @@ export const Section1 = () => {
                           <option value="txl6">TXL 1.6</option>
                           <option value="txl2">TXL 2</option>
                           <option value="vx">VX</option>
-                        </select>{" "}
+                        </select>
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column px-2">
-                        <label class="form-group">Year</label>
-                        <select class="form-control" id="custom-select d-block">
+                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column  px-2">
+                        <label class="text-inverse ">Year</label>
+                        <select class="form-control" id="yearY">
                           <option value="1" selected="">
                             1
                           </option>
@@ -162,38 +158,32 @@ export const Section1 = () => {
                         </select>
                       </div>
                     </div>
-                    <div
-                      class="elementor-element elementor-element-0f11065 elementor-widget__width-initial elementor-widget elementor-widget-html"
-                      data-id="0f11065"
-                      data-element_type="widget"
-                      data-widget_type="html.default"
-                    >
-                      <a
-                        class="btn btn-outline-primary linkButton"
-                        href="https://exeed-uae.com/exeed-txl/"
-                      >
-                        <span class="p-3">
-                          <span class="elementor-button-text">CALCULATE</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div
-                      class="elementor-element elementor-element-87e7113 elementor-widget__width-initial elementor-widget elementor-widget-html"
-                      data-id="87e7113"
-                      data-element_type="widget"
-                      data-widget_type="html.default"
-                    >
-                      <div class="elementor-widget-container">
-                        <h1 id="resultY"></h1>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 pt-4">
+                        <div
+                          class=""
+                          data-id="0f11065"
+                          data-element_type="widget"
+                          data-widget_type="html.default"
+                        >
+                          <a
+                            class="btn btn-outline-primary linkButton"
+                            href="https://exeed-uae.com/exeed-txl/"
+                          >
+                            <span class="p-3">
+                              <span class="elementor-button-text">
+                                CALCULATE
+                              </span> 
+                              
+                            </span>
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                    <div
-                      class="elementor-element elementor-element-73384be elementor-widget elementor-widget-html"
-                      data-id="73384be"
-                      data-element_type="widget"
-                      data-widget_type="html.default"
-                    >
-                      <div class="elementor-widget-container"></div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 pt-4">
+                        <span class="p-3 text-align-center">
+                          <span class="text-inverse">AED</span>
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -203,7 +193,7 @@ export const Section1 = () => {
         </div>
       </section>
       <section
-        class="pt-3 pb-5 section-spacing"
+        class="pt-3 pb-5 section-spacing mt-5 "
         data-id="83e2e07"
         data-element_type="section"
       >
@@ -228,7 +218,7 @@ export const Section1 = () => {
                       data-widget_type="heading.default"
                     >
                       <div class="title-white-wrapper">
-                        <h2 class="title-white">ROADSIDE ASSISTANCE 24/7</h2>{" "}
+                        <h2 class="title-white-bold">ROADSIDE ASSISTANCE 24/7</h2>{" "}
                       </div>
                     </div>
                     <div
@@ -262,13 +252,13 @@ export const Section1 = () => {
                       </div>
                     </div>
                     <div
-                      class="title-white"
+                      class="mt-5"
                       data-id="a32d36b"
                       data-element_type="widget"
                       data-widget_type="heading.default"
                     >
                       <div class="elementor-widget-container">
-                        <h2 class="title-white">COST OF OWNERSHIP</h2>{" "}
+                        <h2 class="title-white-bold">COST OF OWNERSHIP</h2>{" "}
                       </div>
                     </div>
                     <div
@@ -300,13 +290,13 @@ export const Section1 = () => {
                       </div>
                     </div>
                     <div
-                      class=""
+                      class="pt-5"
                       data-id="3fc1bd4"
                       data-element_type="widget"
                       data-widget_type="heading.default"
                     >
                       <div class="elementor-widget-container">
-                        <h2 class="title-white">
+                        <h2 class="title-white-bold">
                           MANUFACTURER VEHICLE WARRANTY
                         </h2>{" "}
                       </div>
@@ -337,11 +327,11 @@ export const Section1 = () => {
         </div>
       </section>
       <section
-        class="pb-5 pt-5  d-flex justify-content-center align-items-center w-100"
+        class="pt-5  d-flex justify-content-center align-items-center w-100"
         data-id="80b2f29"
         data-element_type="section"
       >
-        <div class="row d-flex w-75">
+        <div class="row d-flex w-85">
           <div class="col-md-12">
             <div class="">
               <div class="">
@@ -352,8 +342,8 @@ export const Section1 = () => {
         </div>
       </section>
 
-      <section class="pb-5 pt-5  d-flex justify-content-center align-items-center w-100">
-        <div class="row d-flex w-75">
+      <section class="pb-5  d-flex justify-content-center align-items-center w-100">
+        <div class="row d-flex w-85">
           <div
             class="col-lg-4 col-md-4 col-sm-12"
             data-id="90c8e18"
@@ -376,7 +366,7 @@ export const Section1 = () => {
                 </div>
               </div>
               <div
-                class=""
+                class="pt-4 justify-content-center d-flex"
                 data-id="17e1424"
                 data-element_type="widget"
                 data-widget_type="button.default"
@@ -421,7 +411,7 @@ export const Section1 = () => {
                 </div>
               </div>
               <div
-                class=""
+                class="pt-4 justify-content-center d-flex"
                 data-id="8ec8e12"
                 data-element_type="widget"
                 data-widget_type="button.default"
@@ -466,7 +456,7 @@ export const Section1 = () => {
                 </div>
               </div>
               <div
-                class=""
+                class="pt-4 justify-content-center d-flex"
                 data-id="48e2246"
                 data-element_type="widget"
                 data-widget_type="button.default"

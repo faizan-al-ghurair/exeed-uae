@@ -49,7 +49,7 @@ export const Section1 = () => {
                             href=""
                           >
                             <span class="p-3">
-                              <span class="elementor-button-text">
+                              <span class="elementor-button-span">
                                 DISCOVER MORE
                               </span>
                             </span>
