@@ -1,22 +1,21 @@
 import React from "react";
 import { Section1 } from "./section1";
+import { Header } from "../../home/header";
+import { Footer } from "../../home/section6";
+import { Section3 as BookaTestDrive } from "../../models/page2-exeed-vx/section3";
+import { Section6 } from "../page2-exeed-vx/section6";
 import { Section2 } from "./section2";
-import { Section3 } from "./section3";
-import { Section4 } from "./section4";
-import { Section5 } from "./section5";
-import { Section6 } from "./section6";
-import { Header } from "./header";
 
-export const Page1 = () => {
+
+export const Page5EceedRX = () => {
   return (
     <div className="App">
-      <Header />
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
+       <Header />   
+       <Section2 />   
+       <BookaTestDrive />
+       <Section1 />
+       <Section6/>      
+       <Footer/>
     </div>
   );
 };
