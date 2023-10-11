@@ -1321,7 +1321,6 @@ background-position: center center;
 background-repeat: no-repeat;
 background-size: cover; */
 
-
 .form-background-black {
   .text-inverse {
     color: #c0c0c0;
@@ -1372,17 +1371,14 @@ background-size: cover; */
   }
 }
 
-
 .title-white-bold {
   color: #c28a6c;
   line-height: 1.5;
   color: #c0c0c0;
 
-
-    font-family: "Calibri", Sans-serif;
-    font-size: 1.7em;
-    font-weight: bold;
-
+  font-family: "Calibri", Sans-serif;
+  font-size: 1.7em;
+  font-weight: bold;
 
   -webkit-font-smoothing: antialiased;
   @media (min-width: 1800px) and (max-width: 3800px) {
@@ -1405,7 +1401,7 @@ background-size: cover; */
   }
 }
 
-.w-85{
+.w-85 {
   width: 85%;
 }
 .text-inverse {
@@ -1428,5 +1424,30 @@ background-size: cover; */
   }
   @media (min-width: 40px) and (max-width: 400px) {
     font-size: 0.8em;
+  }
+}
+
+.iframe-car {
+  min-width: 100%;
+  min-height: 74vh;
+  @media screen and (-webkit-min-device-pixel-ratio: 1),
+    (min-width: 1800px) and (max-width: 3800px) {
+    min-height: 74vh;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    min-height: 74vh;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    min-height: 74vh;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    min-height: 74vh;
+    min-height: 74vh;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    min-height: 74vh;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    min-height: 74vh;
   }
 }

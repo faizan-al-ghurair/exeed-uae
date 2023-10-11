@@ -4,7 +4,7 @@ export const Section3 = () => {
   return (
     <>
       <section
-        class="elementor-section app-bg-black container pt-5 pb-5"
+        class="elementor-section app-bg-black container pt-5"
         data-id="e356b8a"
         data-element_type="section"
       >
@@ -269,6 +269,34 @@ export const Section3 = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="elementor-section app-bg-black container pt-5 pb-5"
+        data-id="e356b8a"
+        data-element_type="section"
+      >
+        <div class="row pt-1 pb-2">
+          <div
+            class="col-md-12 col-sm-12 d-flex justify-content-center"
+            data-id="e5985fc"
+            data-element_type="column"
+          >
+            <iframe
+              src="https://www.exeedinternational.com/data/tms/website/html/360deg/VX/index.html"
+              // src="https://www.exeedinternational.com/data/tms/website/html/360deg/TXL/index.html"
+              // src="https://www.exeedinternational.com/data/tms/website/html/360deg/LX/index.html"
+              frameborder="0"
+              class="iframe-car w-100 h-100"
+              id="car360"
+              scrolling="no"
+              allow="autoplay"
+              webkitallowfullscreen="true"
+              mozallowFullScreen="true"
+              allowFullScreen="true"
+              allowvr=""
+            ></iframe>
           </div>
         </div>
       </section>

@@ -15,6 +15,7 @@ import { SpareParts } from "./services/spareParts";
 import { DubaiShowroom } from "./showRoom/dubai";
 import { Page5EceedRX } from "./models/page5-exeed-rx";
 import { LeaseRate } from "./financial/leaserate";
+import { NewsHome } from "./discoverMore/news/news_home";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="service-calculator" element={<ServiceCalculator />} />
         <Route path="book-service" element={<BookService />} />
         <Route path="spare-parts" element={<SpareParts />} />
+        <Route path="/news-home" element={<NewsHome />} />
         <Route path="*" element={<Home />} />
         <Route path="lease-rate" element={<LeaseRate />} />
       </Routes>
