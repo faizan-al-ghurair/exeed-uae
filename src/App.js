@@ -14,6 +14,7 @@ import { BookService } from "./services/bookService";
 import { SpareParts } from "./services/spareParts";
 import { DubaiShowroom } from "./showRoom/dubai";
 import { Page5EceedRX } from "./models/page5-exeed-rx";
+import { LeaseRate } from "./financial/leaserate";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="book-service" element={<BookService />} />
         <Route path="spare-parts" element={<SpareParts />} />
         <Route path="*" element={<Home />} />
+        <Route path="lease-rate" element={<LeaseRate />} />
       </Routes>
     </BrowserRouter>
   );
