@@ -109,27 +109,27 @@ export const Section5 = () => {
       >
         <div class="m-4">
           <ul class="nav nav-tabs" id="myTab">
-            <li class="nav-item px-1">
+            <li class="nav-item px-1 w-10">
               <a href="#INTERIOR" class="nav-link active" data-bs-toggle="tab">
                 INTERIOR
               </a>
             </li>
-            <li class="nav-item px-1">
+            <li class="nav-item px-1 w-10">
               <a href="#EXTERIOR" class="nav-link" data-bs-toggle="tab">
                 EXTERIOR
               </a>
             </li>
-            <li class="nav-item px-1">
+            <li class="nav-item px-1 w-10">
               <a href="#PERFORMANCE" class="nav-link" data-bs-toggle="tab">
                 PERFORMANCE
               </a>
             </li>
-            <li class="nav-item px-1">
+            <li class="nav-item px-1 w-10">
               <a href="#SAFETY" class="nav-link" data-bs-toggle="tab">
                 SAFETY
               </a>
             </li>
-            <li class="nav-item px-1">
+            <li class="nav-item px-1 w-10">
               <a href="#TECHNOLOGY" class="nav-link" data-bs-toggle="tab">
                 TECHNOLOGY
               </a>
