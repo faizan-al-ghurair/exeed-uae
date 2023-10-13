@@ -748,9 +748,6 @@ body {
   background-size: auto;
 }
 
-.faizan {
-  background-color: red;
-}
 .border-bottom-bold {
   border-style: solid;
   border-width: 0px 0px 1px 0px;
@@ -1199,7 +1196,7 @@ button:hover {
   height: 100%;
 }
 .bg-color-black {
-  background-color: #121212;
+  background-color: #121212 !important;
 }
 
 .modelHeader-section {
@@ -1507,6 +1504,165 @@ background-size: cover; */
   @media (min-width: 40px) and (max-width: 400px) {
     min-height: 74vh;
   }
+}
+
+.test-drive-images {
+  height: 16vh !important;
+  @media screen and (-webkit-min-device-pixel-ratio: 1),
+    (min-width: 1800px) and (max-width: 3800px) {
+    height: 16vh !important;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    height: 15vh !important;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    height: 15vh !important;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    height: 12vh !important;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    height: 19vh !important;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    height: 12vh !important;
+  }
+}
+
+.dynamic-tabs-test-drive {
+  .nav-link {
+    color: white;
+    background-color: transparent;
+    &:hover {
+      border-color: transparent;
+      color: #c28a6c;
+    }
+  }
+  .nav-item .active {
+    background-color: transparent;
+    border-color: transparent;
+    color: #c28a6c;
+  }
+  .nav-tabs {
+    font-size: 1.3em;
+    background-color: transparent;
+    border: 0;
+    justify-content: space-around;
+    border: 1px solid #c0c0c0;
+  }
+}
+.w-10 {
+  width: 10%;
+}
+.line-white {
+  width: 100%;
+  height: 1px;
+  background-color: #c0c0c0;
+}
+.p-small {
+  color: #c0c0c0;
+  @media screen and (-webkit-min-device-pixel-ratio: 1),
+    (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 0.8em;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 0.7;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 0.8em;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 0.7em;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    font-size: 0.7em;
+  }
+  @media (min-width: 40px) and (max-width: 400px) {
+    font-size: 0.7em;
+  }
+}
+
+.nav-link-test-drive {
+  color: #c0c0c0;
+  font-family: "Calibri", Sans-serif;
+  font-weight: 400;
+  font-size: 1em !important;
+  &:hover {
+    color: #c28a6c;
+  }
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 1em !important;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    font-size: 1em !important;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 0.9em !important;
+  }
+  @media (min-width: 10px) and (max-width: 1200px) {
+    font-size: 0.8em !important;
+  }
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.border-right-white {
+  border-right: 1px solid #c0c0c0;
+}
+.border-left-white {
+  border-left: 1px solid #c0c0c0;
+}
+.border-top-white {
+  border-top: 1px solid #c0c0c0;
+}
+
+.test-drive-tabs {
+  .active {
+    /* background-color: red; */
+  }
+}
+
+.display-none {
+  display: none !important;
+}
+.flex {
+  display: flex;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+#wrapper .image-container {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.image-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background: rgba(22, 21, 21, 0.7);
+}
+
+#wrapper img {
+  object-fit: cover;
+}
+
+.image-container.selected::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #c28a6ca9;
+
+  background: rgba(228, 144, 19, 0.1);
 }
 
 .car-tiles-container {

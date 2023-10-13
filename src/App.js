@@ -17,7 +17,7 @@ import { DubaiShowroom } from "./showRoom/dubai";
 import { Page5EceedRX } from "./models/page5-exeed-rx";
 import { LeaseRate } from "./financial/leaserate";
 import { NewsHome } from "./discoverMore/news/news_home";
-
+import { TestDrive } from "./testDrive";
 
 function App() {
   return (
@@ -40,8 +40,9 @@ function App() {
         <Route path="spare-parts" element={<SpareParts />} />
         <Route path="/warranty" element={<Warranty />} />
         <Route path="/news-home" element={<NewsHome />} />
-        <Route path="*" element={<Home />} />
+        {/* <Route path="*" element={<Home />} /> */}
         <Route path="lease-rate" element={<LeaseRate />} />
+        <Route path="test-drive" element={<TestDrive />} />
       </Routes>
     </BrowserRouter>
   );

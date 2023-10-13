@@ -535,7 +535,7 @@ export const Header = () => {
               </ul>
             </li>
             <li class="nav-item px-1">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="test-drive">
                 {"TEST DRIVE"}
               </a>
             </li>
