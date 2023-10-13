@@ -1,5 +1,6 @@
 import React from "react";
 import $ from "jquery";
+import searchIcon from "../../Search-icon.svg";
 
 const CarousalComponent = ({ id, active }) => {
   $(document).ready(function () {
@@ -407,11 +408,18 @@ export const Section2 = () => {
                             </div>
                           </div>
                           <div class="d-flex w-100  ">
-                            <div class="elementor-widget-container">
-                              <div class="bg-color-black form-background">
+                            <div class="elementor-widget-container w-100">
+                              <div class="bg-color-black form-background d-flex align-items-center mb-3 location-search-container">
+                                <div
+                                  class="h-100 d-flex location-search-img-container
+                                "
+                                >
+                                  <img src={searchIcon} class="w-10" />
+                                </div>
                                 <input
+                                  type="search"
                                   id="searchInput"
-                                  class="form-control bg-color-black mb-3 text-inverse"
+                                  class="form-control bg-color-black text-inverse search-input"
                                   placeholder="Enter Zipcode, Dealer Name, City Name"
                                 />
                               </div>

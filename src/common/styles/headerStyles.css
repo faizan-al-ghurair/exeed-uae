@@ -1691,3 +1691,60 @@ background-size: cover; */
 .car-tiles-container {
   scrollbar-color: #c28a6c; /* Set your desired colors */
 }
+
+/* Search bar css Location*/
+
+.elementor-widget-container .search-input {
+  background-color: transparent !important;
+  color: #c28a6c;
+  border: none;
+  outline: none !important;
+  outline: 7px solid #121212 !important;
+  font-size: 1.1rem !important;
+}
+
+.elementor-widget-container .search-input::placeholder {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.elementor-widget-container .search-input:focus {
+  outline: none !important;
+  outline: 7px solid #121212 !important;
+}
+
+.location-search-container {
+  height: 50px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  @media (min-width: 800px) and (max-width: 1200px) {
+    padding-left: 1rem;
+  }
+  @media (min-width: 10px) and (max-width: 800px) {
+    padding-left: 0.1rem;
+  }
+}
+
+.location-search-img-container {
+  width: 5%;
+  @media (min-width: 10px) and (max-width: 800px) {
+    width: 10%;
+  }
+}
+
+.location-search-img-container img {
+  width: 50%;
+  @media (min-width: 800px) and (max-width: 1200px) {
+    width: 70%;
+  }
+  @media (min-width: 10px) and (max-width: 800px) {
+    width: 70%;
+  }
+}
+
+.elementor-widget-container .search-input::-webkit-search-cancel-button,
+.elementor-widget-container .search-input::-webkit-search-decoration,
+.elementor-widget-container .search-input::-webkit-search-results-button,
+.elementor-widget-container .search-input::-webkit-search-results-decoration {
+  display: none;
+}
