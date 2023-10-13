@@ -73,10 +73,12 @@ export const Promotion = () => {
     }
 
     // Attach a click event handler to the title element
-    $(".promotion-terms-title").on("click", function (e) {
-      e.stopPropagation();
-      $(this).next(".promotion-terms-list").slideToggle();
-    });
+    $(".promotion-terms-title")
+      .unbind()
+      .on("click", function (e) {
+        e.stopPropagation();
+        $(this).next(".promotion-terms-list").slideToggle();
+      });
   });
 
   return (
