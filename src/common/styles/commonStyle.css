@@ -644,4 +644,56 @@
   }
 }
 
+/* modal caoursel */
+
+/* .modal-carousel-placeholder {
+}
+
+.carousel-img-placeholder-modal {
+  height: 900px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: 1600px) and (max-width: 1800px) {
+    height: 800px;
+  }
+  @media (min-width: 1400px) and (max-width: 1600px) {
+    height: 700px;
+  }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    height: 600px;
+  }
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    height: 500px;
+  }
+  @media (min-width: 580px) and (max-width: 1000px) {
+    height: 300px;
+  }
+  @media (min-width: 350px) and (max-width: 580px) {
+    height: 200px;
+  }
+  @media (min-width: 200px) and (max-width: 350px) {
+    height: 150px;
+  }
+}
+
+.carousel-container-modal {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container-modal img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  @media (min-width: 1600px) and (max-width: 1800px) {
+    max-height: 800px;
+  }
+} */
+
 /* End of Khadija's code */
