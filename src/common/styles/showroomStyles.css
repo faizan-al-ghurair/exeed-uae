@@ -253,19 +253,86 @@
 
 
 
-/***********  Financial / Lease Rate Page CSS - Start *********/
+/******************************  Financial / Lease Rate Page CSS - Start   ************************/
+
+.financial-LeaseRate{
+  padding: 0% 7.5% 0% 7.5%;
+  font-family: 'Calibri';
+}
+
+.financial-LeaseRate input,select{
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    transition: all .3s;
+}
+
+.finacialLease-Left{
+    width: 30%;
+    display: inline-block;
+    padding: 0% 2% 0% 0%;
+}
+
+.financialCalculator, .elementor-widget-container{
+  color: white;
+  padding-bottom: 10px;
+}
+
+#financial-LeaseRate-carModel, #financial-LeaseRate-months{
+  background-color: #0C0B0B;
+  color: white;
+}
+
+#LeaseRate-calcu{
+  background: #C1886D;
+  color: white;
+  border: 1px solid #C1886D;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+}
+
+#LeaseRate-calcu:hover {
+  background: #C1886D;
+  color: white;
+}
+
+.elementor-widget-container{
+  padding-bottom: 20px;
+}
+
+#finacialLease-price::before {
+  content: "AED ";
+}
+
+#finacialLease-price::after {
+  content: " / Month";
+}
+
+#finacialLease-price{
+ font-size: 1rem;
+}
+
+.calcbutton-parent{
+  display: inline-block;
+}
+
+.calc-price-parent{
+  float: right;
+}
+
+.finacialLease-Right{
+  width: 70%;
+  color: wheat;
+  display: inline-block;
+  vertical-align:top;
+}
+
+#finleaseImage{
+  max-width: 100%;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-/***********  Financial / Lease Rate Page CSS - END *********/
+/*******************************  Financial / Lease Rate Page CSS - END ****************************/
