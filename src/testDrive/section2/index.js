@@ -39,6 +39,27 @@ const CarousalComponent = ({ id, active }) => {
         e.stopPropagation();
         // alert("hi")
       });
+
+    const containers = $(".image-container");
+    const select = $("#sel1");
+
+    // Initialize at position 1
+    selectElement("region1");
+
+    containers.on("click", function () {
+      selectElement($(this).attr("id"));
+      select.val($(this).attr("id"));
+    });
+
+    select.change(function () {
+      selectElement($(this).val());
+    });
+
+    function selectElement(id) {
+      let others = containers.not($("#" + id));
+      $("#" + id).addClass("selected");
+      others.removeClass("selected");
+    }
   });
 
   return (
@@ -211,23 +232,38 @@ export const Section2 = () => {
         data-element_type="section"
       >
         <section class="flex flex-column justify-content-center align-items-center w-100 bg-color-black">
-          <div class="row flex w-85 pt-4">
+          <div id="wrapper" class="row flex w-85 pt-4 ">
             <p class="text-inverse">1 Vehicle Please Select The Vehicle</p>
             <div class="target-1 flex direction-column">
               <div class="flex">
-                <div
-                  class="col-lg-4 col-md-4 col-sm-12 pt-3"
-                  data-id="90c8e18"
-                  data-element_type="column"
-                >
-                  <div class="">
-                    <div
-                      class=""
-                      data-id="39cc3f7"
-                      data-element_type="widget"
-                      data-widget_type="image.default"
-                    >
-                      <div class="">
+                {/*                      
+<div id="wrapper">
+  <div id="region1" class="image-container">
+    <img src="https://cdn.mos.cms.futurecdn.net/DEpYy8jSdvD9dkvVDSPNoD.jpg" alt=""/>
+  </div>
+  <div id="region2" class="image-container">
+    <img src="https://www.starwarsnewsnet.com/wp-content/uploads/2014/05/star-20wars-20video-20games-20hoth-20atat-20empire-20at-20war-201680x1050-20wallpaper_wallpaperswa.com_551.jpg" alt=""/>
+  </div>
+  <div id="region3" class="image-container">
+    <img src="https://www.austinchronicle.com/binary/e3fd/AllisonLefcort_CaptainPhasma_Add.jpg" alt=""/>
+  </div>
+  <div id="region4" class="image-container">
+    <img src="https://cdn.mos.cms.futurecdn.net/ew7hxbJKwPewaRmjYW79bi.jpg" alt=""/>
+  </div>
+  <div id="region5" class="image-container">
+    <img src="https://www.starwarsnewsnet.com/wp-content/uploads/2021/01/Empire-at-War_wall.jpg" alt=""/>
+  </div>
+</div>
+
+ */}
+
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
+                  <div class="w-100 h-100">
+                    <div class="">
+                      <div
+                        id="region1"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center "
+                      >
                         <img
                           decoding="async"
                           loading="lazy"
@@ -238,50 +274,37 @@ export const Section2 = () => {
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-lg-4 col-md-4 col-sm-12 pt-3"
-                  data-id="9966c5f"
-                  data-element_type="column"
-                >
-                  <div class="">
-                    <div
-                      class=""
-                      data-id="13be543"
-                      data-element_type="widget"
-                      data-widget_type="image.default"
-                    >
-                      <div class="elementor-widget-container">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
+                  <div class="w-100 h-100">
+                    <div class="">
+                      <div
+                        id="region2"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center "
+                      >
                         <img
                           decoding="async"
                           loading="lazy"
                           src="https://exeed-uae.com/wp-content/uploads/2023/08/Group-432-1.png"
                           class="test-drive-images"
-                          alt=""
                         />
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div
-                  class="col-lg-4 col-md-4 col-sm-12 pt-3"
-                  data-id="6bca915"
-                  data-element_type="column"
-                >
-                  <div class="">
-                    <div
-                      class=""
-                      data-id="0ff9c46"
-                      data-element_type="widget"
-                      data-widget_type="image.default"
-                    >
-                      <div class="elementor-widget-container">
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
+                  <div class="w-100 h-100">
+                    <div class="">
+                      <div
+                        id="region3"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center "
+                      >
                         <img
                           decoding="async"
                           loading="lazy"
                           src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-431-1.png"
                           class="test-drive-images"
-                          alt=""
                         />
                       </div>
                     </div>
