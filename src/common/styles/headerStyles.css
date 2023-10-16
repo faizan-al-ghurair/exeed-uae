@@ -157,11 +157,6 @@
   max-width: 100%;
   height: auto;
 }
-.absolute-details-car {
-  height: 20%;
-  position: absolute;
-  bottom: 0;
-}
 
 .elementor-widget-container-font {
   font-size: 1.1em;
@@ -770,6 +765,7 @@ body {
   bottom: 0;
   height: 25%;
   background-color: rgb(0, 0, 0, 0.7);
+  /* border-right: 1px solid #c0c0c0; */
 }
 
 .elementor-widget-container-font {
@@ -1747,4 +1743,48 @@ background-size: cover; */
 .elementor-widget-container .search-input::-webkit-search-results-button,
 .elementor-widget-container .search-input::-webkit-search-results-decoration {
   display: none;
+}
+
+/* Border to tabs in homepage */
+.home-tab-border {
+  border-right: 1px solid #c0c0c0;
+  @media (min-width: 10px) and (max-width: 767px) {
+    border-right: none;
+    border-bottom: 1px solid #c0c0c0;
+    padding-top: 1rem;
+  }
+}
+
+.home-tab-border:last-child {
+  border-right: none;
+}
+
+/* Border for Modal Specs in Nav */
+.modal-specs-border {
+  border-right: 1px solid rgba(193, 193, 193, 0.3);
+}
+
+.modal-specs-border:last-child {
+  border-right: none;
+}
+
+/* Contact button margin in home */
+.home-contact-button {
+  @media (min-width: 10px) and (max-width: 767px) {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Home banner Scroll buttons position*/
+.home-scrolls {
+  margin-bottom: 5rem;
+  margin-right: 5rem;
+
+  @media (min-width: 10px) and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.modal-contact-form {
+  padding: 0;
 }

@@ -3,24 +3,12 @@ import React from "react";
 export const Section3 = () => {
   return (
     <>
-      <section
-        class="elementor-section app-bg-black container pt-5"
-        data-id="e356b8a"
-        data-element_type="section"
-      >
-        <div class="row pt-5 pb-5">
-          <div
-            class="col-md-4 col-sm-12 d-flex justify-content-center"
-            data-id="e5985fc"
-            data-element_type="column"
-          >
-            <div class="">
-              <div
-                class=""
-                data-element_type="widget"
-                data-widget_type="icon-box.default"
-              >
-                <div class="">
+      <section class="section-black row">
+        <div class="col-md-12 d-flex py-5">
+          <div class="col-md-10 w-100 d-flex justify-content-center flex-column ">
+            <div class="row d-flex justify-content-center align-items-center aboutus-section2">
+              <div class="col-md-10 col-sm-10 col-10 d-flex justify-content-evenly abtus-section2-flex">
+                <div class="aboutus-section2-tab text-center">
                   <div class="">
                     <div class="elementor-icon-box-icon d-flex justify-content-center">
                       <a
@@ -85,22 +73,7 @@ export const Section3 = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-4 col-sm-12 d-flex justify-content-center"
-            data-id="ace7245"
-            data-element_type="column"
-          >
-            <div class="">
-              <div
-                class=""
-                data-id="44796bb"
-                data-element_type="widget"
-                data-widget_type="icon-box.default"
-              >
-                <div class="">
+                <div class="aboutus-section2-tab text-center">
                   <div class="">
                     <div class="icon-style-home-page d-flex flex-column">
                       <a class="" href="https://exeed-uae.com/book-a-service/">
@@ -162,22 +135,7 @@ export const Section3 = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-4 col-sm-12 d-flex justify-content-center"
-            data-id="a8950dc"
-            data-element_type="column"
-          >
-            <div class="">
-              <div
-                class=""
-                data-id="9e76823"
-                data-element_type="widget"
-                data-widget_type="icon-box.default"
-              >
-                <div class="">
+                <div class="aboutus-section2-tab text-center">
                   <div class="">
                     <div class="icon-style-home-page d-flex flex-column">
                       <a class="" href="https://exeed-uae.com/request-a-quote/">
@@ -272,31 +230,27 @@ export const Section3 = () => {
           </div>
         </div>
       </section>
-      <section
-        class="elementor-section app-bg-black container pt-5 pb-5"
-        data-id="e356b8a"
-        data-element_type="section"
-      >
-        <div class="row pt-1 pb-2">
-          <div
-            class="col-md-12 col-sm-12 d-flex justify-content-center"
-            data-id="e5985fc"
-            data-element_type="column"
-          >
-            <iframe
-              src="https://www.exeedinternational.com/data/tms/website/html/360deg/VX/index.html"
-              // src="https://www.exeedinternational.com/data/tms/website/html/360deg/TXL/index.html"
-              // src="https://www.exeedinternational.com/data/tms/website/html/360deg/LX/index.html"
-              frameborder="0"
-              class="iframe-car w-100 h-100"
-              id="car360"
-              scrolling="no"
-              allow="autoplay"
-              webkitallowfullscreen="true"
-              mozallowFullScreen="true"
-              allowFullScreen="true"
-              allowvr=""
-            ></iframe>
+      <section class="section-black row">
+        <div class="col-md-12 d-flex py-5">
+          <div class="col-md-10 w-100 d-flex justify-content-center flex-column ">
+            <div class="row d-flex justify-content-center align-items-center aboutus-section2">
+              <div class="col-md-10 col-sm-10 col-10 d-flex justify-content-evenly abtus-section2-flex">
+                <iframe
+                  src="https://www.exeedinternational.com/data/tms/website/html/360deg/VX/index.html"
+                  // src="https://www.exeedinternational.com/data/tms/website/html/360deg/TXL/index.html"
+                  // src="https://www.exeedinternational.com/data/tms/website/html/360deg/LX/index.html"
+                  frameborder="0"
+                  class="iframe-car w-100 h-100"
+                  id="car360"
+                  scrolling="no"
+                  allow="autoplay"
+                  webkitallowfullscreen="true"
+                  mozallowFullScreen="true"
+                  allowFullScreen="true"
+                  allowvr=""
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>

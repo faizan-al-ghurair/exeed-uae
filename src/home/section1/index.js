@@ -44,10 +44,7 @@ export const Section1 = () => {
                     <div class="elementor-widget-container">
                       <div class="">
                         <div class="out-line-btn-large ">
-                          <a
-                            class="btn btn-outline-primary linkButton"
-                            href=""
-                          >
+                          <a class="btn btn-outline-primary linkButton" href="">
                             <span class="p-3">
                               <span class="elementor-button-span">
                                 DISCOVER MORE
@@ -59,7 +56,11 @@ export const Section1 = () => {
                     </div>
                   </div>
                 </div>
-                <div class="" data-id="9becd0b" data-element_type="column">
+                <div
+                  class="home-scrolls"
+                  data-id="9becd0b"
+                  data-element_type="column"
+                >
                   <div class="">
                     <div
                       class=""

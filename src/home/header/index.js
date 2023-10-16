@@ -200,9 +200,9 @@ export const Header = () => {
                       <div class="car-img-widget position-relative">
                         <div>
                           <div class="absolute-details-car d-flex w-100 align-items-center">
-                            <div class="col-md-4">
+                            <div class="col-md-4 modal-specs-border">
                               <div>
-                                <div class="elementor-widget-container row justify-content-center align-items-center">
+                                <div class=" row justify-content-center align-items-center">
                                   <div class="elementor-icon-box-wrapper text-center col-md-3">
                                     <div class="w-100">
                                       <span class="">
@@ -243,14 +243,14 @@ export const Header = () => {
                                 </div>
                               </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 modal-specs-border">
                               <div
                                 class="w-100"
                                 data-id="5d7c2b4f"
                                 data-element_type="widget"
                                 data-widget_type="icon-box.default"
                               >
-                                <div class="elementor-widget-container row justify-content-center align-items-center">
+                                <div class="row justify-content-center align-items-center">
                                   <div class="elementor-icon-box-wrapper text-center  col-md-3">
                                     <div class="w-100">
                                       <span class="">
@@ -285,14 +285,14 @@ export const Header = () => {
                                 </div>
                               </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 modal-specs-border">
                               <div
                                 class="w-100"
                                 data-id="5d7c2b4f"
                                 data-element_type="widget"
                                 data-widget_type="icon-box.default"
                               >
-                                <div class="elementor-widget-container row justify-content-center align-items-center">
+                                <div class="row justify-content-center align-items-center">
                                   <div class="elementor-icon-box-wrapper text-center col-md-3">
                                     <div class="w-100">
                                       <span class="">
