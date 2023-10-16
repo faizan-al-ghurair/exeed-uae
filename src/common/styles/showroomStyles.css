@@ -269,7 +269,7 @@
 }
 
 .finacialLease-Left{
-    width: 30%;
+    width: 29.50%;
     display: inline-block;
     padding: 0% 2% 0% 0%;
 }
@@ -389,6 +389,12 @@
   .financial-LeaseRate-rateInfo{
     clear: both;
   }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .finacialLease__Img-wrapper {
+    width: 29%;
+  }  
 }
  
 
