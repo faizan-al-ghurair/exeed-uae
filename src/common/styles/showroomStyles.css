@@ -374,17 +374,17 @@
   }
 }
 
-@media (min-width: 1800px)  {
+@media (min-width: 1921px)  {
   .finacialLease-Right{
     min-height: 55vh;
   }
 
   #LeaseRate-calcu {
-    font-size: 43px;
+    font-size: 25px;
     padding: 0.5rem 1rem;
   } 
   #finacialLease-price{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .financial-LeaseRate-rateInfo{
     clear: both;
