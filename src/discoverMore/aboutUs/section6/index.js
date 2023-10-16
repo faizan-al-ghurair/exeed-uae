@@ -7,7 +7,7 @@ export const Section6 = () => {
   return (
     <>
       <section class="section-black row">
-        <div class="col-md-12 d-flex my-5">
+        <div class="col-md-12 d-flex mb-5">
           <div class="col-md-10 w-100 d-flex justify-content-center flex-column">
             <div class="row d-flex justify-content-center align-items-start aboutus-section6">
               <div

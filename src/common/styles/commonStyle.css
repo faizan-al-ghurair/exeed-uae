@@ -291,10 +291,10 @@
   flex: 0 0 100%; /* Make each item take up the full width */
 }
 
-.carousel img {
+/* .carousel img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .prev,
 .next {
@@ -308,11 +308,31 @@
   cursor: pointer;
   color: #c28a6c;
   font-size: 5rem;
+
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 3.5rem;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 10px) and (max-width: 500px) {
+    font-size: 2rem;
+    padding: 10px 10px;
+  }
 }
 
 .prev:hover,
 .next:hover {
   font-size: 6rem;
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 4.5rem;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    font-size: 4rem;
+  }
+  @media (min-width: 10px) and (max-width: 500px) {
+    font-size: 3rem;
+  }
 }
 
 .prev {
@@ -695,5 +715,90 @@
     max-height: 800px;
   }
 } */
+
+/* New CAoursel of tags in modal */
+.modal-tags {
+  gap: 3%;
+  @media (min-width: 1400px) and (max-width: 1800px) {
+    gap: 2%;
+  }
+  @media (min-width: 1000px) and (max-width: 1400px) {
+    gap: 1.5%;
+  }
+  @media (min-width: 767px) and (max-width: 1000px) {
+    gap: 1%;
+  }
+  @media (min-width: 100px) and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+.modal-tag-btn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.modal-tag-btn:hover {
+  color: #c28a6c;
+  cursor: pointer;
+}
+
+.modal-tag-btn:focus {
+  color: #c28a6c;
+}
+
+.carousel-img-placeholder-modal {
+  width: 100%;
+  overflow: hidden;
+  height: 610px;
+
+  @media (min-width: 1400px) and (max-width: 1800px) {
+    height: 550px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1600px) {
+    height: 500px;
+  }
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    height: 450px;
+  }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    height: 400px;
+  }
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    height: 350px;
+  }
+  @media (min-width: 580px) and (max-width: 1000px) {
+    height: 250px;
+  }
+  @media (min-width: 350px) and (max-width: 580px) {
+    height: 200px;
+  }
+  @media (min-width: 200px) and (max-width: 350px) {
+    height: 150px;
+  }
+}
+
+.carousel-img-placeholder-modal img {
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  /* position: absolute; */
+}
+.carousel-container-modal {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-carousel-text {
+  padding: 1rem 2rem;
+}
+
+.tag-hidden {
+  display: none;
+}
 
 /* End of Khadija's code */

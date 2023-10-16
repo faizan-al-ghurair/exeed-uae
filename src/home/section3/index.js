@@ -10,7 +10,7 @@ export const Section3 = () => {
       >
         <div class="row pt-5 pb-5">
           <div
-            class="col-md-4 col-sm-12 d-flex justify-content-center"
+            class="col-md-4 col-sm-12 d-flex justify-content-center home-tab-border"
             data-id="e5985fc"
             data-element_type="column"
           >
@@ -89,7 +89,7 @@ export const Section3 = () => {
             </div>
           </div>
           <div
-            class="col-md-4 col-sm-12 d-flex justify-content-center"
+            class="col-md-4 col-sm-12 d-flex justify-content-center home-tab-border"
             data-id="ace7245"
             data-element_type="column"
           >
@@ -157,7 +157,7 @@ export const Section3 = () => {
             </div>
           </div>
           <div
-            class="col-md-4 col-sm-12 d-flex justify-content-center"
+            class="col-md-4 col-sm-12 d-flex justify-content-center home-tab-border"
             data-id="a8950dc"
             data-element_type="column"
           >
@@ -263,11 +263,9 @@ export const Section3 = () => {
           </div>
         </div>
       </section>
-   
     </>
   );
 };
-
 
 // <iframe
 // src="https://www.exeedinternational.com/data/tms/website/html/360deg/VX/index.html"

@@ -70,7 +70,7 @@ export const Section2 = () => {
               data-element_type="widget"
               data-widget_type="button.default"
             >
-              <div class="">
+              <div class="home-contact-button">
                 <div class="out-line-btn-large ">
                   <a
                     class="btn btn-outline-primary linkButton"
@@ -110,7 +110,6 @@ export const Section2 = () => {
           </div>
         </div>
       </section>
-      
     </>
   );
 };
