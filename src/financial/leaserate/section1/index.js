@@ -7,6 +7,7 @@ export const Section1 = () => {
 
   $(document).ready(function () {    
     $('#financial-LeaseRate-carModel').on('change', function(){ 
+          $('.finacialLease-InitialImageBox').hide();
           var img_path = $(this).find(':selected').attr("data-imagesrc");
           $('#finleaseImage').attr( 'src', img_path );
     }); 
@@ -215,7 +216,7 @@ export const Section1 = () => {
                             </div>
                        </div>  
 
-                      <div class="elementor-element elementor-element-7062f69 elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="7062f69" data-element_type="widget" data-widget_type="html.default">
+                      <div class="financial-LeaseRate-rateInfo" data-id="7062f69" data-element_type="widget" data-widget_type="html.default">
                         <div class="elementor-widget-container"> <small>The rates are based on 40,000 kms mileage per annum and T&amp;Cs applies.</small> </div>
                       </div>
                     </div>
@@ -224,7 +225,20 @@ export const Section1 = () => {
                           
                   <div class="finacialLease-Right">                       
                       
-                 
+                    <div class="finacialLease-InitialImageBox">
+                         <div class="finacialLease__Img-wrapper">
+                            <img src="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"></img>
+                         </div>
+                         <div class="finacialLease__Img-wrapper">
+                            <img src="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"></img>
+                         </div>
+                         <div class="finacialLease__Img-wrapper">
+                            <img src="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"></img>
+                         </div>
+                    </div>
+
+
+
                     <img id="finleaseImage" alt="" src=""/>
 
                     <div id="vxx"></div>
