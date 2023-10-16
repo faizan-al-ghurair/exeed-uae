@@ -61,6 +61,16 @@ const CarousalComponent = ({ id, active }) => {
       $("#" + id).addClass("selected");
       others.removeClass("selected");
     }
+
+
+    //Click function for Showroom Location    
+    $("#DubaiShowroomAddr")
+      .unbind("click")
+      .click("click", function (e) {
+        $(this).css('background-color', '#C28A6C');
+        e.stopPropagation();
+    });
+
   });
 
   return (
@@ -111,7 +121,7 @@ const CarousalComponent = ({ id, active }) => {
         <div class="">
           {(id === "SERVICECENTER" || id === "NEWCARS" || id === "ALL") && (
             <>
-              <section class="container-fluid text-inverse">
+              <section class="container-fluid text-inverse" id="DubaiShowroomAddr">
                 <div class="row">
                   <div class="col-lg-2 col-md-2 px-3 col-sm-12">
                     <div class="">
@@ -171,7 +181,7 @@ const CarousalComponent = ({ id, active }) => {
                 </div>
               </section>
               <div class="line-white mb-4"></div>
-              <section class="container-fluid text-inverse">
+              <section class="container-fluid text-inverse" id="AbudhabiShowroomAddr">
                 <div class="row">
                   <div class="col-lg-2 col-md-2 px-3 col-sm-12">
                     <div class="">
