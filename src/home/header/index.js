@@ -622,7 +622,7 @@ export const Header = () => {
                   </a>
                 </li>
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a class="dropdown-item nav-font-color" href="/lease-rate">
                     {"LEASE RATE "}
                   </a>
                 </li>
