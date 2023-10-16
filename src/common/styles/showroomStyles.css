@@ -398,5 +398,15 @@
 }
  
 
+.showroomAddr{
+  padding-top: 1rem;
+}
+
+.removelineDefaults{
+    margin-bottom: 0px !important;
+    line-height: 0px;
+    margin-top: 0px !important;
+}
+
 
 /*******************************  Financial / Lease Rate Page CSS - END ****************************/

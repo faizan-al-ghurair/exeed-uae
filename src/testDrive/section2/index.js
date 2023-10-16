@@ -64,9 +64,10 @@ const CarousalComponent = ({ id, active }) => {
 
 
     //Click function for Showroom Location    
-    $("#DubaiShowroomAddr")
+    $(".showroomAddr")
       .unbind("click")
       .click("click", function (e) {
+        $(".showroomAddr").css('background', 'none');
         $(this).css('background-color', '#C28A6C');
         e.stopPropagation();
     });
@@ -110,7 +111,7 @@ const CarousalComponent = ({ id, active }) => {
           </div>
         </div>
       </section>
-      <div class="line-white mb-3"></div>
+      <div class="line-white mb-3 removelineDefaults"></div>
 
       <section
         class="elementor-section"
@@ -121,7 +122,8 @@ const CarousalComponent = ({ id, active }) => {
         <div class="">
           {(id === "SERVICECENTER" || id === "NEWCARS" || id === "ALL") && (
             <>
-              <section class="container-fluid text-inverse" id="DubaiShowroomAddr">
+            <div className="testdrive-showroom-holder">
+              <section class="container-fluid text-inverse showroomAddr" id="DubaiShowroomAddr">
                 <div class="row">
                   <div class="col-lg-2 col-md-2 px-3 col-sm-12">
                     <div class="">
@@ -180,8 +182,8 @@ const CarousalComponent = ({ id, active }) => {
                   </div>
                 </div>
               </section>
-              <div class="line-white mb-4"></div>
-              <section class="container-fluid text-inverse" id="AbudhabiShowroomAddr">
+              <div class="line-white mb-4 removelineDefaults"></div>
+              <section class="container-fluid text-inverse showroomAddr" id="AbudhabiShowroomAddr">
                 <div class="row">
                   <div class="col-lg-2 col-md-2 px-3 col-sm-12">
                     <div class="">
@@ -215,17 +217,18 @@ const CarousalComponent = ({ id, active }) => {
                   </div>
                 </div>
               </section>
-              <div class="line-white mt-2"></div>
+              <div class="line-white mt-2 removelineDefaults"></div>
 
               <div class="elementor-widget-wrap mt-4 mb-3">
                 <div class="row w-85 pt-1 pb-5">
                   <div class="elementor-widget-wrap pt-3">
                     <span id="openStep3" class="p-3 linkButton">
-                      <span class="elementor-button-text">Next step 3</span>
+                      <span class="elementor-button-text">Next step</span>
                     </span>
                   </div>
                 </div>
               </div>
+            </div>  
             </>
           )}
         </div>
@@ -325,7 +328,7 @@ export const Section2 = () => {
               <div class="row w-85 pt-4 pb-3" data-element_type="column">
                 <div class="elementor-widget-wrap">
                   <span id="openStep2" class="p-3 linkButton">
-                    <span class="elementor-button-text">NEXT STEP to 2</span>
+                    <span class="elementor-button-text">NEXT STEP</span>
                   </span>
                 </div>
               </div>
@@ -365,7 +368,7 @@ export const Section2 = () => {
                       <div class="elementor-widget-wrap pt-3">
                         <span id="openStep1" class="p-3 linkButton">
                           <span class="elementor-button-text">
-                            PREVIOUS to 1
+                            PREVIOUS
                           </span>
                         </span>
                       </div>
@@ -565,7 +568,7 @@ export const Section2 = () => {
                       <div class="elementor-widget-wrap pt-3">
                         <span id="openStep2From3" class="p-3 linkButton">
                           <span class="elementor-button-text">
-                            PREVIOUS to 2
+                            PREVIOUS 
                           </span>
                         </span>
                       </div>
