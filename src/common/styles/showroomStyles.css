@@ -286,7 +286,7 @@
 
 #LeaseRate-calcu{
   background: #C1886D;
-  color: white;
+  color: #C1886D;
   border: 1px solid #C1886D;
   background-color: transparent;
   padding: 0.5rem 1rem;
@@ -330,9 +330,67 @@
 
 #finleaseImage{
   max-width: 100%;
+  position: relative;
+  top: -40px;
 }
 
+.finacialLease-Right{
+  overflow: hidden; 
+  max-height: 400px;
+}
 
+#finleaseImage:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+
+  overflow: hidden; 
+}
+
+.finacialLease__Img-wrapper {
+  width: 30%;
+  display: inline-block;
+  margin-right: 25px;
+  overflow: hidden;
+}
+
+.finacialLease__Img-wrapper img{
+   height: 400px;
+   position: relative;
+   left: -150px;
+}
+
+.finacialLease__Img-wrapper img:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {     
+  .finacialLease-Right{
+    display: none;
+  }
+  .finacialLease-Left{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1800px)  {
+  .finacialLease-Right{
+    min-height: 55vh;
+  }
+
+  #LeaseRate-calcu {
+    font-size: 43px;
+    padding: 0.5rem 1rem;
+  } 
+  #finacialLease-price{
+    font-size: 2.5rem;
+  }
+  .financial-LeaseRate-rateInfo{
+    clear: both;
+  }
+}
+ 
 
 
 /*******************************  Financial / Lease Rate Page CSS - END ****************************/

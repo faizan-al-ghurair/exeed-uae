@@ -7,6 +7,7 @@ export const Section1 = () => {
 
   $(document).ready(function () {    
     $('#financial-LeaseRate-carModel').on('change', function(){ 
+          $('.finacialLease-InitialImageBox').hide();
           var img_path = $(this).find(':selected').attr("data-imagesrc");
           $('#finleaseImage').attr( 'src', img_path );
     }); 
@@ -171,16 +172,16 @@ export const Section1 = () => {
 
 
                           <select id="financial-LeaseRate-carModel">
-                            <option value="no" id="defaultOption" selected>Car</option>
-                            <option value="LXC" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"> Exeed LX 1.5T Comfort 5-Str SUV 2024YM </option>
-                            <option value="LXL"> Exeed LX 1.5T Luxury 5-Str SUV 2024YM </option>
-                            <option value="LXF"> Exeed LX 1.6T Flagship 5-Str AWD SUV 2024YM </option>
+                            <option value="no" id="defaultOption" >Car</option>
+                            <option value="LXC" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"> Exeed LX 1.5T Comfort 5-Str SUV 2024YM </option>
+                            <option value="LXL" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"> Exeed LX 1.5T Luxury 5-Str SUV 2024YM </option>
+                            <option value="LXF" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"> Exeed LX 1.6T Flagship 5-Str AWD SUV 2024YM </option>
                             <option value="TXLC" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"> Exeed TXL 1.6T Comfort 5-Str SUV 2024YM </option>
-                            <option value="TXLL"> Exeed TXL 2.0T Luxury 5-Str SUV 2024YM </option>
-                            <option value="TXLF"> Exeed TXL 2.0T Flagship 5-Str AWD SUV 2024YM </option>
-                            <option value="VXL"> Exeed VX 2.0L Luxury 7-Str AWD SUV 2024YM </option>
-                            <option value="VXF"> Exeed VX 2.0L Flagship 7-Str AWD SUV 2024 YM</option>
-                            <option value="VXB"> Exeed VX 2.0L Black Gold 7-Str AWD SUV 2024YM</option>
+                            <option value="TXLL" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"> Exeed TXL 2.0T Luxury 5-Str SUV 2024YM </option>
+                            <option value="TXLF" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"> Exeed TXL 2.0T Flagship 5-Str AWD SUV 2024YM </option>
+                            <option value="VXL" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"> Exeed VX 2.0L Luxury 7-Str AWD SUV 2024YM </option>
+                            <option value="VXF" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"> Exeed VX 2.0L Flagship 7-Str AWD SUV 2024 YM</option>
+                            <option value="VXB" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"> Exeed VX 2.0L Black Gold 7-Str AWD SUV 2024YM</option>
                           </select>
 
 
@@ -195,7 +196,7 @@ export const Section1 = () => {
                         <div class="elementor-widget-container">
                           <label class="financialCalculator">Month</label>
                           <select id="financial-LeaseRate-months">
-                            <option value="12" selected="">12</option>
+                            <option value="12" >12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
                             <option value="48">48</option>
@@ -206,7 +207,7 @@ export const Section1 = () => {
                        <div class="btn-area">
                             <div class="calcbutton-parent">
                               <div class="elementor-widget-container">
-                                <button onclick="calculatePrice()" id="LeaseRate-calcu">CALCULATE</button>
+                                <button id="LeaseRate-calcu">CALCULATE</button>
                               </div>
                             </div>
                             <div class="calc-price-parent">
@@ -215,7 +216,7 @@ export const Section1 = () => {
                             </div>
                        </div>  
 
-                      <div class="elementor-element elementor-element-7062f69 elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="7062f69" data-element_type="widget" data-widget_type="html.default">
+                      <div class="financial-LeaseRate-rateInfo" data-id="7062f69" data-element_type="widget" data-widget_type="html.default">
                         <div class="elementor-widget-container"> <small>The rates are based on 40,000 kms mileage per annum and T&amp;Cs applies.</small> </div>
                       </div>
                     </div>
@@ -224,7 +225,20 @@ export const Section1 = () => {
                           
                   <div class="finacialLease-Right">                       
                       
-                 
+                    <div class="finacialLease-InitialImageBox">
+                         <div class="finacialLease__Img-wrapper">
+                            <img src="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"></img>
+                         </div>
+                         <div class="finacialLease__Img-wrapper">
+                            <img src="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"></img>
+                         </div>
+                         <div class="finacialLease__Img-wrapper">
+                            <img src="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"></img>
+                         </div>
+                    </div>
+
+
+
                     <img id="finleaseImage" alt="" src=""/>
 
                     <div id="vxx"></div>
