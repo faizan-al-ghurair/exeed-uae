@@ -1,0 +1,481 @@
+[33mcommit f18355bf3b22e3a6188f4b8afbd70eb39969c779[m[33m ([m[1;36mHEAD -> [m[1;32mkhadija[m[33m)[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Mon Oct 16 17:24:24 2023 +0400
+
+    Excel sheet fixes
+
+[33mcommit e281a6c0be23d1126b10a300d15d7afeb64ba2d9[m[33m ([m[1;31morigin/khadija[m[33m)[m
+Merge: 4748ecc 3827296
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Mon Oct 16 09:49:27 2023 +0400
+
+    Merge branch 'main' of https://github.com/faizan-al-ghurair/exeed-uae into khadija
+
+[33mcommit 4748ecc07eb3920fd36c58dc092d93c9dd34399e[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Mon Oct 16 09:47:20 2023 +0400
+
+    Small changes made on friday
+
+[33mcommit 38272966b40ca10b8d82beeea612d23620e73253[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: b32357a 0c2a0ec
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Mon Oct 16 09:41:17 2023 +0400
+
+    Merge pull request #20 from faizan-al-ghurair/sarath
+    
+    LeaseRate-Files-part2
+
+[33mcommit 0c2a0eceaa20b6eaa306749c49be768adc096d9c[m[33m ([m[1;31morigin/sarath[m[33m)[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Mon Oct 16 09:45:38 2023 +0530
+
+    LeaseRate-FilesAll
+
+[33mcommit 14ce217556f6356c2c8070990aa69d2376d1047e[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Fri Oct 13 23:13:39 2023 +0530
+
+    LeaseRate-Files-part2
+
+[33mcommit b32357a9b9f0aa8b427fc1a9b591d7079dede885[m
+Merge: 075facb a388ded
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Fri Oct 13 17:17:43 2023 +0400
+
+    Merge pull request #19 from faizan-al-ghurair/khadija
+    
+    Khadija
+
+[33mcommit a388ded92210c5714911814850d529832a691be3[m
+Merge: 956b35f 075facb
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Fri Oct 13 17:14:16 2023 +0400
+
+    Merge branch 'main' of https://github.com/faizan-al-ghurair/exeed-uae into khadija
+
+[33mcommit 956b35f8afda5acef180f4cef9af333e35be9148[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Fri Oct 13 17:12:17 2023 +0400
+
+    search bar
+
+[33mcommit 075facb53b63bbf3e6898313c4a447389f4ecc85[m
+Merge: 7d88c9c 7ee5442
+Author: faizan-al-ghurair <129278731+faizan-al-ghurair@users.noreply.github.com>
+Date:   Fri Oct 13 15:14:20 2023 +0400
+
+    Merge pull request #18 from faizan-al-ghurair/sarath
+    
+    LeaseRate-Files
+
+[33mcommit 2286369c021650cbdef14689981d7b9f7e23a478[m
+Merge: 8ba9528 7d88c9c
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Fri Oct 13 14:47:00 2023 +0400
+
+    Merge branch 'main' of https://github.com/faizan-al-ghurair/exeed-uae into khadija
+
+[33mcommit 8ba9528d4d5b8ad0cc77f2651d20444f20a6cd7e[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Fri Oct 13 14:45:41 2023 +0400
+
+    Nothing much, I commented my code.
+
+[33mcommit 7d88c9cd38835b102e6d68b4af1477b47ab4ef19[m
+Merge: c11877b 3974513
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Fri Oct 13 14:43:07 2023 +0400
+
+    Merge pull request #17 from faizan-al-ghurair/khadija
+    
+    Khadija
+
+[33mcommit 7ee54428a38eeb7835d1c08f81a7ce91581258fe[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Fri Oct 13 16:02:40 2023 +0530
+
+    LeaseRate-Files
+
+[33mcommit 3974513bd97ba72d480d26e4f28bcb17e5f1d3c6[m
+Merge: bd40777 c11877b
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Fri Oct 13 11:53:17 2023 +0400
+
+    Merge branch 'main' of https://github.com/faizan-al-ghurair/exeed-uae into khadija
+
+[33mcommit bd40777b1723c8dbc696e7988a9a918a1c83b7cf[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Fri Oct 13 11:47:46 2023 +0400
+
+    Fixing Modal Header Nav
+
+[33mcommit c11877be1375be0a17d63d26ba1e569e624c5255[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Fri Oct 13 10:50:19 2023 +0400
+
+    form
+
+[33mcommit 45b6997c881a8ce9e73f626a6a7639ae5b433148[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Thu Oct 12 15:21:41 2023 +0400
+
+    test drive
+
+[33mcommit a96a4dc10fcc297918a15539e65ee04986311515[m
+Merge: 889b486 71610a5
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Thu Oct 12 11:32:54 2023 +0400
+
+    Merge pull request #16 from faizan-al-ghurair/khadija
+    
+    Added a function to home carousel to minimize code and make it easier
+
+[33mcommit 71610a522535c4c76a4efa8565d1e4b46743796b[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Thu Oct 12 11:30:57 2023 +0400
+
+    Added a function to home carousel to minimize code and make it easier
+
+[33mcommit 889b4860fdee35fbaf0260b5bf72d601eab3fcb2[m
+Merge: e3f25ca 1302a46
+Author: faizan-al-ghurair <129278731+faizan-al-ghurair@users.noreply.github.com>
+Date:   Thu Oct 12 11:13:48 2023 +0400
+
+    Merge pull request #15 from faizan-al-ghurair/khadija
+    
+    Khadija
+
+[33mcommit 1302a46760c0cd95954e0c0be000943a034251d6[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Thu Oct 12 11:10:26 2023 +0400
+
+    just deleted something I forgot
+
+[33mcommit 79326b3e870ede261434f87bd561fed349b8a7b9[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Thu Oct 12 11:06:05 2023 +0400
+
+    Fixed Home Carousel
+
+[33mcommit e3f25ca1415f06f0b2268708fdc9f144db30e9b9[m
+Merge: a92d23a 533b51c
+Author: faizan-al-ghurair <129278731+faizan-al-ghurair@users.noreply.github.com>
+Date:   Wed Oct 11 21:57:47 2023 +0400
+
+    Merge pull request #14 from faizan-al-ghurair/khadija
+    
+    Khadija
+
+[33mcommit 533b51c59b5b927b998fe729c4adf134e5b2b599[m
+Merge: b14f740 a92d23a
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Wed Oct 11 16:35:33 2023 +0400
+
+    Merge branch 'main' of https://github.com/faizan-al-ghurair/exeed-uae into khadija
+
+[33mcommit b14f74005b67372a714fbbaad947262d304adf57[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Wed Oct 11 16:23:53 2023 +0400
+
+    Adding Warranty and Fixed Carousel for Promotion and About us
+
+[33mcommit a92d23a8977dfd82766057f31a147e0da0e6dd95[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Wed Oct 11 12:10:43 2023 +0400
+
+    news
+
+[33mcommit d1609c422a4678f5096059279f7d0a4e2a27d199[m
+Merge: 29c0281 5c0de51
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Wed Oct 11 11:39:55 2023 +0400
+
+    Merge pull request #13 from faizan-al-ghurair/sarath
+    
+    Added folder for Financial Page
+
+[33mcommit 5c0de512992c342dde711c6ef3ef307bd46b2cec[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Wed Oct 11 13:02:39 2023 +0530
+
+    Added folder for Financial
+
+[33mcommit 29c02812305dae5b32497a9944c867343d819290[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Wed Oct 11 10:55:15 2023 +0400
+
+    updates for services
+
+[33mcommit 33510d483082bb5ef92b387c8093b3990cfb5a02[m
+Merge: 8741b91 0ffb509
+Author: faizan-al-ghurair <129278731+faizan-al-ghurair@users.noreply.github.com>
+Date:   Wed Oct 11 09:56:46 2023 +0400
+
+    Merge pull request #12 from faizan-al-ghurair/sarath
+    
+    Model-Exeed-RX_Files
+
+[33mcommit 0ffb509047004866bda2673540fb44904843767c[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Tue Oct 10 23:36:02 2023 +0530
+
+    Model-Exeed-RX_Files
+
+[33mcommit 8741b91b383b91e018051fcc239f04f8b4296614[m
+Merge: 05b5511 8ce7323
+Author: faizan-al-ghurair <129278731+faizan-al-ghurair@users.noreply.github.com>
+Date:   Tue Oct 10 15:53:08 2023 +0400
+
+    Merge pull request #11 from faizan-al-ghurair/sarath
+    
+    Dubai Final Files
+
+[33mcommit 8ce7323041ebb36d64ffd80cde089a140c80e4e3[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Tue Oct 10 17:20:34 2023 +0530
+
+    Dubai Final Files
+
+[33mcommit 05b5511d20a19a34da592791dacdf1ceda6214a7[m
+Merge: 2ee579a d861b91
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Tue Oct 10 14:46:29 2023 +0400
+
+    Merge pull request #10 from faizan-al-ghurair/khadija
+    
+    Khadija
+
+[33mcommit d861b913fd239a2d80113f787a5172c793584f53[m
+Merge: 371dc4c 2ee579a
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Tue Oct 10 14:45:33 2023 +0400
+
+    Merge branch 'main' of https://github.com/faizan-al-ghurair/exeed-uae into khadija
+
+[33mcommit 371dc4c874e30c4a83c32cbc50e2917e3a917673[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Tue Oct 10 14:25:23 2023 +0400
+
+    Promotion (without accordian) and contact page
+
+[33mcommit 2ee579a970021f16cca3931df922949cef6ff6aa[m
+Merge: e277b6b 357b689
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Tue Oct 10 11:41:50 2023 +0400
+
+    Merge pull request #9 from faizan-al-ghurair/sarath
+    
+    Dubai-Showroom-Files
+
+[33mcommit 357b6896127e101b701e88de72107880eaa8e455[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Tue Oct 10 13:07:47 2023 +0530
+
+    Dubai-Showroom-Files
+
+[33mcommit e277b6b036047a2b4e48d5f1dc7d0550fe5dd89e[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Mon Oct 9 16:29:44 2023 +0400
+
+    merge services
+
+[33mcommit a1f4269596ff551b8b5d2f5b3992927697872c04[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Mon Oct 9 16:29:23 2023 +0400
+
+    merging services
+
+[33mcommit 046cc5a80d774516f1342c9ac13a730e6de0ae49[m
+Merge: fa1e557 fda2eae
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Mon Oct 9 16:28:12 2023 +0400
+
+    Merge pull request #8 from faizan-al-ghurair/khadija
+    
+    News Details full with Carousel
+
+[33mcommit fda2eae8d25b05d37c07a28e3a8d8bc141574faa[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Mon Oct 9 16:21:33 2023 +0400
+
+    News Details full with Carousel
+
+[33mcommit fa1e557922c710e7d4c99e5b2d6a4a3a45813089[m
+Merge: 2a13dc4 172eaf4
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Mon Oct 9 14:40:39 2023 +0400
+
+    Merge pull request #7 from faizan-al-ghurair/khadija
+    
+    About us khadija
+
+[33mcommit 172eaf41d3840487f0ba44daf33b023e44ca8d52[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Mon Oct 9 14:36:26 2023 +0400
+
+    About us
+
+[33mcommit 2a13dc46ce2cb908de4aa4b78268a324cf1cc8e6[m
+Merge: 91709d6 ff2b351
+Author: KhadijaAMeslem <127182606+KhadijaAMeslem@users.noreply.github.com>
+Date:   Fri Oct 6 12:25:27 2023 +0400
+
+    Merge pull request #6 from faizan-al-ghurair/khadija
+    
+    fixes for breaking changes
+
+[33mcommit ff2b3511f6b471d7186cc3da7cfb3a3ca267d956[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Fri Oct 6 12:24:05 2023 +0400
+
+    fixes for brking changes
+
+[33mcommit 91709d6ecda4ab7703723d4cd8ff379c681503c0[m[33m ([m[1;32mmain[m[33m)[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Fri Oct 6 12:12:42 2023 +0400
+
+    changing footer
+
+[33mcommit 86a2aa8ee4348e83a51705bbc51c60efee9b4f4e[m
+Merge: a7df74c 325594c
+Author: faizan-al-ghurair <129278731+faizan-al-ghurair@users.noreply.github.com>
+Date:   Fri Oct 6 10:26:14 2023 +0400
+
+    Merge pull request #5 from faizan-al-ghurair/sarath
+    
+    Showroom All Files
+
+[33mcommit 325594c6727bf42e24f0a550450e487c1ea1ac28[m
+Merge: da825db a7df74c
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Fri Oct 6 11:53:31 2023 +0530
+
+    App Added Abudhabi
+
+[33mcommit a7df74c339e6a3992cedd43486b981566d48e9c1[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Fri Oct 6 10:03:20 2023 +0400
+
+    forms and dynamic tabs
+
+[33mcommit da825dbefd2fce5e0ac327033455e102a9864792[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Fri Oct 6 11:21:23 2023 +0530
+
+    Showroom All Files
+
+[33mcommit 033baf7fadc8f34255cc80f1d9a052f75f62e8ee[m
+Merge: b947469 6018ec4
+Author: sarathganga <146929195+sarathganga@users.noreply.github.com>
+Date:   Thu Oct 5 15:55:05 2023 +0530
+
+    Merge pull request #4 from faizan-al-ghurair/sarath
+    
+    Showroom - AbuDhabi files
+
+[33mcommit 6018ec4f4d63d6b173924254bbd99f8c4975a558[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Thu Oct 5 15:50:56 2023 +0530
+
+    Showroomfiles_abhudhabi
+
+[33mcommit 2fa00f1b63466a189682c8b3a3aa2204a4fc53b0[m[33m ([m[1;31morigin/faizan[m[33m)[m
+Author: sarath <sarath.gangadharan@al-ghurair.com>
+Date:   Wed Oct 4 19:45:14 2023 +0530
+
+    First Commit - App Changes
+
+[33mcommit 304877b2fdbb6f576c0e916dc8be7c65ef3b86f0[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Wed Oct 4 18:04:28 2023 +0400
+
+    index files
+
+[33mcommit b9474698de7cad0ddb6ff51f26b9e7071d38a253[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Wed Oct 4 17:58:26 2023 +0400
+
+    2nd page modals
+
+[33mcommit 3ebdbcd912bc1b2684e4cd547d46198c7596363d[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m)[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Wed Oct 4 09:43:51 2023 +0400
+
+    common style css added
+
+[33mcommit f03c4b3cea0524141e03f77a59a72988f5c7aca9[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Wed Oct 4 09:23:08 2023 +0400
+
+    all fixes
+
+[33mcommit 1d965228f4cec8d8d2e26b1e2e20d6a964b596a1[m
+Merge: b867c4f bd46418
+Author: faizan-al-ghurair <129278731+faizan-al-ghurair@users.noreply.github.com>
+Date:   Tue Oct 3 16:43:48 2023 +0400
+
+    Merge pull request #2 from faizan-al-ghurair/khadija
+    
+    Khadija
+
+[33mcommit bd46418ed58a44850bb8d47afcd4a18f487227d4[m[33m ([m[1;31mupstream/khadija[m[33m)[m
+Merge: a35680e b867c4f
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Tue Oct 3 15:58:30 2023 +0400
+
+    Merge branch 'main' of https://github.com/KhadijaAMeslem/exeed-uae into khadija
+
+[33mcommit a35680ea3a142f8627668a5b02c7fbe3103d5dcb[m
+Author: KhadijaAMeslem <khadija.meslem@al-ghurair.com>
+Date:   Tue Oct 3 15:47:35 2023 +0400
+
+    Footer and Newsletter
+
+[33mcommit b867c4f9aedc3a14223bf5a787dc6903397374ae[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Tue Oct 3 15:39:50 2023 +0400
+
+    home page bottom section
+
+[33mcommit 9c3f2999a5af6331293fd57884960e1e8b7cf485[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Mon Oct 2 17:03:59 2023 +0400
+
+    home banner
+
+[33mcommit 23198d8908ed530eaad8f0eafc62ffc03fc4b036[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Mon Oct 2 14:40:59 2023 +0400
+
+    page 1 2 section
+
+[33mcommit 825f48e85d4d2c59a16dc7ee1c438feddfcd2456[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Thu Sep 28 10:56:17 2023 +0400
+
+    about us sections
+
+[33mcommit 325df0b825e2ed7ae360ab3c3898202d3da322a8[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Thu Sep 28 10:47:53 2023 +0400
+
+    header complete
+
+[33mcommit ab3c028b42a3427360a14f45e51cd00e1333d90a[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Wed Sep 27 15:53:38 2023 +0400
+
+    initial changes
+
+[33mcommit 26528a213c8acb1be32d0e579f04c6e7b39a290c[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Wed Sep 27 15:51:25 2023 +0400
+
+    first commit
+
+[33mcommit 39ecf2d490f6eaa605d915759dffe3a8f46df2e3[m
+Author: faizan-al-ghurair <faizan.muzaffar@al-ghurair.com>
+Date:   Tue Sep 26 12:11:07 2023 +0400
+
+    Initialize project using Create React App
