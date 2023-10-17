@@ -664,59 +664,7 @@
   }
 }
 
-/* modal caoursel */
-
-/* .modal-carousel-placeholder {
-}
-
-.carousel-img-placeholder-modal {
-  height: 900px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-
-  @media (min-width: 1600px) and (max-width: 1800px) {
-    height: 800px;
-  }
-  @media (min-width: 1400px) and (max-width: 1600px) {
-    height: 700px;
-  }
-  @media (min-width: 1200px) and (max-width: 1400px) {
-    height: 600px;
-  }
-  @media (min-width: 1000px) and (max-width: 1200px) {
-    height: 500px;
-  }
-  @media (min-width: 580px) and (max-width: 1000px) {
-    height: 300px;
-  }
-  @media (min-width: 350px) and (max-width: 580px) {
-    height: 200px;
-  }
-  @media (min-width: 200px) and (max-width: 350px) {
-    height: 150px;
-  }
-}
-
-.carousel-container-modal {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-container-modal img {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  @media (min-width: 1600px) and (max-width: 1800px) {
-    max-height: 800px;
-  }
-} */
-
-/* New CAoursel of tags in modal */
+/* New Carousel of tags in modal */
 .modal-tags {
   gap: 3%;
   @media (min-width: 1400px) and (max-width: 1800px) {
@@ -797,6 +745,17 @@
   padding: 1rem 2rem;
 }
 
+.carousel-modal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: transform 0.2s ease; /* Slide animation duration and easing */
+}
+
+.carousel-modal li {
+  flex: 0 0 100%; /* Make each item take up the full width */
+}
 .tag-hidden {
   display: none;
 }
