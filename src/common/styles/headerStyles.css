@@ -1788,3 +1788,19 @@ background-size: cover; */
 .modal-contact-form {
   padding: 0;
 }
+
+
+/******************************** Service Calculator FIX    *******************/
+
+#resultY::before {
+  content: "AED ";
+}
+
+#resultY {
+  text-align: left;
+  padding-left: 12px;
+}
+
+#resultK::before {
+  content: "AED ";
+}
