@@ -2,17 +2,21 @@ import React from "react";
 import $ from "jquery";
 import searchIcon from "../../images/Search-icon.svg";
 
-const CarousalComponent = ({ id, active }) => {
+const CarousalComponent = ({ id, active }) => { 
   $(document).ready(function () {
     // Attach a click event handler to the title element
     $("#openStep2")
       .unbind("click")
       .click("click", function (e) {
-        $(".target-1").slideToggle();
-        $(".target-2").slideDown();
+        if($(".image-container").hasClass("selected")){
+          $(".target-1").slideToggle();
+          $(".target-2").slideDown();
+          $('.errorMessage').hide();          
+        }else{
+          $('.errorMessage').show();
+        }       
         e.stopPropagation();
-        // alert("hi")
-      });
+    });
 
     $("#openStep1")
       .unbind("click")
@@ -20,16 +24,24 @@ const CarousalComponent = ({ id, active }) => {
         $(".target-1").slideDown();
         $(".target-2").slideUp();
         e.stopPropagation();
-        // alert("hi")
       });
+    
 
+    // Next Button in Showroom Locations  
     $("#openStep3")
       .unbind("click")
-      .click("click", function (e) {
-        $(".target-3").slideDown();
-        $(".target-2").slideUp();
+      .click("click", function (e) {      
+
+        if($(".showroomAddr").hasClass("selected")){
+          $(".target-3").slideDown();
+          $(".target-2").slideUp();
+          $('.errorMessage2').hide();          
+        }else{
+          $('.errorMessage2').show();
+        }       
         e.stopPropagation();
-        // alert("hi")
+
+
       });
 
     $("#openStep2From3")
@@ -38,18 +50,17 @@ const CarousalComponent = ({ id, active }) => {
         $(".target-2").slideDown();
         $(".target-3").slideUp();
         e.stopPropagation();
-        // alert("hi")
       });
 
     const containers = $(".image-container");
     const select = $("#sel1");
 
     // Initialize at position 1
-    selectElement("region1");
+    //selectElement("region1");
 
-    containers.on("click", function () {
+    containers.on("click", function () { 
       selectElement($(this).attr("id"));
-      select.val($(this).attr("id"));
+      select.val($(this).attr("id"));       
     });
 
     select.change(function () {
@@ -66,8 +77,9 @@ const CarousalComponent = ({ id, active }) => {
     $(".showroomAddr")
       .unbind("click")
       .click("click", function (e) {
-        $(".showroomAddr").css("background", "none");
-        $(this).css("background-color", "#C28A6C");
+        $(".showroomAddr").css('background', 'none');
+        $(".showroomAddr").addClass('selected');
+        $(this).css('background-color', '#C28A6C');
         e.stopPropagation();
       });
   });
@@ -223,6 +235,8 @@ const CarousalComponent = ({ id, active }) => {
                 </section>
                 <div class="line-white mt-2 removelineDefaults"></div>
 
+                <div class="errorMessage2">PLEASE SELECT LOCATION FIRST</div>
+
                 <div class="elementor-widget-wrap mt-4 mb-3">
                   <div class="row w-85 pt-1 pb-5">
                     <div class="elementor-widget-wrap pt-3">
@@ -247,46 +261,29 @@ export const Section2 = () => {
       <section
         class="elementor-section section-spacing"
         data-id="83e2e07"
-        data-element_type="section"
-      >
+        data-element_type="section">
         <section class="flex flex-column justify-content-center align-items-center w-100 bg-color-black">
           <div id="wrapper" class="row flex w-85 pt-4 ">
             <p class="text-inverse">1 Vehicle Please Select The Vehicle</p>
             <div class="target-1 flex direction-column">
               <div class="flex">
-                {/*                      
-<div id="wrapper">
-  <div id="region1" class="image-container">
-    <img src="https://cdn.mos.cms.futurecdn.net/DEpYy8jSdvD9dkvVDSPNoD.jpg" alt=""/>
-  </div>
-  <div id="region2" class="image-container">
-    <img src="https://www.starwarsnewsnet.com/wp-content/uploads/2014/05/star-20wars-20video-20games-20hoth-20atat-20empire-20at-20war-201680x1050-20wallpaper_wallpaperswa.com_551.jpg" alt=""/>
-  </div>
-  <div id="region3" class="image-container">
-    <img src="https://www.austinchronicle.com/binary/e3fd/AllisonLefcort_CaptainPhasma_Add.jpg" alt=""/>
-  </div>
-  <div id="region4" class="image-container">
-    <img src="https://cdn.mos.cms.futurecdn.net/ew7hxbJKwPewaRmjYW79bi.jpg" alt=""/>
-  </div>
-  <div id="region5" class="image-container">
-    <img src="https://www.starwarsnewsnet.com/wp-content/uploads/2021/01/Empire-at-War_wall.jpg" alt=""/>
-  </div>
-</div>
-
- */}
+               
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
+                  <div class="w-100 h-100">
+                    <div id='txl'>
+                      <div id="region1" class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center">
+                        <img decoding="async" loading="lazy" src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-433-1.png"
+                          class="test-drive-images" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
                   <div class="w-100 h-100">
-                    <div class="">
-                      <div
-                        id="region1"
-                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center "
-                      >
-                        <img
-                          decoding="async"
-                          loading="lazy"
-                          src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-433-1.png"
-                          class="test-drive-images"
+                    <div  id='vx'>
+                      <div id="region2" class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center ">
+                        <img decoding="async" loading="lazy" src="https://exeed-uae.com/wp-content/uploads/2023/08/Group-432-1.png"  class="test-drive-images"  alt=""
                         />
                       </div>
                     </div>
@@ -295,40 +292,18 @@ export const Section2 = () => {
 
                 <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
                   <div class="w-100 h-100">
-                    <div class="">
-                      <div
-                        id="region2"
-                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center "
-                      >
-                        <img
-                          decoding="async"
-                          loading="lazy"
-                          src="https://exeed-uae.com/wp-content/uploads/2023/08/Group-432-1.png"
-                          class="test-drive-images"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
-                  <div class="w-100 h-100">
-                    <div class="">
-                      <div
-                        id="region3"
-                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center "
-                      >
-                        <img
-                          decoding="async"
-                          loading="lazy"
-                          src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-431-1.png"
-                          class="test-drive-images"
-                        />
+                    <div  id='lx'>
+                      <div id="region3"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center" >
+                        <img decoding="async" loading="lazy" src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-431-1.png" class="test-drive-images"  alt=""/>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <div class="errorMessage">PLEASE SELECT CAR FIRST</div>
+
               <div class="row w-85 pt-4 pb-3" data-element_type="column">
                 <div class="elementor-widget-wrap">
                   <span id="openStep2" class="p-3 linkButton">
@@ -429,7 +404,7 @@ export const Section2 = () => {
                                   class="h-100 d-flex location-search-img-container
                                 "
                                 >
-                                  <img src={searchIcon} class="w-10" />
+                                  <img src={searchIcon} class="w-10"  alt=""/>
                                 </div>
                                 <input
                                   type="search"
@@ -576,24 +551,16 @@ export const Section2 = () => {
                   </div>
                 </div>
                 <div class="form">
-                  <form
-                    class="section-spacing"
-                    id="needs-validation"
-                    novalidate
-                  >
-                    <div class="container-fluid form-background section-spacing pb-5">
+                
+                  <div class="container-fluid form-background section-spacing pb-5">
+                    <form class="" method="" name="Test Drive" action="">
                       <div class="row pb-5">
                         <div class="col-lg-6 col-sm-12 col-12">
                           <div class="form-group pb-3 px-2">
                             <label class="text-inverse" for="userFirstName">
                               First Name
                             </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="userFirstName"
-                              required
-                            />
+                            <input type="text" class="form-control" id="userFirstName" required/>
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 col-12">
@@ -601,12 +568,7 @@ export const Section2 = () => {
                             <label class="text-inverse " for="userLastName">
                               Last Name
                             </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="userLastName"
-                              required
-                            />
+                            <input type="text" class="form-control" id="userLastName" required/>
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 col-12">
@@ -614,14 +576,7 @@ export const Section2 = () => {
                             <label class="text-inverse" for="userPhone">
                               Phone (05xxxxxxxx)
                             </label>
-                            <input
-                              maxLength={10}
-                              class="form-control"
-                              id="userPhone"
-                              type="tel"
-                              pattern="^0\d{9}$"
-                              required
-                            />
+                            <input maxLength={10} class="form-control" id="userPhone" type="tel" pattern="^0\d{9}$" required/>
                           </div>
                         </div>
 
@@ -697,8 +652,9 @@ export const Section2 = () => {
                           </div>
                         </div>
                       </div>
+                      </form>
                     </div>
-                  </form>
+                 
                 </div>
               </div>
             </div>

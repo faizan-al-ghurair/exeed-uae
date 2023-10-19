@@ -1850,3 +1850,12 @@ information-svg-modal
 .form-control {
   background-color: #0c0b0b;
 }
+/******************************** Test Drive - CSS New    *******************/
+
+.errorMessage, .errorMessage2{
+  display: none;
+  color: #F50000;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+  font-weight: 400;
+}
