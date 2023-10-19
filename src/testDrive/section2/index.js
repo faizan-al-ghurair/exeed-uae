@@ -1,6 +1,6 @@
 import React from "react";
 import $ from "jquery";
-import searchIcon from "../../Search-icon.svg";
+import searchIcon from "../../images/Search-icon.svg";
 
 const CarousalComponent = ({ id, active }) => {
   $(document).ready(function () {
@@ -62,16 +62,14 @@ const CarousalComponent = ({ id, active }) => {
       others.removeClass("selected");
     }
 
-
-    //Click function for Showroom Location    
+    //Click function for Showroom Location
     $(".showroomAddr")
       .unbind("click")
       .click("click", function (e) {
-        $(".showroomAddr").css('background', 'none');
-        $(this).css('background-color', '#C28A6C');
+        $(".showroomAddr").css("background", "none");
+        $(this).css("background-color", "#C28A6C");
         e.stopPropagation();
-    });
-
+      });
   });
 
   return (
@@ -122,113 +120,119 @@ const CarousalComponent = ({ id, active }) => {
         <div class="">
           {(id === "SERVICECENTER" || id === "NEWCARS" || id === "ALL") && (
             <>
-            <div className="testdrive-showroom-holder">
-              <section class="container-fluid text-inverse showroomAddr" id="DubaiShowroomAddr">
-                <div class="row">
-                  <div class="col-lg-2 col-md-2 px-3 col-sm-12">
-                    <div class="">
-                      <p class="p-small">DUBAI </p>
+              <div className="testdrive-showroom-holder">
+                <section
+                  class="container-fluid text-inverse showroomAddr"
+                  id="DubaiShowroomAddr"
+                >
+                  <div class="row">
+                    <div class="col-lg-2 col-md-2 px-3 col-sm-12">
+                      <div class="">
+                        <p class="p-small">DUBAI </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="col-lg-3 col-md-3 px-3 col-sm-12">
-                    <div class="">
-                      <div class="elementor-widget-container">
+                    <div class="col-lg-3 col-md-3 px-3 col-sm-12">
+                      <div class="">
+                        <div class="elementor-widget-container">
+                          <p class="p-small">
+                            EXEED Car Showroom, Service Centre &amp; Spare
+                            Parts, Al Khabeesi, Al Ittihad Road
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 px-3 ">
+                      <div class="">
                         <p class="p-small">
-                          EXEED Car Showroom, Service Centre &amp; Spare Parts,
-                          Al Khabeesi, Al Ittihad Road
+                          Service center Reception &amp; Delivery Area
+                          <br />
+                          -Weekday Timings: 8am to 6Pm
+                          <br />
+                          -Saturday: 8am to 5Pm
+                          <br />
+                          <br />
+                          Exeed Showroom:
+                          <br />
+                          -Weekday Timings : 9am to 8Pm
+                          <br />
+                          -Saturday: 9am to 8Pm
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
+                      <div class="">
+                        <p class="p-small">
+                          exeed.uae@al-ghurair.com
+                          <br />
+                          +971 4 3995661
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
+                      <div class="">
+                        <p class="p-small">
+                          • Showroom
+                          <br />
+                          • Service Center
+                          <br />• Spare Parts
                         </p>
                       </div>
                     </div>
                   </div>
+                </section>
+                <div class="line-white mb-4 removelineDefaults"></div>
+                <section
+                  class="container-fluid text-inverse showroomAddr"
+                  id="AbudhabiShowroomAddr"
+                >
+                  <div class="row">
+                    <div class="col-lg-2 col-md-2 px-3 col-sm-12">
+                      <div class="">
+                        <p class="p-small">ABU DHABI</p>
+                      </div>
+                    </div>
 
-                  <div class="col-lg-3 col-md-3 col-sm-12 px-3 ">
-                    <div class="">
-                      <p class="p-small">
-                        Service center Reception &amp; Delivery Area
-                        <br />
-                        -Weekday Timings: 8am to 6Pm
-                        <br />
-                        -Saturday: 8am to 5Pm
-                        <br />
-                        <br />
-                        Exeed Showroom:
-                        <br />
-                        -Weekday Timings : 9am to 8Pm
-                        <br />
-                        -Saturday: 9am to 8Pm
-                      </p>
+                    <div class="col-lg-3 col-md-3 px-3 col-sm-12">
+                      <div class="">
+                        <div class="elementor-widget-container">
+                          <p class="p-small">Coming Soon</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-                    <div class="">
-                      <p class="p-small">
-                        exeed.uae@al-ghurair.com
-                        <br />
-                        +971 4 3995661
-                      </p>
-                    </div>
-                  </div>
 
-                  <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-                    <div class="">
-                      <p class="p-small">
-                        • Showroom
-                        <br />
-                        • Service Center
-                        <br />• Spare Parts
-                      </p>
+                    <div class="col-lg-3 col-md-3 col-sm-12 px-3 ">
+                      <div class="">
+                        <p class="p-small">Coming Soon</p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </section>
-              <div class="line-white mb-4 removelineDefaults"></div>
-              <section class="container-fluid text-inverse showroomAddr" id="AbudhabiShowroomAddr">
-                <div class="row">
-                  <div class="col-lg-2 col-md-2 px-3 col-sm-12">
-                    <div class="">
-                      <p class="p-small">ABU DHABI</p>
+                    <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
+                      <div class="">
+                        <p class="p-small">Coming Soon</p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="col-lg-3 col-md-3 px-3 col-sm-12">
-                    <div class="">
-                      <div class="elementor-widget-container">
+                    <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
+                      <div class="">
                         <p class="p-small">Coming Soon</p>
                       </div>
                     </div>
                   </div>
+                </section>
+                <div class="line-white mt-2 removelineDefaults"></div>
 
-                  <div class="col-lg-3 col-md-3 col-sm-12 px-3 ">
-                    <div class="">
-                      <p class="p-small">Coming Soon</p>
+                <div class="elementor-widget-wrap mt-4 mb-3">
+                  <div class="row w-85 pt-1 pb-5">
+                    <div class="elementor-widget-wrap pt-3">
+                      <span id="openStep3" class="p-3 linkButton">
+                        <span class="elementor-button-text">Next step</span>
+                      </span>
                     </div>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-                    <div class="">
-                      <p class="p-small">Coming Soon</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-                    <div class="">
-                      <p class="p-small">Coming Soon</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <div class="line-white mt-2 removelineDefaults"></div>
-
-              <div class="elementor-widget-wrap mt-4 mb-3">
-                <div class="row w-85 pt-1 pb-5">
-                  <div class="elementor-widget-wrap pt-3">
-                    <span id="openStep3" class="p-3 linkButton">
-                      <span class="elementor-button-text">Next step</span>
-                    </span>
                   </div>
                 </div>
               </div>
-            </div>  
             </>
           )}
         </div>
@@ -367,9 +371,7 @@ export const Section2 = () => {
                     >
                       <div class="elementor-widget-wrap pt-3">
                         <span id="openStep1" class="p-3 linkButton">
-                          <span class="elementor-button-text">
-                            PREVIOUS
-                          </span>
+                          <span class="elementor-button-text">PREVIOUS</span>
                         </span>
                       </div>
                     </div>
@@ -567,9 +569,7 @@ export const Section2 = () => {
                     <div class="">
                       <div class="elementor-widget-wrap pt-3">
                         <span id="openStep2From3" class="p-3 linkButton">
-                          <span class="elementor-button-text">
-                            PREVIOUS 
-                          </span>
+                          <span class="elementor-button-text">PREVIOUS</span>
                         </span>
                       </div>
                     </div>

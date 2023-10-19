@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../common/styles/headerStyles.css";
 import "../../../common/styles/commonStyle.css";
-import img1 from "../../../EXSSED-1.jpg";
+import img1 from "../../../images/EXSSED-1.jpg";
 
 export const Section6 = () => {
   return (

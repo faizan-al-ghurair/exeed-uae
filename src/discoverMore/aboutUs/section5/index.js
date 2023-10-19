@@ -1,8 +1,8 @@
 import React from "react";
 import "../../../common/styles/headerStyles.css";
 import "../../../common/styles/commonStyle.css";
-import img1 from "../../../TXL-Reality-images-1.png";
-import img2 from "../../../TXL-Reality-images-1-2.png";
+import img1 from "../../../images/TXL-Reality-images-1.png";
+import img2 from "../../../images/TXL-Reality-images-1-2.png";
 
 export const Section5 = () => {
   return (

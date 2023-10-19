@@ -3,11 +3,11 @@ import "../../common/styles/headerStyles.css";
 import "../../common/styles/commonStyle.css";
 import { Header } from "../../home/header";
 import { Footer } from "../../home/section6";
-import prom1 from "../../EXEED_Starting-Offer_Website-Banner_LX86.jpg";
-import prom2 from "../../EXEED_Starting-Offer_Website-Banner_RX.jpg";
-import prom3 from "../../EXEED_Starting-Offer_Website-Banner_TXL79.jpg";
-import prom4 from "../../EXEED_Starting-Offer_Website-Banner_VX83.jpg";
-import logo from "../../AGI-Logo-new.png";
+import prom1 from "../../images/EXEED_Starting-Offer_Website-Banner_LX86.jpg";
+import prom2 from "../../images/EXEED_Starting-Offer_Website-Banner_RX.jpg";
+import prom3 from "../../images/EXEED_Starting-Offer_Website-Banner_TXL79.jpg";
+import prom4 from "../../images/EXEED_Starting-Offer_Website-Banner_VX83.jpg";
+import logo from "../../images/AGI-Logo-new.png";
 import $ from "jquery";
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" />;

@@ -38,7 +38,7 @@
 .aboutus-sec1-banner {
   height: 45vh;
   width: 100%;
-  background-image: url("../../aboutusbanner.png");
+  background-image: url("../../images/aboutusbanner.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -157,7 +157,7 @@
 }
 
 .aboutus-sec3-img {
-  background-image: url("../../TXL-Reality-images-1-2-1.jpg");
+  background-image: url("../../images/TXL-Reality-images-1-2-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -225,11 +225,11 @@
 }
 
 .aboutus-sec5-tab-img1 {
-  background-image: url("../../TXL-Reality-images-1-2.png");
+  background-image: url("../../images/TXL-Reality-images-1-2.png");
 }
 
 .aboutus-sec5-tab-img2 {
-  background-image: url("../../TXL-Reality-images-1.png");
+  background-image: url("../../images/TXL-Reality-images-1.png");
 }
 
 .aboutus-sec5-tab {
@@ -457,7 +457,7 @@
 .contact-sec1-banner {
   height: 45vh;
   width: 100%;
-  background-image: url("../../xx.png");
+  background-image: url("../../images/xx.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -758,6 +758,127 @@
 }
 .tag-hidden {
   display: none;
+}
+
+/* Modal Banner */
+.absolute-details-car-banner {
+  position: absolute;
+  bottom: 0;
+  height: 35%;
+  flex-wrap: wrap !important;
+  @media (min-width: 500px) and (max-width: 767px) {
+    height: 90%;
+    justify-content: center;
+  }
+
+  @media (min-width: 300px) and (max-width: 500px) {
+    height: 100%;
+    justify-content: center;
+  }
+
+  @media (min-width: 10px) and (max-width: 300px) {
+    height: 100%;
+    justify-content: center;
+  }
+}
+
+.title-banner-modal {
+  /* margin-left: 2rem; */
+  margin-bottom: 1rem;
+  @media (min-width: 10px) and (max-width: 767px) {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.testing {
+  flex-wrap: wrap;
+  @media (min-width: 10px) and (max-width: 767px) {
+    align-items: center;
+  }
+
+  @media (min-width: 10px) and (max-width: 450px) {
+    display: none !important;
+  }
+}
+
+.information-svg-modal-banner {
+  height: 3rem;
+  @media screen and (-webkit-min-device-pixel-ratio: 1),
+    (min-width: 1800px) and (max-width: 3800px) {
+    height: 3rem;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    height: 2.7rem;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    height: 2.4rem;
+  }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    height: 2.4rem;
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    height: 2.3rem;
+  }
+  @media (min-width: 250px) and (max-width: 400px) {
+    height: 1.5rem;
+  }
+  @media (min-width: 10px) and (max-width: 250px) {
+    height: 1rem;
+  }
+}
+
+.modal-banner-spec-container {
+  @media (min-width: 10px) and (max-width: 1000px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.header-modal-specs {
+  @media (min-width: 10px) and (max-width: 767px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.absolute-details-car-banner-home {
+  position: absolute;
+  bottom: 0;
+  height: 15%;
+
+  @media (min-width: 767px) and (max-width: 1200px) {
+    height: 20%;
+    justify-content: center;
+  }
+  @media (min-width: 500px) and (max-width: 767px) {
+    height: 40%;
+    justify-content: center;
+  }
+
+  @media (min-width: 10px) and (max-width: 500px) {
+    height: 50%;
+    justify-content: center;
+  }
+}
+
+.home-carousel-specs-border {
+  border-left: 1px solid white;
+  @media (min-width: 10px) and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.specs-columns {
+  width: 25%;
+}
+
+.specs-columns-container {
+  flex-wrap: wrap;
+  @media (min-width: 10px) and (max-width: 767px) {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
 }
 
 /* End of Khadija's code */

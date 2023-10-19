@@ -1767,6 +1767,7 @@ background-size: cover; */
 .modal-specs-border:last-child {
   border-right: none;
 }
+information-svg-modal
 
 /* Contact button margin in home */
 .home-contact-button {
@@ -1788,7 +1789,6 @@ background-size: cover; */
 .modal-contact-form {
   padding: 0;
 }
-
 
 /******************************** Service Calculator FIX    *******************/
 

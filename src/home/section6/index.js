@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import linkedinLogo from "../../linkedin white.svg";
+import linkedinLogo from "../../images/linkedin white.svg";
 
 export const Footer = () => {
   return (

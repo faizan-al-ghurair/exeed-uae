@@ -3,9 +3,9 @@ import "../../../common/styles/headerStyles.css";
 import "../../../common/styles/commonStyle.css";
 import { Header } from "../../../home/header";
 import { Footer } from "../../../home/section6";
-import newsImage from "../../../newsimage.png";
-import banner from "../../../banner.webp";
-import banner2 from "../../../photo-5.png";
+import newsImage from "../../../images/newsimage.png";
+import banner from "../../../images/banner.webp";
+import banner2 from "../../../images/photo-5.png";
 import $ from "jquery";
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" />;
