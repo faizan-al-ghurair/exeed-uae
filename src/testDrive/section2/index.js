@@ -60,8 +60,7 @@ const CarousalComponent = ({ id, active }) => {
 
     containers.on("click", function () { 
       selectElement($(this).attr("id"));
-      select.val($(this).attr("id")); 
-      //let divValue = ($(this).parent().attr("id"));      
+      select.val($(this).attr("id"));       
     });
 
     select.change(function () {
@@ -235,6 +234,8 @@ const CarousalComponent = ({ id, active }) => {
                   </div>
                 </section>
                 <div class="line-white mt-2 removelineDefaults"></div>
+
+                <div class="errorMessage2">PLEASE SELECT LOCATION FIRST</div>
 
                 <div class="elementor-widget-wrap mt-4 mb-3">
                   <div class="row w-85 pt-1 pb-5">
@@ -550,12 +551,8 @@ export const Section2 = () => {
                   </div>
                 </div>
                 <div class="form">
-                  <form
-                    class="section-spacing"
-                    id="needs-validation"
-                    novalidate
-                  >
-                    <div class="container-fluid form-background section-spacing pb-5">
+                
+                  <div class="container-fluid form-background section-spacing pb-5">
                     <form class="" method="" name="Test Drive" action="">
                       <div class="row pb-5">
                         <div class="col-lg-6 col-sm-12 col-12">
@@ -563,7 +560,7 @@ export const Section2 = () => {
                             <label class="text-inverse" for="userFirstName">
                               First Name
                             </label>
-                            <input type="text" class="form-control" id="userFirstName" required></input>
+                            <input type="text" class="form-control" id="userFirstName" required/>
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 col-12">
@@ -571,12 +568,7 @@ export const Section2 = () => {
                             <label class="text-inverse " for="userLastName">
                               Last Name
                             </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="userLastName"
-                              required
-                            />
+                            <input type="text" class="form-control" id="userLastName" required/>
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 col-12">
@@ -584,14 +576,7 @@ export const Section2 = () => {
                             <label class="text-inverse" for="userPhone">
                               Phone (05xxxxxxxx)
                             </label>
-                            <input
-                              maxLength={10}
-                              class="form-control"
-                              id="userPhone"
-                              type="tel"
-                              pattern="^0\d{9}$"
-                              required
-                            />
+                            <input maxLength={10} class="form-control" id="userPhone" type="tel" pattern="^0\d{9}$" required/>
                           </div>
                         </div>
 
@@ -669,7 +654,7 @@ export const Section2 = () => {
                       </div>
                       </form>
                     </div>
-                  </form>
+                 
                 </div>
               </div>
             </div>
