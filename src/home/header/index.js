@@ -238,7 +238,7 @@ export const Header = () => {
                                         </span>
                                       </h3>
                                     </div>
-                                    <spans class="white-banner-text-value modal-specs-values"></spans>
+                                    <span class="white-banner-text-value modal-specs-values"></span>
                                   </div>
                                 </div>
                               </div>
@@ -617,7 +617,10 @@ export const Header = () => {
               </a>
               <ul class="dropdown-menu other-dropdown bg-app-black">
                 <li class="p-3">
-                  <a class="dropdown-item nav-font-color" href="#">
+                  <a
+                    class="dropdown-item nav-font-color"
+                    href="/financial-calculator"
+                  >
                     {"FINANCIAL CALCULATOR"}
                   </a>
                 </li>
@@ -668,6 +671,9 @@ export const Header = () => {
           </ul>
         </div>
       </nav>
+      <a class="whats-app" href="http://wa.me/+971545105685" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
     </>
   );
 };

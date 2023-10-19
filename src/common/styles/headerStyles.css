@@ -1804,3 +1804,49 @@ information-svg-modal
 #resultK::before {
   content: "AED ";
 }
+
+.whats-app {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 50px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  border-width: 11px solid white;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 15px;
+}
+
+.aboutus-sec1-banner-finincial-cal {
+  height: 45vh;
+  width: 100%;
+  background-image: url("https://exeed-uae.com/wp-content/uploads/2023/07/photo.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  @media (min-width: 10px) and (max-width: 1000px) {
+    height: 40vh;
+  }
+  @media (min-width: 550px) and (max-width: 768px) {
+    height: 30vh;
+  }
+  @media (min-width: 350px) and (max-width: 550px) {
+    height: 20vh;
+  }
+
+  @media (min-width: 10px) and (max-width: 350px) {
+    height: 15vh;
+  }
+}
+
+.form-control {
+  background-color: #0c0b0b;
+}

@@ -2,12 +2,12 @@ import React from "react";
 import "../../../common/styles/headerStyles.css";
 import "../../../common/styles/commonStyle.css";
 
-export const Section1 = () => {
+export const FinincialCalHead = () => {
   return (
     <>
       <section class="section-black row aboutus-header">
         <div class="col-md-12 col-sm-12 col-12">
-          <div class="aboutus-sec1-banner"></div>
+          <div class="aboutus-sec1-banner-finincial-cal"></div>
         </div>
         <div class="col-md-12 d-flex py-5">
           <div class="col-md-12 w-100 d-flex justify-content-center flex-column">
