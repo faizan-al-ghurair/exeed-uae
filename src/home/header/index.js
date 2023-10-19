@@ -1,8 +1,8 @@
 import React from "react";
 import "../../common/styles/headerStyles.css";
-import img2 from "../../banner-txl-resized.png";
-import img3 from "../../banner-lx-resized.png";
-import img4 from "../../banner-rx-resized.jpg";
+import img2 from "../../images/banner-txl-resized.png";
+import img3 from "../../images/banner-lx-resized.png";
+import img4 from "../../images/banner-rx-resized.jpg";
 import $ from "jquery";
 
 const CarTile = ({ img, url, id, name }) => {

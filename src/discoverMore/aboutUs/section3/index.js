@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../common/styles/headerStyles.css";
 import "../../../common/styles/commonStyle.css";
-import img1 from "../../../TXL-Reality-images-1-2-1.jpg";
+import img1 from "../../../images/TXL-Reality-images-1-2-1.jpg";
 
 export const Section3 = () => {
   return (

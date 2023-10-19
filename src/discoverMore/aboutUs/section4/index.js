@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../common/styles/headerStyles.css";
 import "../../../common/styles/commonStyle.css";
-import vidThumbOverlay from "../../../Video-play.jpg";
+import vidThumbOverlay from "../../../images/Video-play.jpg";
 import $ from "jquery";
 
 export const Section4 = () => {
