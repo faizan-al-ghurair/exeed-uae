@@ -765,6 +765,11 @@
   position: absolute;
   bottom: 0;
   height: 35%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #0c0b0b
+  ); /* Adjust gradient colors and opacity as needed */
   flex-wrap: wrap !important;
   @media (min-width: 500px) and (max-width: 767px) {
     height: 90%;
@@ -842,11 +847,17 @@
   }
 }
 
+/* Home Carousel Specs */
+
 .absolute-details-car-banner-home {
   position: absolute;
   bottom: 0;
   height: 15%;
-
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #0c0b0b
+  ); /* Adjust gradient colors and opacity as needed */
   @media (min-width: 767px) and (max-width: 1200px) {
     height: 20%;
     justify-content: center;
