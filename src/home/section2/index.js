@@ -72,13 +72,8 @@ export const Section2 = () => {
             >
               <div class="home-contact-button">
                 <div class="out-line-btn-large ">
-                  <a
-                    class="btn btn-outline-primary linkButton"
-                    href="https://exeed-uae.com/exeed-txl/"
-                  >
-                    <span class="p-3">
-                      <span class="elementor-button-text">CONTACT US</span>
-                    </span>
+                  <a class="btn btn-outline-primary linkButton" href="/contact">
+                    <span>CONTACT US</span>
                   </a>
                 </div>
               </div>

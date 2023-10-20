@@ -60,8 +60,8 @@ const CardsListItem = () => {
               class="btn btn-outline-primary linkButton"
               href="https://exeed-uae.com/exeed-txl/"
             >
-              <span class="p-3">
-                <span class="elementor-button-text">EXEED TXL EXPLORE</span>
+              <span class="">
+                <span class="elementor-button-text">Read more</span>
               </span>
             </a>
           </div>
@@ -100,13 +100,9 @@ export const Section5 = () => {
                       <div class="out-line-btn-large d-flex justify-content-end">
                         <a
                           class="btn btn-outline-primary linkButton"
-                          href="https://exeed-uae.com/exeed-txl/"
+                          href="/news-home"
                         >
-                          <span class="p-3">
-                            <span class="elementor-button-text">
-                              EXEED TXL EXPLORE
-                            </span>
-                          </span>
+                          <span class="">Discover more</span>
                         </a>
                       </div>
                     </div>
