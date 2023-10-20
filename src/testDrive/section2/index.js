@@ -255,12 +255,9 @@ const CarousalComponent = ({ id, active }) => {
 export const Section2 = () => {
   return (
     <>
-      <section
-        class="elementor-section section-spacing"
-        data-id="83e2e07"
-        data-element_type="section">
+      <section class="elementor-section  m-auto w-85">
         <section class="flex flex-column justify-content-center align-items-center w-100 bg-color-black">
-          <div id="wrapper" class="row flex w-85 pt-4 ">
+          <div id="wrapper" class="row flex w-85 pt-4 testdrive_section2">
             <p class="text-inverse">1 Vehicle Please Select The Vehicle</p>
             <div class="target-1 flex direction-column">
               <div class="flex">
@@ -313,11 +310,7 @@ export const Section2 = () => {
         </section>
       </section>
 
-      <section
-        class="elementor-section section-spacing mt-4 "
-        data-id="83e2e07"
-        data-element_type="section"
-      >
+      <section class="elementor-section m-auto w-85 mt-4 ">
         {/* 2rd section */}
         <section class="pb-1 flex flex-column justify-content-center align-items-center w-100 bg-color-black ">
           <div class="row flex w-85 pt-3 ">
@@ -518,7 +511,7 @@ export const Section2 = () => {
         {/* 3rd section */}
       </section>
       <section
-        class="elementor-section section-spacing mt-4  "
+        class="elementor-section m-auto w-85 mt-4  "
         data-id="83e2e07"
         data-element_type="section"
       >
