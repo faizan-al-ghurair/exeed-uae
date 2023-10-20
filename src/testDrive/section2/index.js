@@ -647,9 +647,20 @@ export const Section2 = () => {
                               <span class="p-3">SUBMIT</span>
                             </button>
                           </div>
+
+                          <div class="testdrive-message-success" role="alert">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <span>Your submission was successful.</span>
+                          </div>
+
                         </div>
                       </div>
+
+
+
                       </form>
+
+                      
                     </div>
                  
                 </div>

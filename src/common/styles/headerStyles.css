@@ -1869,4 +1869,14 @@ form.TestDriveForm {
   padding-left: 3.2%;
 }
 
+.testdrive-message-success {
+  margin-top: 20px;
+  color: green;
+  font-size: 1.2rem;
+}
+
+.testdrive-message-success span{
+  padding-left: 10px;
+}
+
 /******************************** Test Drive - END    *******************/
