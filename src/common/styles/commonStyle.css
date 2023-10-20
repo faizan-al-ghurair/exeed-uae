@@ -882,6 +882,9 @@
 
 .specs-columns {
   width: 25%;
+  @media (min-width: 10px) and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .specs-columns-container {

@@ -11,14 +11,14 @@ const HomeCarouselBanner = ({ img }) => {
         <div class="absolute-details-car-banner-home d-flex w-100 align-items-center justify-content-center">
           <div class="col-12 col-md-10">
             <div class=" col-md-12 col-12 d-flex justify-content-center align-items-center specs-columns-container">
-              <div class="specs-columns">
+              <div class="specs-columns d-flex justify-content-center">
                 <div class="out-line-btn-large ">
-                  <button
-                    type="submit"
+                  <a
+                    href="/exeed-vx"
                     class="btn btn-outline-primary linkButton"
                   >
-                    <span class="p-3">EXEED TXL EXPLORE</span>
-                  </button>
+                    EXEED TXL EXPLORE
+                  </a>
                 </div>
               </div>
               <div class="specs-columns home-carousel-specs-border">

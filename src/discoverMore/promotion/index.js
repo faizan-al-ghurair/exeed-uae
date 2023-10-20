@@ -136,16 +136,13 @@ export const Promotion = () => {
                   </p>
                   <div class="out-line-btn-large ">
                     <a class="btn btn-outline-primary linkButton" href="">
-                      <span class="p-3">
-                        <span>ENQUIRE NOW</span>
-                      </span>
+                      <span class="">ENQUIRE NOW</span>
                     </a>
                   </div>
 
                   <div class="promotion-terms-wrapper">
                     <div class="promotion-terms-title">
                       <p>WHAT DINING OPTION DO YOU HAVE?</p>
-                      {/* <button class="show-fact ">&#129139;</button> */}
                     </div>
                     <div class="promotion-terms-list term-hidden">
                       <ol>

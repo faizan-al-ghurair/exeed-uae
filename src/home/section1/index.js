@@ -45,11 +45,7 @@ export const Section1 = () => {
                       <div class="">
                         <div class="out-line-btn-large ">
                           <a class="btn btn-outline-primary linkButton" href="">
-                            <span class="p-3">
-                              <span class="elementor-button-span">
-                                DISCOVER MORE
-                              </span>
-                            </span>
+                            <span class="">DISCOVER MORE</span>
                           </a>
                         </div>
                       </div>
