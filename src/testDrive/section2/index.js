@@ -28,10 +28,9 @@ const CarousalComponent = ({ id, active }) => {
     
 
     // Next Button in Showroom Locations  
-    $("#openStep3")
+    $(".openStep3")
       .unbind("click")
-      .click("click", function (e) {      
-
+      .click("click", function (e) {  
         if($(".showroomAddr").hasClass("selected")){
           $(".target-3").slideDown();
           $(".target-2").slideUp();
@@ -40,9 +39,7 @@ const CarousalComponent = ({ id, active }) => {
           $('.errorMessage2').show();
         }       
         e.stopPropagation();
-
-
-      });
+    });
 
     $("#openStep2From3")
       .unbind("click")
@@ -50,13 +47,10 @@ const CarousalComponent = ({ id, active }) => {
         $(".target-2").slideDown();
         $(".target-3").slideUp();
         e.stopPropagation();
-      });
+    });
 
     const containers = $(".image-container");
     const select = $("#sel1");
-
-    // Initialize at position 1
-    //selectElement("region1");
 
     containers.on("click", function () { 
       selectElement($(this).attr("id"));
@@ -76,9 +70,10 @@ const CarousalComponent = ({ id, active }) => {
     //Click function for Showroom Location
     $(".showroomAddr")
       .unbind("click")
-      .click("click", function (e) {
+      .click("click", function (e) { 
+        $(".showroomAddr").removeClass("selected");
         $(".showroomAddr").css('background', 'none');
-        $(".showroomAddr").addClass('selected');
+        $(this).addClass("selected");
         $(this).css('background-color', '#C28A6C');
         e.stopPropagation();
       });
@@ -240,9 +235,11 @@ const CarousalComponent = ({ id, active }) => {
                 <div class="elementor-widget-wrap mt-4 mb-3">
                   <div class="row w-85 pt-1 pb-5">
                     <div class="elementor-widget-wrap pt-3">
-                      <span id="openStep3" class="p-3 linkButton">
-                        <span class="elementor-button-text">Next step</span>
-                      </span>
+                        <a href="#" class="" role="button">
+                          <span  class="p-3 linkButton openStep3">
+                          <span class="elementor-button-text">Next step</span>
+                          </span>
+                        </a>                      
                     </div>
                   </div>
                 </div>
@@ -268,7 +265,7 @@ export const Section2 = () => {
             <div class="target-1 flex direction-column">
               <div class="flex">
                
-                <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
+                <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
                   <div class="w-100 h-100">
                     <div id='txl'>
                       <div id="region1" class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center">
@@ -279,7 +276,7 @@ export const Section2 = () => {
                   </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
+                <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
                   <div class="w-100 h-100">
                     <div  id='vx'>
                       <div id="region2" class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center ">
@@ -290,7 +287,7 @@ export const Section2 = () => {
                   </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-12 pt-3 justify-content-center align-items-center flex">
+                <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
                   <div class="w-100 h-100">
                     <div  id='lx'>
                       <div id="region3"
@@ -553,7 +550,7 @@ export const Section2 = () => {
                 <div class="form">
                 
                   <div class="container-fluid form-background section-spacing pb-5">
-                    <form class="" method="" name="Test Drive" action="">
+                    <form class="TestDriveForm" method="" name="TestDrive" action="">
                       <div class="row pb-5">
                         <div class="col-lg-6 col-sm-12 col-12">
                           <div class="form-group pb-3 px-2">
