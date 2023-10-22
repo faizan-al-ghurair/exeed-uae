@@ -2,21 +2,21 @@ import React from "react";
 import $ from "jquery";
 import searchIcon from "../../images/Search-icon.svg";
 
-const CarousalComponent = ({ id, active }) => { 
+const CarousalComponent = ({ id, active }) => {
   $(document).ready(function () {
     // Attach a click event handler to the title element
     $("#openStep2")
       .unbind("click")
       .click("click", function (e) {
-        if($(".image-container").hasClass("selected")){
+        if ($(".image-container").hasClass("selected")) {
           $(".target-1").slideToggle();
           $(".target-2").slideDown();
-          $('.errorMessage').hide();          
-        }else{
-          $('.errorMessage').show();
-        }       
+          $(".errorMessage").hide();
+        } else {
+          $(".errorMessage").show();
+        }
         e.stopPropagation();
-    });
+      });
 
     $("#openStep1")
       .unbind("click")
@@ -25,21 +25,20 @@ const CarousalComponent = ({ id, active }) => {
         $(".target-2").slideUp();
         e.stopPropagation();
       });
-    
 
-    // Next Button in Showroom Locations  
+    // Next Button in Showroom Locations
     $(".openStep3")
       .unbind("click")
-      .click("click", function (e) {  
-        if($(".showroomAddr").hasClass("selected")){
+      .click("click", function (e) {
+        if ($(".showroomAddr").hasClass("selected")) {
           $(".target-3").slideDown();
           $(".target-2").slideUp();
-          $('.errorMessage2').hide();          
-        }else{
-          $('.errorMessage2').show();
-        }       
+          $(".errorMessage2").hide();
+        } else {
+          $(".errorMessage2").show();
+        }
         e.stopPropagation();
-    });
+      });
 
     $("#openStep2From3")
       .unbind("click")
@@ -47,14 +46,14 @@ const CarousalComponent = ({ id, active }) => {
         $(".target-2").slideDown();
         $(".target-3").slideUp();
         e.stopPropagation();
-    });
+      });
 
     const containers = $(".image-container");
     const select = $("#sel1");
 
-    containers.on("click", function () { 
+    containers.on("click", function () {
       selectElement($(this).attr("id"));
-      select.val($(this).attr("id"));       
+      select.val($(this).attr("id"));
     });
 
     select.change(function () {
@@ -70,53 +69,49 @@ const CarousalComponent = ({ id, active }) => {
     //Click function for Showroom Location
     $(".showroomAddr")
       .unbind("click")
-      .click("click", function (e) { 
+      .click("click", function (e) {
         $(".showroomAddr").removeClass("selected");
-        $(".showroomAddr").css('background', 'none');
+        $(".showroomAddr").css("background", "none");
         $(this).addClass("selected");
-        $(this).css('background-color', '#C28A6C');
+        $(this).css("background-color", "#C28A6C");
         e.stopPropagation();
       });
   });
 
   return (
     <div class={`tab-pane fade show ${active}`} id={id}>
-      <div class="line-white mb-4"></div>
-      <section class="container-fluid text-inverse border-left-white border-right-white border-top-white">
-        <div class="row pt-3">
-          <div class="col-lg-2 col-md-2 px-3 col-sm-12">
-            <div class="">
-              <p class="p-small">NAME</p>
+      <div class="line-white"></div>
+      <section class=" medium-none mt-4 container-fluid text-inverse border-left-white border-right-white border-top-white">
+        <div class=" d-flex justify-content-around align-item-center">
+          <div class="ph-3">
+            <p class="p-small">NAME</p>
+          </div>
+
+          <div class="">
+            <div class="ph-3">
+              <p class="p-small">ADDRESS</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-3 px-3 col-sm-12">
-            <div class="">
-              <div class="elementor-widget-container">
-                <p class="p-small">ADDRESS</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-sm-12 px-3 ">
-            <div class="">
+          <div class="">
+            <div class="ph-3">
               <p class="p-small">OPENING HOURS</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-            <div class="">
+          <div class=" ">
+            <div class="ph-3">
               <p class="p-small">PHONE / EMAIL</p>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-            <div class="">
+          <div class=" ">
+            <div class="ph-3">
               <p class="p-small">SERVICES</p>
             </div>
           </div>
         </div>
       </section>
-      <div class="line-white mb-3 removelineDefaults"></div>
+      <div class="line-white"></div>
 
       <section
         class="elementor-section"
@@ -197,32 +192,30 @@ const CarousalComponent = ({ id, active }) => {
                 >
                   <div class="row">
                     <div class="col-lg-2 col-md-2 px-3 col-sm-12">
-                      <div class="">
+                      <div class="ph-3">
                         <p class="p-small">ABU DHABI</p>
                       </div>
                     </div>
 
                     <div class="col-lg-3 col-md-3 px-3 col-sm-12">
-                      <div class="">
-                        <div class="elementor-widget-container">
-                          <p class="p-small">Coming Soon</p>
-                        </div>
+                      <div class="ph-3">
+                        <p class="p-small">Coming Soon</p>
                       </div>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-12 px-3 ">
-                      <div class="">
+                      <div class="ph-3">
                         <p class="p-small">Coming Soon</p>
                       </div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-                      <div class="">
+                      <div class="ph-3">
                         <p class="p-small">Coming Soon</p>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-                      <div class="">
+                      <div class="ph-3">
                         <p class="p-small">Coming Soon</p>
                       </div>
                     </div>
@@ -235,11 +228,11 @@ const CarousalComponent = ({ id, active }) => {
                 <div class="elementor-widget-wrap mt-4 mb-3">
                   <div class="row w-85 pt-1 pb-5">
                     <div class="elementor-widget-wrap pt-3">
-                        <a href="#" class="" role="button">
-                          <span  class="p-3 linkButton openStep3">
+                      <a href="#" class="" role="button">
+                        <span class="p-3 linkButton openStep3">
                           <span class="elementor-button-text">Next step</span>
-                          </span>
-                        </a>                      
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -261,23 +254,19 @@ export const Section2 = () => {
             <p class="text-inverse">1 Vehicle Please Select The Vehicle</p>
             <div class="target-1 flex direction-column">
               <div class="flex">
-               
                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
                   <div class="w-100 h-100">
-                    <div id='txl'>
-                      <div id="region1" class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center">
-                        <img decoding="async" loading="lazy" src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-433-1.png"
-                          class="test-drive-images" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
-                  <div class="w-100 h-100">
-                    <div  id='vx'>
-                      <div id="region2" class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center ">
-                        <img decoding="async" loading="lazy" src="https://exeed-uae.com/wp-content/uploads/2023/08/Group-432-1.png"  class="test-drive-images"  alt=""
+                    <div id="txl">
+                      <div
+                        id="region1"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center"
+                      >
+                        <img
+                          decoding="async"
+                          loading="lazy"
+                          src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-433-1.png"
+                          class="test-drive-images"
+                          alt=""
                         />
                       </div>
                     </div>
@@ -286,10 +275,37 @@ export const Section2 = () => {
 
                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
                   <div class="w-100 h-100">
-                    <div  id='lx'>
-                      <div id="region3"
-                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center" >
-                        <img decoding="async" loading="lazy" src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-431-1.png" class="test-drive-images"  alt=""/>
+                    <div id="vx">
+                      <div
+                        id="region2"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center "
+                      >
+                        <img
+                          decoding="async"
+                          loading="lazy"
+                          src="https://exeed-uae.com/wp-content/uploads/2023/08/Group-432-1.png"
+                          class="test-drive-images"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
+                  <div class="w-100 h-100">
+                    <div id="lx">
+                      <div
+                        id="region3"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center"
+                      >
+                        <img
+                          decoding="async"
+                          loading="lazy"
+                          src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-431-1.png"
+                          class="test-drive-images"
+                          alt=""
+                        />
                       </div>
                     </div>
                   </div>
@@ -394,7 +410,7 @@ export const Section2 = () => {
                                   class="h-100 d-flex location-search-img-container
                                 "
                                 >
-                                  <img src={searchIcon} class="w-10"  alt=""/>
+                                  <img src={searchIcon} class="w-10" alt="" />
                                 </div>
                                 <input
                                   type="search"
@@ -406,8 +422,8 @@ export const Section2 = () => {
                             </div>
                           </div>
                         </div>
-                        <ul class="nav nav-tabs mb-4 " id="myTab">
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-right-white pt-2 pb-2">
+                        <ul class="nav nav-tabs mb-4 row" id="myTab">
+                          <li class="nav-item col-lg-2 col-xs-12  text-align-center border-right-white pt-2 pb-2">
                             <a
                               href="#ALL"
                               class="nav-link-test-drive active"
@@ -416,7 +432,7 @@ export const Section2 = () => {
                               ALL
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-right-white pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center border-right-white pt-2 pb-2">
                             <a
                               href="#NEWCARS"
                               class="nav-link-test-drive"
@@ -425,7 +441,7 @@ export const Section2 = () => {
                               NEW CARS
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-right-white pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center border-right-white pt-2 pb-2">
                             <a
                               href="#USEDCARS"
                               class="nav-link-test-drive"
@@ -434,7 +450,7 @@ export const Section2 = () => {
                               USED CARS
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-right-white pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center border-right-white pt-2 pb-2">
                             <a
                               href="#AFTERSALES"
                               class="nav-link-test-drive"
@@ -443,7 +459,7 @@ export const Section2 = () => {
                               AFTER SALES
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center  pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center  pt-2 pb-2">
                             <a
                               href="#TRADEIN"
                               class="nav-link-test-drive"
@@ -452,7 +468,7 @@ export const Section2 = () => {
                               TRADE IN
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-left-white pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center border-left-white pt-2 pb-2">
                             <a
                               href="#SERVICECENTER"
                               class="nav-link-test-drive"
@@ -541,16 +557,25 @@ export const Section2 = () => {
                   </div>
                 </div>
                 <div class="form">
-                
                   <div class="container-fluid form-background section-spacing pb-5">
-                    <form class="TestDriveForm" method="" name="TestDrive" action="">
+                    <form
+                      class="TestDriveForm"
+                      method=""
+                      name="TestDrive"
+                      action=""
+                    >
                       <div class="row pb-5">
                         <div class="col-lg-6 col-sm-12 col-12">
                           <div class="form-group pb-3 px-2">
                             <label class="text-inverse" for="userFirstName">
                               First Name
                             </label>
-                            <input type="text" class="form-control" id="userFirstName" required/>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="userFirstName"
+                              required
+                            />
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 col-12">
@@ -558,7 +583,12 @@ export const Section2 = () => {
                             <label class="text-inverse " for="userLastName">
                               Last Name
                             </label>
-                            <input type="text" class="form-control" id="userLastName" required/>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="userLastName"
+                              required
+                            />
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 col-12">
@@ -566,7 +596,14 @@ export const Section2 = () => {
                             <label class="text-inverse" for="userPhone">
                               Phone (05xxxxxxxx)
                             </label>
-                            <input maxLength={10} class="form-control" id="userPhone" type="tel" pattern="^0\d{9}$" required/>
+                            <input
+                              maxLength={10}
+                              class="form-control"
+                              id="userPhone"
+                              type="tel"
+                              pattern="^0\d{9}$"
+                              required
+                            />
                           </div>
                         </div>
 
@@ -645,17 +682,10 @@ export const Section2 = () => {
                             <i class="fa fa-check" aria-hidden="true"></i>
                             <span>Your submission was successful.</span>
                           </div>
-
                         </div>
                       </div>
-
-
-
-                      </form>
-
-                      
-                    </div>
-                 
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
