@@ -407,6 +407,29 @@
     line-height: 0px;
     margin-top: 0px !important;
 }
-
-
 /*******************************  Financial / Lease Rate Page CSS - END ****************************/
+
+
+
+/************************************   FINANCIAL CALCULATOR - Start  **************************************/
+
+
+.input-hide{
+  display: none;
+}
+
+#price::before {
+  content: "AED ";
+}
+
+#price::after {
+  content: " / Month";
+}
+
+
+
+
+
+
+
+/************************************   FINANCIAL CALCULATOR - END  **************************************/

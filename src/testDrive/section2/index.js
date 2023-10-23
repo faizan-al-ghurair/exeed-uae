@@ -80,42 +80,38 @@ const CarousalComponent = ({ id, active }) => {
 
   return (
     <div class={`tab-pane fade show ${active}`} id={id}>
-      <div class="line-white mb-4"></div>
-      <section class="container-fluid text-inverse border-left-white border-right-white border-top-white">
-        <div class="row pt-3">
-          <div class="col-lg-2 col-md-2 px-3 col-sm-12">
-            <div class="">
-              <p class="p-small">NAME</p>
+      <div class="line-white"></div>
+      <section class=" medium-none mt-4 container-fluid text-inverse border-left-white border-right-white border-top-white">
+        <div class=" d-flex justify-content-around align-item-center">
+          <div class="ph-3">
+            <p class="p-small">NAME</p>
+          </div>
+
+          <div class="">
+            <div class="ph-3">
+              <p class="p-small">ADDRESS</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-3 px-3 col-sm-12">
-            <div class="">
-              <div class="elementor-widget-container">
-                <p class="p-small">ADDRESS</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-sm-12 px-3 ">
-            <div class="">
+          <div class="">
+            <div class="ph-3">
               <p class="p-small">OPENING HOURS</p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-            <div class="">
+          <div class=" ">
+            <div class="ph-3">
               <p class="p-small">PHONE / EMAIL</p>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-            <div class="">
+          <div class=" ">
+            <div class="ph-3">
               <p class="p-small">SERVICES</p>
             </div>
           </div>
         </div>
       </section>
-      <div class="line-white mb-3 removelineDefaults"></div>
+      <div class="line-white"></div>
 
       <section
         class="elementor-section"
@@ -196,32 +192,30 @@ const CarousalComponent = ({ id, active }) => {
                 >
                   <div class="row">
                     <div class="col-lg-2 col-md-2 px-3 col-sm-12">
-                      <div class="">
+                      <div class="ph-3">
                         <p class="p-small">ABU DHABI</p>
                       </div>
                     </div>
 
                     <div class="col-lg-3 col-md-3 px-3 col-sm-12">
-                      <div class="">
-                        <div class="elementor-widget-container">
-                          <p class="p-small">Coming Soon</p>
-                        </div>
+                      <div class="ph-3">
+                        <p class="p-small">Coming Soon</p>
                       </div>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-12 px-3 ">
-                      <div class="">
+                      <div class="ph-3">
                         <p class="p-small">Coming Soon</p>
                       </div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-                      <div class="">
+                      <div class="ph-3">
                         <p class="p-small">Coming Soon</p>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2 col-sm-12 px-3 ">
-                      <div class="">
+                      <div class="ph-3">
                         <p class="p-small">Coming Soon</p>
                       </div>
                     </div>
@@ -428,8 +422,8 @@ export const Section2 = () => {
                             </div>
                           </div>
                         </div>
-                        <ul class="nav nav-tabs mb-4 " id="myTab">
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-right-white pt-2 pb-2">
+                        <ul class="nav nav-tabs mb-4 row" id="myTab">
+                          <li class="nav-item col-lg-2 col-xs-12  text-align-center border-right-white pt-2 pb-2">
                             <a
                               href="#ALL"
                               class="nav-link-test-drive active"
@@ -438,7 +432,7 @@ export const Section2 = () => {
                               ALL
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-right-white pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center border-right-white pt-2 pb-2">
                             <a
                               href="#NEWCARS"
                               class="nav-link-test-drive"
@@ -447,7 +441,7 @@ export const Section2 = () => {
                               NEW CARS
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-right-white pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center border-right-white pt-2 pb-2">
                             <a
                               href="#USEDCARS"
                               class="nav-link-test-drive"
@@ -456,7 +450,7 @@ export const Section2 = () => {
                               USED CARS
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-right-white pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center border-right-white pt-2 pb-2">
                             <a
                               href="#AFTERSALES"
                               class="nav-link-test-drive"
@@ -465,7 +459,7 @@ export const Section2 = () => {
                               AFTER SALES
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center  pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center  pt-2 pb-2">
                             <a
                               href="#TRADEIN"
                               class="nav-link-test-drive"
@@ -474,7 +468,7 @@ export const Section2 = () => {
                               TRADE IN
                             </a>
                           </li>
-                          <li class="nav-item px-1 col-lg-2 text-align-center border-left-white pt-2 pb-2">
+                          <li class="nav-item px-1 col-lg-2 col-xs-12 text-align-center border-left-white pt-2 pb-2">
                             <a
                               href="#SERVICECENTER"
                               class="nav-link-test-drive"

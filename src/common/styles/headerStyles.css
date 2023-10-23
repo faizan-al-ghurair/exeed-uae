@@ -1584,26 +1584,52 @@ background-size: cover; */
   height: 1px;
   background-color: #c0c0c0;
 }
+
+.ph-3 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .p-small {
   color: #c0c0c0;
-  @media screen and (-webkit-min-device-pixel-ratio: 1),
-    (min-width: 1800px) and (max-width: 3800px) {
-    font-size: 0.8em;
+  font-family: "Calibri", Sans-serif;
+  font-weight: 400;
+  font-size: 1vw !important;
+  margin-bottom: 0px !important;
+  &:hover {
+    color: #c28a6c;
+  }
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    font-size: 1vw !important;
   }
   @media (min-width: 1500px) and (max-width: 1800px) {
-    font-size: 0.7;
+    font-size: 1vw !important;
   }
   @media (min-width: 1200px) and (max-width: 1500px) {
-    font-size: 0.8em;
+    font-size: 1vw !important;
   }
-  @media (min-width: 800px) and (max-width: 1200px) {
-    font-size: 0.7em;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    font-size: 1vw !important;
   }
-  @media (min-width: 400px) and (max-width: 800px) {
-    font-size: 0.7em;
+  @media (min-width: 90px) and (max-width: 992px) {
+    font-size: 0.8em !important;
   }
-  @media (min-width: 40px) and (max-width: 400px) {
-    font-size: 0.7em;
+}
+.medium-none {
+  @media (min-width: 1800px) and (max-width: 3800px) {
+    display: block;
+  }
+  @media (min-width: 1500px) and (max-width: 1800px) {
+    display: block;
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    display: block;
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    display: none;
+  }
+  @media (min-width: 90px) and (max-width: 992px) {
+    display: none;
   }
 }
 
@@ -1611,20 +1637,23 @@ background-size: cover; */
   color: #c0c0c0;
   font-family: "Calibri", Sans-serif;
   font-weight: 400;
-  font-size: 1em !important;
+  font-size: 1vw !important;
   &:hover {
     color: #c28a6c;
   }
   @media (min-width: 1800px) and (max-width: 3800px) {
-    font-size: 1em !important;
+    font-size: 1vw !important;
   }
   @media (min-width: 1500px) and (max-width: 1800px) {
-    font-size: 1em !important;
+    font-size: 1vw !important;
   }
   @media (min-width: 1200px) and (max-width: 1500px) {
-    font-size: 0.9em !important;
+    font-size: 1vw !important;
   }
-  @media (min-width: 10px) and (max-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1200px) {
+    font-size: 1vw !important;
+  }
+  @media (min-width: 90px) and (max-width: 992px) {
     font-size: 0.8em !important;
   }
 }
