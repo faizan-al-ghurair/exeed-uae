@@ -24,37 +24,9 @@ export const Section1 = () => {
 
     $("#carSelection").hide();
 
-    carModel.addEventListener("change", () => {
-      selectedCar = carModel.value;
+   
 
-      if (selectedCar.substring(0, 2) == "LX") {
-        lxCTA.classList.add("selectedOption");
-        txlCTA.style.opacity = 0;
-        txlCTA.classList.remove("selectedOption");
-        vxCTA.style.opacity = 0;
-        vxCTA.classList.remove("selectedOption");
-      }
-
-      if (selectedCar.substring(0, 2) == "TX") {
-        lxCTA.style.opacity = 0;
-        lxCTA.classList.remove("selectedOption");
-        txlCTA.classList.add("selectedOption");
-        vxCTA.style.opacity = 0;
-        vxCTA.classList.remove("selectedOption");
-      }
-
-      if (selectedCar.substring(0, 2) == "VX") {
-        lxCTA.style.opacity = 0;
-        lxCTA.classList.remove("selectedOption");
-        txlCTA.style.opacity = 0;
-        txlCTA.classList.remove("selectedOption");
-        vxCTA.classList.add("selectedOption");
-      }
-    });
-
-    month.addEventListener("change", () => {
-      selectedMonth = parseInt(month.value);
-    });
+    
 
     const suvModels = {
       LXC: {
@@ -159,146 +131,38 @@ export const Section1 = () => {
                   >
                     <div class="col-lg-6 col-sm-12 col-12 px-1">
                       <label class="financialCalculator">Car</label>
-
-                      <select id="financial-LeaseRate-carModel">
-                        <option value="no" id="defaultOption">
-                          Car
-                        </option>
-                        <option
-                          value="LXC"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed LX 1.5T Comfort 5-Str SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="LXL"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed LX 1.5T Luxury 5-Str SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="LXF"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed LX 1.6T Flagship 5-Str AWD SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="TXLC"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"
-                        >
-                          {" "}
-                          Exeed TXL 1.6T Comfort 5-Str SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="TXLL"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"
-                        >
-                          {" "}
-                          Exeed TXL 2.0T Luxury 5-Str SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="TXLF"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"
-                        >
-                          {" "}
-                          Exeed TXL 2.0T Flagship 5-Str AWD SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="VXL"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed VX 2.0L Luxury 7-Str AWD SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="VXF"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed VX 2.0L Flagship 7-Str AWD SUV 2024 YM
-                        </option>
-                        <option
-                          value="VXB"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed VX 2.0L Black Gold 7-Str AWD SUV 2024YM
-                        </option>
-                      </select>
+                        <select id="carModel">
+                          <option value="" id="defaultOption" disabled="" selected="">Car</option>
+                          <option value="vx" id="vxOption">VX</option>
+                          <option value="txl" id="txlOption">TXL</option>
+                          <option value="lx" id="lxOption">LX</option>
+                        </select>
                     </div>
-                    <div class="col-lg-6 col-sm-12 col-12 px-1">
-                      <label class="financialCalculator">Model</label>
-                      <select id="financial-LeaseRate-carModel">
-                        <option value="no" id="defaultOption">
-                          Model
-                        </option>
-                        <option
-                          value="LXC"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed LX 1.5T Comfort 5-Str SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="LXL"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed LX 1.5T Luxury 5-Str SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="LXF"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed LX 1.6T Flagship 5-Str AWD SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="TXLC"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"
-                        >
-                          {" "}
-                          Exeed TXL 1.6T Comfort 5-Str SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="TXLL"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"
-                        >
-                          {" "}
-                          Exeed TXL 2.0T Luxury 5-Str SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="TXLF"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"
-                        >
-                          {" "}
-                          Exeed TXL 2.0T Flagship 5-Str AWD SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="VXL"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed VX 2.0L Luxury 7-Str AWD SUV 2024YM{" "}
-                        </option>
-                        <option
-                          value="VXF"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed VX 2.0L Flagship 7-Str AWD SUV 2024 YM
-                        </option>
-                        <option
-                          value="VXB"
-                          data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"
-                        >
-                          {" "}
-                          Exeed VX 2.0L Black Gold 7-Str AWD SUV 2024YM
-                        </option>
-                      </select>
+                    <div class="col-lg-6 col-sm-12 col-12 px-1">                     
+                          
+                      <div class="elementor-widget-container">
+                          <label class="financialCalculator">Model</label>
+                          <input type="text" id="model" disabled="" placeholder="Choose model"  class=""/>
+
+                          <select id="modelVX" class="input-hide">
+                            <option value="129999" selected="">2.0TGDI Luxury (2024)</option>
+                            <option value="144999">2.0TGDI Flagship (2024)</option>
+                            <option value="149999">2.0TGDI Blackgold (2024)</option>
+                          </select>
+
+                          <select id="modelTXL"  class="input-hide">
+                            <option value="104999" selected="">1.6TGDI Comfort (2024)</option>
+                            <option value="124999">2.0TGDI Luxury (2024)</option>
+                            <option value="134999">2.0TGDI Flagship (2024)</option>
+                          </select>
+
+                          <select id="modelLX"  class="input-hide">
+                            <option value="84999" selected="">1.5TCL Comfort (2024)</option>
+                            <option value="89999">1.5TCL Luxury (2024)</option>
+                            <option value="104999">1.6TGDI Flagship (2024)</option>
+                          </select>		
+                       </div>
+
                     </div>
 
                     <div class="col-lg-12 col-sm-12 col-12 pt-3 px-1">
@@ -306,13 +170,7 @@ export const Section1 = () => {
                         <label class="text-inverse" for="userPhone">
                           Total Amount (AED)
                         </label>
-                        <input
-                          maxLength={10}
-                          placeholder={"Total amount"}
-                          class="form-control"
-                          id="TotalAmount"
-                          required
-                        />
+                         <input type="text" id="total" disabled placeholder="Total Amount"/>
                       </div>
                     </div>
 
@@ -321,13 +179,7 @@ export const Section1 = () => {
                         <label class="text-inverse" for="userPhone">
                           Down Payment 20%
                         </label>
-                        <input
-                          maxLength={10}
-                          class="form-control"
-                          id="DownPayment"
-                          required
-                          placeholder={"Total amount"}
-                        />
+                        <input type="text" id="downPayment" disabled placeholder="Total Amount"/>
                       </div>
                     </div>
 
@@ -336,26 +188,11 @@ export const Section1 = () => {
                         <label class="text-inverse" for="userPhone">
                           Amount Finance 80%
                         </label>
-                        <input
-                          maxLength={10}
-                          class="form-control"
-                          id="AmountFinance"
-                          required
-                          placeholder={"Total amount"}
-                        />
+                        <input type="text" id="amountFinance" disabled placeholder="Total Amount"/>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="elementor-element elementor-element-5a34e8d4 elementor-widget__width-initial elementor-widget elementor-widget-html"
-                    data-id="5a34e8d4"
-                    data-element_type="widget"
-                    data-widget_type="html.default"
-                  >
-                    <div class="elementor-widget-container">
-                      <label id="carSelection">Please Select Car</label>
-                    </div>
-                  </div>
+                  
                   <div
                     class="elementor-element elementor-element-6903c9a2 elementor-widget elementor-widget-html"
                     data-id="6903c9a2"
@@ -364,11 +201,12 @@ export const Section1 = () => {
                   >
                     <div class="elementor-widget-container">
                       <label class="financialCalculator">Month</label>
-                      <select id="financial-LeaseRate-months">
-                        <option value="12">12</option>
+                      <select id="months">
+                        <option value="12" selected="">12</option>
                         <option value="24">24</option>
                         <option value="36">36</option>
                         <option value="48">48</option>
+                        <option value="60">60</option>
                       </select>
                     </div>
                   </div>
@@ -381,7 +219,7 @@ export const Section1 = () => {
                     </div>
                     <div class="calc-price-parent">
                       <div class="elementor-widget-container">
-                        <div id="finacialLease-price"></div>{" "}
+                        <div id="price"></div>
                       </div>
                     </div>
                   </div>
