@@ -11,19 +11,7 @@
     margin-top: 0;
   }
 }
-@media all and (min-width: 992px) {
-  .navbar .nav-item .dropdown-menu {
-    display: none;
-  }
-  .navbar .nav-item:hover .nav-link {
-  }
-  .navbar .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-  .navbar .nav-item .dropdown-menu {
-    margin-top: 0;
-  }
-}
+
 .bg-primary {
   background-color: #0c0b0b !important;
 }
@@ -107,11 +95,19 @@
   background-color: transparent;
   padding-left: 1vw;
   padding-right: 1vw;
+
+  @media (min-width: 10px) and (max-width: 992px) {
+    padding: 0;
+  }
 }
 
 .cars-header-modal {
   background-color: #0c0b0b;
   padding-top: 1vw;
+
+  @media (min-width: 10px) and (max-width: 991px) {
+    display: none;
+  }
 }
 
 .attachment-large {
@@ -493,6 +489,10 @@ border-color: #C1886D7A; */
   border-style: solid;
   border-width: 0px 0px 0.2px 0px;
   border-color: #c1886d7a;
+
+  @media (min-width: 40px) and (max-width: 992px) {
+    padding: 1.8rem 0;
+  }
 }
 .nav-link {
   text-transform: uppercase;
@@ -586,10 +586,6 @@ body {
   min-height: 100px;
 }
 
-.navbar-toggler {
-  display: flex;
-  justify-content: flex-end;
-}
 .padding-right-sm {
   padding-right: 1em;
 }
@@ -701,6 +697,11 @@ body {
   background-color: transparent;
   padding-left: 1vw;
   padding-right: 1vw;
+
+  @media (min-width: 10px) and (max-width: 992px) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .nav-font-color {
@@ -709,11 +710,6 @@ body {
     background-color: #0c0b0b !important;
     color: #707070;
   }
-}
-
-.cars-header-modal {
-  background-color: #0c0b0b;
-  padding-top: 1vw;
 }
 
 .attachment-large {
@@ -1944,3 +1940,49 @@ form.TestDriveForm {
 }
 
 /******************************** Test Drive - END    *******************/
+
+/* Mobile Models Nav */
+.header-nav-link {
+  @media (min-width: 10px) and (max-width: 991px) {
+    font-size: 2rem;
+  }
+}
+
+.header-nav-link a {
+  @media (min-width: 10px) and (max-width: 991px) {
+    padding: 1rem 2rem;
+  }
+}
+.header-nav-link a:focus {
+  @media (min-width: 10px) and (max-width: 991px) {
+    background-color: #c28a6c;
+  }
+}
+
+.cars-header-modal-mobile {
+  display: none;
+  @media (min-width: 10px) and (max-width: 991px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.other-dropdown li {
+  @media (min-width: 10px) and (max-width: 992px) {
+    padding: 0 0.5rem !important;
+    font-size: 1.5rem;
+  }
+}
+
+.navbar-close {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.show-navbar-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* End of Khadija Code */
