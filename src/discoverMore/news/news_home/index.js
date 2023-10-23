@@ -8,65 +8,33 @@ import banner from "../../../images/banner.webp";
 import banner2 from "../../../images/photo-5.png";
 import $ from "jquery";
 
+// khadija
 export const NewsHome = () => {
   const Cards = ({ img }) => {
     return (
-      <div
-        class="bg-color-black p-4"
-        data-id="c2856af"
-        data-element_type="column"
-      >
-        <div class="">
-          <div
-            class=""
-            data-id="01c9ab6"
-            data-element_type="widget"
-            data-widget_type="text-editor.default"
+      <div class="card-cont">
+        <div class="mb-2 card-img">
+          <img
+            decoding="async"
+            loading="lazy"
+            src={img}
+            class="attachment-full size-full wp-image-3094"
+          />{" "}
+        </div>
+        <div class="text-inverse text-disappear">
+          <p class="ptest">
+            Innovative showcase to two additional pop-up events
+          </p>{" "}
+        </div>
+
+        <div class="out-line-btn-large ">
+          <a
+            href="/newsdetails"
+            type="submit"
+            class="btn btn-outline-primary linkButton"
           >
-            <div class="text-inverse">
-              <p>Innovative showcase to two additional pop-up events</p>{" "}
-            </div>
-          </div>
-          <div
-            class=""
-            data-id="9c6586b"
-            data-element_type="widget"
-            data-widget_type="image.default"
-          >
-            <div class="">
-              <img
-                decoding="async"
-                loading="lazy"
-                src={img}
-                class="attachment-full size-full wp-image-3094"
-              />{" "}
-            </div>
-          </div>
-          <div
-            class=""
-            data-id="9986020"
-            data-element_type="widget"
-            data-widget_type="spacer.default"
-          >
-            <div class="">
-              <div class="elementor-spacer">
-                <div class=""></div>
-              </div>
-            </div>
-          </div>
-          <div class="" data-id="f7c2d9e" data-element_type="widget">
-            <div class="pt-4">
-              <div class="out-line-btn-large ">
-                <a
-                  href="/newsdetails"
-                  type="submit"
-                  class="btn btn-outline-primary linkButton"
-                >
-                  <span class="p-3">READ MORE</span>
-                </a>
-              </div>
-            </div>
-          </div>
+            <span class="">READ MORE</span>
+          </a>
         </div>
       </div>
     );

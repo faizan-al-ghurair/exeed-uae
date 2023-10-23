@@ -2,71 +2,67 @@ import React from "react";
 import $ from "jquery";
 import { Footer } from "../../../home/section6";
 
-
 export const Section1 = () => {
+  $(document).ready(function () {
+    const priceTable = {
+      lx5: {
+        1: 835,
+        2: 1888,
+        3: 2677,
+        4: 4357,
+        5: 6383,
+        6: 6955,
+        7: 7530,
+      },
+      lx6: {
+        1: 976,
+        2: 2147,
+        3: 3069,
+        4: 4765,
+        5: 6701,
+        6: 7363,
+        7: 7979,
+      },
+      txl6: {
+        1: 976,
+        2: 2147,
+        3: 3069,
+        4: 4765,
+        5: 6701,
+        6: 7363,
+        7: 7979,
+      },
+      txl2: {
+        1: 1023,
+        2: 2189,
+        3: 3156,
+        4: 5004,
+        5: 7506,
+        6: 8116,
+        7: 8727,
+      },
+      vx: {
+        1: 1066,
+        2: 2240,
+        3: 3246,
+        4: 5098,
+        5: 7708,
+        6: 8315,
+        7: 8954,
+      },
+    };
 
+    //Code for SERVICE CONTRACT BY YEAR -- Calculation
+    $("#servicecontractcalcu").on("click", function () {
+      const carModel = document.getElementById("carModelY").value;
+      const year = document.getElementById("yearY").value;
+      const price = priceTable[carModel][year];
+      const resultElement = document.getElementById("resultY");
+      resultElement.innerHTML = price;
+    });
 
-  $(document).ready(function () {  
-      const priceTable = {
-            lx5: {
-              1: 835,
-              2: 1888,
-              3: 2677,
-              4: 4357,
-              5: 6383,
-              6: 6955,
-              7: 7530,
-            },
-            lx6: {
-              1: 976,
-              2: 2147,
-              3: 3069,
-              4: 4765,
-              5: 6701,
-              6: 7363,
-              7: 7979,
-            },
-            txl6: {
-              1: 976,
-              2: 2147,
-              3: 3069,
-              4: 4765,
-              5: 6701,
-              6: 7363,
-              7: 7979,
-            },
-            txl2: {
-              1: 1023,
-              2: 2189,
-              3: 3156,
-              4: 5004,
-              5: 7506,
-              6: 8116,
-              7: 8727,
-            },
-            vx: {
-              1: 1066,
-              2: 2240,
-              3: 3246,
-              4: 5098,
-              5: 7708,
-              6: 8315,
-              7: 8954,
-            }        
-      };    
-    
-      //Code for SERVICE CONTRACT BY YEAR -- Calculation
-      $("#servicecontractcalcu").on('click',function() {  
-          const carModel = document.getElementById("carModelY").value;
-          const year = document.getElementById("yearY").value;        
-          const price = priceTable[carModel][year];          
-          const resultElement = document.getElementById("resultY");        
-          resultElement.innerHTML = price;    
-      });      
-
-
-     //Code for SERVICE CONTRACT BY KILOMETER -- Calculation
-     const priceTableK = {
+    //Code for SERVICE CONTRACT BY KILOMETER -- Calculation
+    const priceTableK = {
       lx5: {
         10000: 359.9,
         20000: 567.5,
@@ -154,23 +150,17 @@ export const Section1 = () => {
         180000: 758.9,
         190000: 425.3,
         200000: 1220.3,
-      }
-      
-    
-      };   
-     
+      },
+    };
 
-      $("#servicecontractcalcu-kilometer").on('click',function() { 
-          const carModel = document.getElementById("carModelK").value;
-          const year = document.getElementById("yearK").value;          
-          const price = priceTableK[carModel][year];            
-          const resultElement = document.getElementById("resultK");          
-          resultElement.innerHTML = price;
-      });
-
-      
+    $("#servicecontractcalcu-kilometer").on("click", function () {
+      const carModel = document.getElementById("carModelK").value;
+      const year = document.getElementById("yearK").value;
+      const price = priceTableK[carModel][year];
+      const resultElement = document.getElementById("resultK");
+      resultElement.innerHTML = price;
+    });
   });
-
 
   return (
     <>
@@ -256,18 +246,20 @@ export const Section1 = () => {
                           class=""
                           data-id="0f11065"
                           data-element_type="widget"
-                          data-widget_type="html.default">
-                        
-                            <button class="btn btn-outline-primary linkButton"
-                             onclick="calculatePrice()" id="servicecontractcalcu">CALCULATE
-                             </button>
-                           
-                          
+                          data-widget_type="html.default"
+                        >
+                          <button
+                            class="btn btn-outline-primary linkButton"
+                            onclick="calculatePrice()"
+                            id="servicecontractcalcu"
+                          >
+                            CALCULATE
+                          </button>
                         </div>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 pt-4">
                         <span class="p-3 text-align-center">
-                        <div class="text-inverse" id="resultY"></div>                          
+                          <div class="text-inverse" id="resultY"></div>
                         </span>
                       </div>
                     </div>
@@ -312,26 +304,28 @@ export const Section1 = () => {
                       <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column  px-2">
                         <label class="text-inverse ">Year</label>
                         <select class="form-control" id="yearK">
-                            <option value="10000" selected>10000</option>
-                            <option value="20000">20000</option>
-                            <option value="30000">30000</option>
-                            <option value="40000">40000</option>
-                            <option value="50000">50000</option>
-                            <option value="60000">60000</option>
-                            <option value="70000">70000</option>
-                            <option value="80000">80000</option>
-                            <option value="90000">90000</option>
-                            <option value="100000">100000</option>
-                            <option value="110000">110000</option>
-                            <option value="120000">120000</option>
-                            <option value="130000">130000</option>
-                            <option value="140000">140000</option>
-                            <option value="150000">150000</option>
-                            <option value="160000">160000</option>
-                            <option value="170000">170000</option>
-                            <option value="180000">180000</option>
-                            <option value="190000">190000</option>
-                            <option value="200000">200000</option>
+                          <option value="10000" selected>
+                            10000
+                          </option>
+                          <option value="20000">20000</option>
+                          <option value="30000">30000</option>
+                          <option value="40000">40000</option>
+                          <option value="50000">50000</option>
+                          <option value="60000">60000</option>
+                          <option value="70000">70000</option>
+                          <option value="80000">80000</option>
+                          <option value="90000">90000</option>
+                          <option value="100000">100000</option>
+                          <option value="110000">110000</option>
+                          <option value="120000">120000</option>
+                          <option value="130000">130000</option>
+                          <option value="140000">140000</option>
+                          <option value="150000">150000</option>
+                          <option value="160000">160000</option>
+                          <option value="170000">170000</option>
+                          <option value="180000">180000</option>
+                          <option value="190000">190000</option>
+                          <option value="200000">200000</option>
                         </select>
                       </div>
                     </div>
@@ -343,18 +337,19 @@ export const Section1 = () => {
                           data-element_type="widget"
                           data-widget_type="html.default"
                         >
-                         
-                              <button  class="btn btn-outline-primary linkButton" id="servicecontractcalcu-kilometer">
-                                CALCULATE
-                              </button>
-                         
-
-
+                          <button
+                            class="btn btn-outline-primary linkButton"
+                            id="servicecontractcalcu-kilometer"
+                          >
+                            CALCULATE
+                          </button>
                         </div>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 pt-4">
                         <span class="p-3 text-align-center">
-                          <span class="text-inverse" id="resultK">AED</span>
+                          <span class="text-inverse" id="resultK">
+                            AED
+                          </span>
                         </span>
                       </div>
                     </div>
@@ -391,7 +386,9 @@ export const Section1 = () => {
                       data-widget_type="heading.default"
                     >
                       <div class="title-white-wrapper">
-                        <h2 class="title-white-bold">ROADSIDE ASSISTANCE 24/7</h2>{" "}
+                        <h2 class="title-white-bold">
+                          ROADSIDE ASSISTANCE 24/7
+                        </h2>{" "}
                       </div>
                     </div>
                     <div
@@ -530,7 +527,8 @@ export const Section1 = () => {
                 data-widget_type="image.default"
               >
                 <div class="">
-                  <img alt=""
+                  <img
+                    alt=""
                     decoding="async"
                     loading="lazy"
                     src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-433-1.png"
@@ -550,7 +548,7 @@ export const Section1 = () => {
                       class="btn btn-outline-primary linkButton"
                       href="https://exeed-uae.com/exeed-txl/"
                     >
-                      <span class="p-3">
+                      <span class="">
                         <span class="elementor-button-text">
                           DOWNLOAD THE MANUAL
                         </span>
@@ -595,7 +593,7 @@ export const Section1 = () => {
                       class="btn btn-outline-primary linkButton"
                       href="https://exeed-uae.com/exeed-txl/"
                     >
-                      <span class="p-3">
+                      <span class="">
                         <span class="elementor-button-text">
                           DOWNLOAD THE MANUAL
                         </span>
@@ -640,7 +638,7 @@ export const Section1 = () => {
                       class="btn btn-outline-primary linkButton"
                       href="https://exeed-uae.com/exeed-txl/"
                     >
-                      <span class="p-3">
+                      <span class="">
                         <span class="elementor-button-text">
                           DOWNLOAD THE MANUAL
                         </span>

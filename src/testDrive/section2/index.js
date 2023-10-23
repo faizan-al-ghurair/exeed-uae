@@ -229,7 +229,7 @@ const CarousalComponent = ({ id, active }) => {
                   <div class="row w-85 pt-1 pb-5">
                     <div class="elementor-widget-wrap pt-3">
                       <a href="#" class="" role="button">
-                        <span class="p-3 linkButton openStep3">
+                        <span class="linkButton openStep3">
                           <span class="elementor-button-text">Next step</span>
                         </span>
                       </a>
@@ -316,7 +316,7 @@ export const Section2 = () => {
 
               <div class="row w-85 pt-4 pb-3" data-element_type="column">
                 <div class="elementor-widget-wrap">
-                  <span id="openStep2" class="p-3 linkButton">
+                  <span id="openStep2" class="linkButton">
                     <span class="elementor-button-text">NEXT STEP</span>
                   </span>
                 </div>
@@ -351,7 +351,7 @@ export const Section2 = () => {
                       data-widget_type="html.default"
                     >
                       <div class="elementor-widget-wrap pt-3">
-                        <span id="openStep1" class="p-3 linkButton">
+                        <span id="openStep1" class="linkButton">
                           <span class="elementor-button-text">PREVIOUS</span>
                         </span>
                       </div>
@@ -549,7 +549,7 @@ export const Section2 = () => {
                   <div class="elementor-widget-wrap">
                     <div class="">
                       <div class="elementor-widget-wrap pt-3">
-                        <span id="openStep2From3" class="p-3 linkButton">
+                        <span id="openStep2From3" class="linkButton">
                           <span class="elementor-button-text">PREVIOUS</span>
                         </span>
                       </div>
