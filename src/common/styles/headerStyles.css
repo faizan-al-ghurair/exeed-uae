@@ -455,39 +455,33 @@ border-color: #C1886D7A; */
   }
 }
 
-.out-line-btn-large {
+/* .out-line-btn-large {
   @media screen and (-webkit-min-device-pixel-ratio: 1),
     (min-width: 1800px) and (max-width: 3800px) {
     .elementor-button-text-span {
-      /* font-size: 1.5em; */
     }
   }
   @media (min-width: 1500px) and (max-width: 1800px) {
     .elementor-button-text-span {
-      /* font-size: 1.4em; */
     }
   }
   @media (min-width: 1200px) and (max-width: 1500px) {
     .elementor-button-text-span {
-      /* font-size: 1.3em; */
     }
   }
   @media (min-width: 800px) and (max-width: 1200px) {
     .elementor-button-text-span {
-      /* font-size: 1.1em; */
     }
   }
   @media (min-width: 400px) and (max-width: 800px) {
     .elementor-button-text-span {
-      /* font-size: 0.9em; */
     }
   }
   @media (min-width: 40px) and (max-width: 400px) {
     .elementor-button-text-span {
-      /* font-size: 0.8em; */
     }
   }
-}
+} */
 
 .row {
   --bs-gutter-x: 0rem !important;
@@ -1898,7 +1892,7 @@ information-svg-modal
   font-weight: 400;
 }
 
-#wrapper > .target-1 .flex{
+#wrapper > .target-1 .flex {
   flex-wrap: wrap;
 }
 
@@ -1912,7 +1906,7 @@ form.TestDriveForm {
   font-size: 1.2rem;
 }
 
-.testdrive-message-success span{
+.testdrive-message-success span {
   padding-left: 10px;
 }
 

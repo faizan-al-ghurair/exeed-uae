@@ -2,21 +2,21 @@ import React from "react";
 import $ from "jquery";
 import searchIcon from "../../images/Search-icon.svg";
 
-const CarousalComponent = ({ id, active }) => { 
+const CarousalComponent = ({ id, active }) => {
   $(document).ready(function () {
     // Attach a click event handler to the title element
     $("#openStep2")
       .unbind("click")
       .click("click", function (e) {
-        if($(".image-container").hasClass("selected")){
+        if ($(".image-container").hasClass("selected")) {
           $(".target-1").slideToggle();
           $(".target-2").slideDown();
-          $('.errorMessage').hide();          
-        }else{
-          $('.errorMessage').show();
-        }       
+          $(".errorMessage").hide();
+        } else {
+          $(".errorMessage").show();
+        }
         e.stopPropagation();
-    });
+      });
 
     $("#openStep1")
       .unbind("click")
@@ -25,21 +25,20 @@ const CarousalComponent = ({ id, active }) => {
         $(".target-2").slideUp();
         e.stopPropagation();
       });
-    
 
-    // Next Button in Showroom Locations  
+    // Next Button in Showroom Locations
     $(".openStep3")
       .unbind("click")
-      .click("click", function (e) {  
-        if($(".showroomAddr").hasClass("selected")){
+      .click("click", function (e) {
+        if ($(".showroomAddr").hasClass("selected")) {
           $(".target-3").slideDown();
           $(".target-2").slideUp();
-          $('.errorMessage2').hide();          
-        }else{
-          $('.errorMessage2').show();
-        }       
+          $(".errorMessage2").hide();
+        } else {
+          $(".errorMessage2").show();
+        }
         e.stopPropagation();
-    });
+      });
 
     $("#openStep2From3")
       .unbind("click")
@@ -47,14 +46,14 @@ const CarousalComponent = ({ id, active }) => {
         $(".target-2").slideDown();
         $(".target-3").slideUp();
         e.stopPropagation();
-    });
+      });
 
     const containers = $(".image-container");
     const select = $("#sel1");
 
-    containers.on("click", function () { 
+    containers.on("click", function () {
       selectElement($(this).attr("id"));
-      select.val($(this).attr("id"));       
+      select.val($(this).attr("id"));
     });
 
     select.change(function () {
@@ -70,11 +69,11 @@ const CarousalComponent = ({ id, active }) => {
     //Click function for Showroom Location
     $(".showroomAddr")
       .unbind("click")
-      .click("click", function (e) { 
+      .click("click", function (e) {
         $(".showroomAddr").removeClass("selected");
-        $(".showroomAddr").css('background', 'none');
+        $(".showroomAddr").css("background", "none");
         $(this).addClass("selected");
-        $(this).css('background-color', '#C28A6C');
+        $(this).css("background-color", "#C28A6C");
         e.stopPropagation();
       });
   });
@@ -235,11 +234,11 @@ const CarousalComponent = ({ id, active }) => {
                 <div class="elementor-widget-wrap mt-4 mb-3">
                   <div class="row w-85 pt-1 pb-5">
                     <div class="elementor-widget-wrap pt-3">
-                        <a href="#" class="" role="button">
-                          <span  class="p-3 linkButton openStep3">
+                      <a href="#" class="" role="button">
+                        <span class="linkButton openStep3">
                           <span class="elementor-button-text">Next step</span>
-                          </span>
-                        </a>                      
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -261,23 +260,19 @@ export const Section2 = () => {
             <p class="text-inverse">1 Vehicle Please Select The Vehicle</p>
             <div class="target-1 flex direction-column">
               <div class="flex">
-               
                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
                   <div class="w-100 h-100">
-                    <div id='txl'>
-                      <div id="region1" class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center">
-                        <img decoding="async" loading="lazy" src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-433-1.png"
-                          class="test-drive-images" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
-                  <div class="w-100 h-100">
-                    <div  id='vx'>
-                      <div id="region2" class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center ">
-                        <img decoding="async" loading="lazy" src="https://exeed-uae.com/wp-content/uploads/2023/08/Group-432-1.png"  class="test-drive-images"  alt=""
+                    <div id="txl">
+                      <div
+                        id="region1"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center"
+                      >
+                        <img
+                          decoding="async"
+                          loading="lazy"
+                          src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-433-1.png"
+                          class="test-drive-images"
+                          alt=""
                         />
                       </div>
                     </div>
@@ -286,10 +281,37 @@ export const Section2 = () => {
 
                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
                   <div class="w-100 h-100">
-                    <div  id='lx'>
-                      <div id="region3"
-                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center" >
-                        <img decoding="async" loading="lazy" src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-431-1.png" class="test-drive-images"  alt=""/>
+                    <div id="vx">
+                      <div
+                        id="region2"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center "
+                      >
+                        <img
+                          decoding="async"
+                          loading="lazy"
+                          src="https://exeed-uae.com/wp-content/uploads/2023/08/Group-432-1.png"
+                          class="test-drive-images"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 pt-3 justify-content-center align-items-center flex">
+                  <div class="w-100 h-100">
+                    <div id="lx">
+                      <div
+                        id="region3"
+                        class="image-container pt-3 w-100 pb-4 justify-content-center d-flex align-items-center"
+                      >
+                        <img
+                          decoding="async"
+                          loading="lazy"
+                          src="https://exeed-uae.com/wp-content/uploads/2023/07/Group-431-1.png"
+                          class="test-drive-images"
+                          alt=""
+                        />
                       </div>
                     </div>
                   </div>
@@ -300,7 +322,7 @@ export const Section2 = () => {
 
               <div class="row w-85 pt-4 pb-3" data-element_type="column">
                 <div class="elementor-widget-wrap">
-                  <span id="openStep2" class="p-3 linkButton">
+                  <span id="openStep2" class="linkButton">
                     <span class="elementor-button-text">NEXT STEP</span>
                   </span>
                 </div>
@@ -335,7 +357,7 @@ export const Section2 = () => {
                       data-widget_type="html.default"
                     >
                       <div class="elementor-widget-wrap pt-3">
-                        <span id="openStep1" class="p-3 linkButton">
+                        <span id="openStep1" class="linkButton">
                           <span class="elementor-button-text">PREVIOUS</span>
                         </span>
                       </div>
@@ -394,7 +416,7 @@ export const Section2 = () => {
                                   class="h-100 d-flex location-search-img-container
                                 "
                                 >
-                                  <img src={searchIcon} class="w-10"  alt=""/>
+                                  <img src={searchIcon} class="w-10" alt="" />
                                 </div>
                                 <input
                                   type="search"
@@ -533,7 +555,7 @@ export const Section2 = () => {
                   <div class="elementor-widget-wrap">
                     <div class="">
                       <div class="elementor-widget-wrap pt-3">
-                        <span id="openStep2From3" class="p-3 linkButton">
+                        <span id="openStep2From3" class="linkButton">
                           <span class="elementor-button-text">PREVIOUS</span>
                         </span>
                       </div>
@@ -541,16 +563,25 @@ export const Section2 = () => {
                   </div>
                 </div>
                 <div class="form">
-                
                   <div class="container-fluid form-background section-spacing pb-5">
-                    <form class="TestDriveForm" method="" name="TestDrive" action="">
+                    <form
+                      class="TestDriveForm"
+                      method=""
+                      name="TestDrive"
+                      action=""
+                    >
                       <div class="row pb-5">
                         <div class="col-lg-6 col-sm-12 col-12">
                           <div class="form-group pb-3 px-2">
                             <label class="text-inverse" for="userFirstName">
                               First Name
                             </label>
-                            <input type="text" class="form-control" id="userFirstName" required/>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="userFirstName"
+                              required
+                            />
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 col-12">
@@ -558,7 +589,12 @@ export const Section2 = () => {
                             <label class="text-inverse " for="userLastName">
                               Last Name
                             </label>
-                            <input type="text" class="form-control" id="userLastName" required/>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="userLastName"
+                              required
+                            />
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 col-12">
@@ -566,7 +602,14 @@ export const Section2 = () => {
                             <label class="text-inverse" for="userPhone">
                               Phone (05xxxxxxxx)
                             </label>
-                            <input maxLength={10} class="form-control" id="userPhone" type="tel" pattern="^0\d{9}$" required/>
+                            <input
+                              maxLength={10}
+                              class="form-control"
+                              id="userPhone"
+                              type="tel"
+                              pattern="^0\d{9}$"
+                              required
+                            />
                           </div>
                         </div>
 
@@ -645,17 +688,10 @@ export const Section2 = () => {
                             <i class="fa fa-check" aria-hidden="true"></i>
                             <span>Your submission was successful.</span>
                           </div>
-
                         </div>
                       </div>
-
-
-
-                      </form>
-
-                      
-                    </div>
-                 
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>

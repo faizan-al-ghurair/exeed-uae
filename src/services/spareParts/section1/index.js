@@ -50,25 +50,6 @@ export const Section1 = () => {
                 </div>
               </section>
             </div>
-            {/* <div
-              class="container px-5"
-              data-id="aaf3ac8"
-              data-element_type="widget"
-              data-widget_type="button.default"
-            >
-              <div class="">
-                <div class="out-line-btn-large ">
-                  <a
-                    class="btn btn-outline-primary linkButton"
-                    href="https://exeed-uae.com/exeed-txl/"
-                  >
-                    <span class="p-3">
-                      <span class="elementor-button-text">CONTACT US</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
         <div
@@ -289,7 +270,7 @@ export const Section1 = () => {
                             type="submit"
                             class="btn btn-outline-primary linkButton"
                           >
-                            <span class="p-3">SUBMIT</span>
+                            <span class="">SUBMIT</span>
                           </button>
                         </div>
                       </div>

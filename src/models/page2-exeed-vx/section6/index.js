@@ -156,7 +156,7 @@ export const Section6 = () => {
                             type="submit"
                             class="btn btn-outline-primary linkButton"
                           >
-                            <span class="p-3">SUBMIT</span>
+                            <span class="">SUBMIT</span>
                           </button>
                         </div>
                       </div>
