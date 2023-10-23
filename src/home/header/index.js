@@ -112,6 +112,50 @@ export const Header = () => {
 
     // Initialize the preview with the first car tile
     updatePreview(carTiles[0].id);
+
+    // Function to add the class when the screen width is less than 768px
+    function addClassOnResize() {
+      var screenWidth = $(window).width();
+      if (screenWidth < 992) {
+        // Add the class to the div
+        $(".car-models-nav-dropdown").addClass("other-dropdown bg-app-black");
+        $(".car-models-nav-dropdown").removeClass("cars-dropdown");
+      } else {
+        // Remove the class if the screen width is greater or equal to 768px
+        $(".car-models-nav-dropdown").removeClass(
+          "other-dropdown bg-app-black"
+        );
+        $(".car-models-nav-dropdown").addClass("cars-dropdown");
+      }
+    }
+
+    // Call the function on page load and window resize
+    addClassOnResize();
+    $(window).on("resize", addClassOnResize);
+
+    // Get a reference to the div element by its ID
+    const hamburgerIcon = $(".navbar-toggler");
+    var openNav = false;
+
+    // Add a click event listener to the div
+    // $(".navbar-close").css("display", "none");
+    hamburgerIcon.on("click", function () {
+      // Change the background color when the div is clicked
+
+      hamburgerIcon.css("background-color", "#c28a6c"); // You can set your desired color
+      if (openNav === false) {
+        // Show the "x" and hide the default Bootstrap icon
+        $(".navbar-close").addClass("show-navbar-close");
+        $(".navbar-toggler-icon").hide();
+        openNav = true;
+      } else {
+        // Show the default Bootstrap icon and hide the "x"
+
+        openNav = false;
+        $(".navbar-toggler-icon").show();
+        $(".navbar-close").removeClass("show-navbar-close");
+      }
+    });
   });
 
   return (
@@ -128,19 +172,20 @@ export const Header = () => {
         </div>
         <div class="px-2">
           <button
-            class="navbar-toggler"
+            class="navbar-toggler "
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#main_nav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+            <span class="navbar-close ">&#x2715;</span>
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="main_nav">
-          <ul class="navbar-nav mVW-5 header-nav-link">
-            <li class="nav-item px-1 dropdown">
+          <ul class="navbar-nav mVW-5">
+            <li class="nav-item  dropdown header-nav-link">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -148,7 +193,7 @@ export const Header = () => {
               >
                 {"MODELS"}
               </a>
-              <ul class="dropdown-menu cars-dropdown">
+              <ul class="dropdown-menu cars-dropdown car-models-nav-dropdown">
                 <div class="cars-header-modal">
                   <section
                     class="row"
@@ -532,14 +577,40 @@ export const Header = () => {
                     </div>
                   </section>
                 </div>
+                <div class="cars-header-modal-mobile">
+                  <li class="p-3 ">
+                    <a class="dropdown-item nav-font-color" href="/exeed-vx">
+                      {"EXEED VX"}
+                    </a>
+                  </li>
+                  <li class="p-3">
+                    <a class="dropdown-item nav-font-color" href="/exeed-txl">
+                      {"EXEED TXL"}
+                    </a>
+                  </li>
+                  <li class="p-3">
+                    <a
+                      base
+                      class="dropdown-item nav-font-color"
+                      href="/exeed-lx"
+                    >
+                      {"EXEED LX"}
+                    </a>
+                  </li>
+                  <li class="p-3">
+                    <a class="dropdown-item nav-font-color" href="/exeed-rx">
+                      {"EXEED RX"}
+                    </a>
+                  </li>
+                </div>
               </ul>
             </li>
-            <li class="nav-item px-1">
+            <li class="nav-item header-nav-link">
               <a class="nav-link" href="test-drive">
                 {"TEST DRIVE"}
               </a>
             </li>
-            <li class="nav-item px-1 dropdown">
+            <li class="nav-item  dropdown header-nav-link">
               <a
                 class="nav-link  dropdown-toggle"
                 href="#"
@@ -548,7 +619,7 @@ export const Header = () => {
                 {"SERVICES"}
               </a>
               <ul class="dropdown-menu other-dropdown bg-app-black ">
-                <li class="p-2 ">
+                <li class="">
                   <a
                     class="dropdown-item nav-font-color"
                     href="service-calculator"
@@ -577,12 +648,12 @@ export const Header = () => {
                 </li>
               </ul>
             </li>
-            <li class="nav-item px-1">
+            <li class="nav-item  header-nav-link">
               <a class="nav-link" href="#">
                 {"REQUEST QUOTE"}
               </a>
             </li>
-            <li class="nav-item px-1 dropdown">
+            <li class="nav-item  dropdown header-nav-link">
               <a
                 class="nav-link  dropdown-toggle"
                 href="#"
@@ -606,8 +677,7 @@ export const Header = () => {
                 </li>
               </ul>
             </li>
-
-            <li class="nav-item px-1 dropdown">
+            <li class="nav-item  dropdown header-nav-link">
               <a
                 class="nav-link  dropdown-toggle"
                 href="#"
@@ -631,8 +701,7 @@ export const Header = () => {
                 </li>
               </ul>
             </li>
-
-            <li class="nav-item px-1 dropdown">
+            <li class="nav-item  dropdown header-nav-link">
               <a
                 class="nav-link  dropdown-toggle"
                 href="#"

@@ -27,7 +27,7 @@ export const NewsHome = () => {
           </p>{" "}
         </div>
 
-        <div class="out-line-btn-large ">
+        <div class="out-line-btn-large-news ">
           <a
             href="/newsdetails"
             type="submit"
