@@ -9,7 +9,7 @@ export const FinincialCalHead = () => {
         <div class="col-md-12 col-sm-12 col-12">
           <div class="aboutus-sec1-banner-finincial-cal"></div>
         </div>
-        <div class="col-md-12 d-flex py-5">
+        <div class="col-md-12 d-flex py-4">
           <div class="col-md-12 w-100 d-flex justify-content-center flex-column">
             <div class="aboutus-title row d-flex flex-column align-items-center ">
               <div class="col-md-10 col-sm-10 col-10">

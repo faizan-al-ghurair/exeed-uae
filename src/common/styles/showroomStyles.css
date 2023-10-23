@@ -426,10 +426,51 @@
   content: " / Month";
 }
 
+#calcu {
+  background: #C1886D;
+  color: #C1886D;
+  border: 1px solid #C1886D;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+}
+
+#calcu:hover {
+  background: #C1886D;
+  color: white;
+}
+
+.finacial-calc-Left label.text-inverse {
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+}
+
+.finacial-calc-Left {
+  width: 29.50%;
+  display: inline-block;
+  padding: 0% 2% 0% 0%;
+}
+
+#carModel, #modelVX, #model, #months, #modelTXL, #modelLX{
+  background-color: #0C0B0B;
+  color: white;
+}
+
+#total, #downPayment, #amountFinance{
+  background-color: #0C0B0B;
+}
 
 
+@media (min-width: 320px) and (max-width: 1023px) {
+  .finacial-calc-Left {
+    width: 100%;
+  }    
+}
 
-
-
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .finacial-calc-Left label.text-inverse{
+    font-size: 0.7rem;
+  }
+}
 
 /************************************   FINANCIAL CALCULATOR - END  **************************************/

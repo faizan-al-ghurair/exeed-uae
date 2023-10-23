@@ -3,116 +3,203 @@ import $ from "jquery";
 
 export const Section1 = () => {
   $(document).ready(function () {
-    $("#financial-LeaseRate-carModel").on("change", function () {
+    $("#carModel").on("change", function () {
       $(".finacialLease-InitialImageBox").hide();
       var img_path = $(this).find(":selected").attr("data-imagesrc");
       $("#finleaseImage").attr("src", img_path);
     });
   });
 
-  // Function for calculating EMI per Month fro Lease
-  window.onload = (event) => {
-    //Calculation for EMI
-    var vxCTA = document.getElementById("vxx");
-    var txlCTA = document.getElementById("txlx");
-    var lxCTA = document.getElementById("lxx");
-    // var carValues = [LXC, LXL, LXF, TXLC, TXLL, TXLF, VXL, VXF, VXB];
-    var carModel = document.getElementById("financial-LeaseRate-carModel");
-    var selectedCar;
-    var month = document.getElementById("financial-LeaseRate-months");
-    var selectedMonth = 12;
 
-    $("#carSelection").hide();
+  window.onload = (event) => {  
+        var vx = document.getElementById('vxx');
+        var txl = document.getElementById('txlx');
+        var lx = document.getElementById('lxx');
+        
+        const carModel = document.getElementById("carModel");
+        var dO = document.getElementById('defaultOption');
+        var vxO = document.getElementById('vxOption');
+        var lxO = document.getElementById('lxOption');
+        var txlO = document.getElementById('txlOption');
+        
+        var activeCar;
+        
+        
+        var vxM = document.getElementById('modelVX');
+        var txlM = document.getElementById('modelTXL');
+        var lxM = document.getElementById('modelLX');
+        
+        var months = document.getElementById('months');
+        var amountFinance;
+        var monthsAmount = 12;
+        
+        
+        function vxf() {        
+          vx.classList.add('selectedOption');
+          lx.style.opacity = 0;
+          txl.style.opacity = 0;
+        
+          dO.removeAttribute('selected');
+          vxO.setAttribute('selected', 'selected');
+          activeCar = 0;
+          modelAppear();        
+        }
+        
+        function txlf() {        
+          txl.classList.add('selectedOption');
+          lx.style.opacity = 0;
+          vx.style.opacity = 0;
+          dO.removeAttribute('selected');
+          txlO.setAttribute('selected', 'selected');
+        
+          activeCar = 1;
+          modelAppear();        
+        }
+        
+        function lxf() {        
+          lx.classList.add('selectedOption');
+          vx.style.opacity = 0;
+          txl.style.opacity = 0;
+          dO.removeAttribute('selected');
+          lxO.setAttribute('selected', 'selected');
+          activeCar = 2;
+          modelAppear();
+        }      
+        
+               
+        vx.addEventListener('click', () => {
+          vxf();
+        });              
+        
+        txl.addEventListener('click', () => {
+          txlf();
+        });
+        
+        lx.addEventListener('click', () => {
+          lxf();
+        });
+        
+        vxM.addEventListener("change", totalAmount);
+        txlM.addEventListener("change", totalAmount);
+        lxM.addEventListener("change", totalAmount);
+        months.addEventListener("change", amountToPay);
+                     
+        
+        carModel.addEventListener("change", function() {
+          const selectedOptionValue = carModel.value;
+          const selectedOptionText = carModel.options[carModel.selectedIndex].text;
+        
+          console.log("Selected Value:", selectedOptionValue);
+          console.log("Selected Text:", selectedOptionText);
+        
+          if (selectedOptionText == "VX") {
+            vx.style.opacity = 1;
+            vxf();
+          } else if (selectedOptionText == "TXL") {
+            txl.style.opacity = 1;
+            txlf();
+          } else if (selectedOptionText == "LX") {
+            lx.style.opacity = 1;
+            lxf();
+          }       
+        
+        });
+        
+      
+        function modelAppear() {
+        
+          var model = document.getElementById('model');
+        
+        
+          model.style.display = "none";
+          vxM.style.display = "none";
+          txlM.style.display = "none";
+          lxM.style.display = "none";
+        
+          if (activeCar == 0) {
+            vxM.style.display = "block";
+          } else if (activeCar == 1) {
+            txlM.style.display = "block";
+        
+          } else if (activeCar == 2) {
+            lxM.style.display = "block";
+          }
+        
+          totalAmount();
+        
+        }
+        
+        
+        
+        
+        
+        function totalAmount() {        
+          var totalPlaceholder = document.getElementById('total');
+          var downPaymentPlaceholder = document.getElementById('downPayment');
+          var amountFinancePlaceholder = document.getElementById('amountFinance');
+        
+          var selectedCarTotalAmount = 0;
+        
+        
+          if (activeCar == 0) {
+            selectedCarTotalAmount = parseInt(vxM.value);
+          } else if (activeCar == 1) {
+            selectedCarTotalAmount = parseInt(txlM.value);
+        
+          } else if (activeCar == 2) {
+            selectedCarTotalAmount = parseInt(lxM.value);
+          }
+        
+        
+          totalPlaceholder.setAttribute("placeholder", selectedCarTotalAmount);
+          var downPayment = 0;
+          downPayment = Math.round(selectedCarTotalAmount * .2);
+        
+          downPaymentPlaceholder.setAttribute("placeholder", downPayment);
+        
+          amountFinance = 0;
+          amountFinance = Math.round(selectedCarTotalAmount * .8);
+        
+          amountFinancePlaceholder.setAttribute("placeholder", amountFinance);
+        
+        
+          return (selectedCarTotalAmount);        
+        }
+        
+        function amountToPay() {        
+          monthsAmount = parseInt(months.value);      
+        }       
+        
+        var price = document.getElementById('price');
+        var paymentValue;   
+        var valueC;     
+        
+        function calculateAmount(valueA, valueB) {         
+          if (valueB <= 12) {
+            valueC = 0.035;
+          } else if (valueB > 12 && valueB <= 24) {
+            valueC = 0.07;
+          } else if (valueB > 24 && valueB <= 36) {
+            valueC = 0.105;
+          } else if (valueB > 36 && valueB <= 48) {
+            valueC = 0.14;
+          } else if (valueB > 48 && valueB <= 60) {
+            valueC = 0.175;
+          }
+        
+          var paymentValue1 = ((valueA / valueB) + ((valueA / valueB) * valueC));   
 
-   
+          return (Math.round(paymentValue1));
+        }
+        
 
-    
+        $("#calcu").click(function(){
+          price.innerHTML = calculateAmount(amountFinance, monthsAmount);    
+        });
+        
+        paymentValue = calculateAmount(amountFinance, monthsAmount);        
+        console.log(paymentValue);
 
-    const suvModels = {
-      LXC: {
-        48: 2260,
-        36: 2499,
-        24: 2949,
-        12: 3399,
-      },
-
-      LXL: {
-        48: 2389,
-        36: 2656,
-        24: 3122,
-        12: 3609,
-      },
-
-      LXF: {
-        48: 2699,
-        36: 2999,
-        24: 3536,
-        12: 4099,
-      },
-
-      TXLC: {
-        48: 2725,
-        36: 3019,
-        24: 3549,
-        12: 4125,
-      },
-
-      TXLL: {
-        48: 3113,
-        36: 3464,
-        24: 4099,
-        12: 4767,
-      },
-
-      TXLF: {
-        48: 3299,
-        36: 3686,
-        24: 4370,
-        12: 5080,
-      },
-
-      VXL: {
-        48: 3327,
-        36: 3715,
-        24: 4404,
-        12: 5125,
-      },
-
-      VXF: {
-        48: 3515,
-        36: 3927,
-        24: 4668,
-        12: 5434,
-      },
-
-      VXB: {
-        48: 3655,
-        36: 4086,
-        24: 4868,
-        12: 5665,
-      },
-    };
-
-    const errorLog = document.getElementById("carSelection");
-
-    function calculatePrice() {
-      if (carModel.value == "no") {
-        errorLog.style.display = "block";
-      } else {
-        errorLog.style.display = "none";
-      }
-
-      if (carModel.value != "no") {
-        var price = suvModels[selectedCar][selectedMonth];
-      }
-
-      const resultElement = document.getElementById("finacialLease-price");
-
-      resultElement.innerHTML = price;
-    }
-    document.getElementById("LeaseRate-calcu").onclick = function () {
-      calculatePrice();
-    };
   };
 
   return (
@@ -121,7 +208,7 @@ export const Section1 = () => {
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
-              <div class="finacialLease-Left">
+              <div class="finacial-calc-Left">
                 <div class="elementor-widget-wrap elementor-element-populated">
                   <div
                     class="row"
@@ -133,9 +220,9 @@ export const Section1 = () => {
                       <label class="financialCalculator">Car</label>
                         <select id="carModel">
                           <option value="" id="defaultOption" disabled="" selected="">Car</option>
-                          <option value="vx" id="vxOption">VX</option>
-                          <option value="txl" id="txlOption">TXL</option>
-                          <option value="lx" id="lxOption">LX</option>
+                          <option value="vx" id="vxOption" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png">VX</option>
+                          <option value="txl" id="txlOption" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg">TXL</option>
+                          <option value="lx" id="lxOption" data-imagesrc="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png">LX</option>
                         </select>
                     </div>
                     <div class="col-lg-6 col-sm-12 col-12 px-1">                     
@@ -175,7 +262,7 @@ export const Section1 = () => {
                     </div>
 
                     <div class="col-lg-6 col-sm-12 col-12">
-                      <div class="form-group  pb-3 px-2">
+                      <div class="form-group  pb-3">
                         <label class="text-inverse" for="userPhone">
                           Down Payment 20%
                         </label>
@@ -184,7 +271,7 @@ export const Section1 = () => {
                     </div>
 
                     <div class="col-lg-6 col-sm-12 col-12">
-                      <div class="form-group  pb-3 px-2">
+                      <div class="form-group  pb-3 px-2 pr-0">
                         <label class="text-inverse" for="userPhone">
                           Amount Finance 80%
                         </label>
@@ -214,7 +301,7 @@ export const Section1 = () => {
                   <div class="btn-area">
                     <div class="calcbutton-parent">
                       <div class="elementor-widget-container">
-                        <button id="LeaseRate-calcu">CALCULATE</button>
+                        <button  id="calcu">CALCULATE</button>
                       </div>
                     </div>
                     <div class="calc-price-parent">
@@ -244,13 +331,13 @@ export const Section1 = () => {
               <div class="finacialLease-Right">
                 <div class="finacialLease-InitialImageBox">
                   <div class="finacialLease__Img-wrapper">
-                    <img src="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png"></img>
+                    <img src="https://exeed-uae.com/wp-content/uploads/2023/07/vx-car-homepage-slider-1-1.png" alt=""></img>
                   </div>
                   <div class="finacialLease__Img-wrapper">
-                    <img src="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg"></img>
+                    <img src="https://exeed-uae.com/wp-content/uploads/2023/07/TXL-Reality-images-11-2.jpg" alt=""></img>
                   </div>
                   <div class="finacialLease__Img-wrapper">
-                    <img src="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png"></img>
+                    <img src="https://exeed-uae.com/wp-content/uploads/2023/07/lx-care-homepage-slider-1-1.png" alt=""></img>
                   </div>
                 </div>
 
