@@ -229,7 +229,7 @@ export const Section1 = () => {
                           
                       <div class="elementor-widget-container">
                           <label class="financialCalculator">Model</label>
-                          <input type="text" id="model" disabled="" placeholder="Choose model"  class=""/>
+                          <input type="text" id="model" disabled placeholder="Choose model"  class=""/>
 
                           <select id="modelVX" class="input-hide">
                             <option value="129999" selected="">2.0TGDI Luxury (2024)</option>
