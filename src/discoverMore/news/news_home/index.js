@@ -10,6 +10,24 @@ import $ from "jquery";
 
 // khadija
 export const NewsHome = () => {
+  $(document).ready(function () {
+    // Attach hover event to car tiles
+    $(".card-cont")
+      .unbind()
+      .hover(
+        function () {
+          $(this).find(".card-img").find("img").css("transform", "scale(1.08)");
+          $(this)
+            .find(".card-img")
+            .find("img")
+            .css("transition", "transform 1s");
+          $(this).find(".card-img").find("img").css("overflow", "hidden");
+        },
+        function () {
+          $(this).find(".card-img").find("img").css("transform", "scale(1.0)");
+        }
+      );
+  });
   const Cards = ({ img }) => {
     return (
       <div class="card-cont">
