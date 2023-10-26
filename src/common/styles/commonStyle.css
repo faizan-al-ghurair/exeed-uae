@@ -923,11 +923,9 @@
   }
 }
 
-.card-cont:hover {
-  transform: scale(1.05);
-}
 .card-img {
   height: 50%;
+  overflow: hidden;
   @media (min-width: 1000px) and (max-width: 1200px) {
     height: 45%;
   }
@@ -945,6 +943,7 @@
 .card-img img {
   object-fit: cover;
   width: 100%;
+  position: relative;
 }
 
 .text-disappear {
