@@ -505,3 +505,18 @@
   }
 }
 
+/*** Service Calculator - Mobile Font Adjust   ******/
+@media (min-width: 280px) and (max-width: 767px) {
+  h2.white-sub-title {
+    font-size: 0.9rem !important;
+  }
+}
+
+
+/*** Homepage - Font overlap in Galaxy Fold  ******/
+@media (min-width: 280px) and (max-width:320px) {
+  .section1-home h2.banner-title-style {
+    line-height: 1rem;
+    font-size: 1.4rem;
+  }
+}  
