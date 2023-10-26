@@ -73,7 +73,7 @@
   padding-top: 1%;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 280px) and (max-width: 767px) {
   .findshowroom-contactdetails .contactdetails-text{
     display: flex;
   }
@@ -215,7 +215,7 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 1023px) {
+@media (min-width: 280px) and (max-width: 1023px) {
   .rx-heading-title{
     font-size: 1.3rem;
   }
@@ -461,7 +461,7 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 1023px) {
+@media (min-width: 280px) and (max-width: 1023px) {
   .finacial-calc-Left {
     width: 100%;
   }    
@@ -474,3 +474,49 @@
 }
 
 /************************************   FINANCIAL CALCULATOR - END  **************************************/
+
+
+/*** For Navbar Sticky ***/
+.main-container {
+  padding-top: 100px;
+}
+
+
+.nav-parent {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  height: 100px;
+  z-index: 99;
+}
+
+/*** For Navbar Sticky - END ***/
+
+
+/*** Finance Cal - Aed font Adjustment   ******/
+@media (min-width: 280px) and (max-width: 320px) {
+  .finacial-calc-Left .btn-area {
+    display: flex;
+  }
+  .calc-price-parent {  
+    padding-left: 20px;
+    font-size:  1rem;
+    line-height: 1.2rem;
+  }
+}
+
+/*** Service Calculator - Mobile Font Adjust   ******/
+@media (min-width: 280px) and (max-width: 767px) {
+  h2.white-sub-title {
+    font-size: 0.9rem !important;
+  }
+}
+
+
+/*** Homepage - Font overlap in Galaxy Fold  ******/
+@media (min-width: 280px) and (max-width:320px) {
+  .section1-home h2.banner-title-style {
+    line-height: 1rem;
+    font-size: 1.4rem;
+  }
+}  
