@@ -520,3 +520,33 @@
     font-size: 1.4rem;
   }
 }  
+
+
+
+/*** Subscribe for Updates Email Input  ******/
+.newsletter-email  input[type="email"] {
+  height: 43px;
+  border-radius: 0px;
+  font-size: 1rem;
+}
+
+.newsletter-btn{
+  height: 43px;
+  border-radius: 0px;
+  font-size: 1rem;
+}
+
+.newsletter-text h2{
+  font-weight: 700;
+}
+
+@media (min-width: 280px) and (max-width:320px) {
+  .newsletter-inner {
+       padding: 0rem 1rem;
+  }
+}  
+
+
+
+/*** Accept / Reject Cokie Notification  ******/
+
