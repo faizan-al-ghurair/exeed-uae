@@ -579,7 +579,6 @@
 
 .dialog-type-lightbox {
   position: fixed;
-  height: 100%;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -774,7 +773,7 @@
 }
 
 .elementor-3287 .elementor-element.elementor-element-c1aaaac {
-  max-width: 60%;
+  max-width: 100%;
 }
 
 @media (max-width: 1023px){
@@ -808,4 +807,28 @@
     text-align: center;
   }
 }
+
+/** Fix for Accept Button **/
+
+@media (min-width: 1500px)  {
+  .elementor-widget-wrap.elementor-element-populated {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.elementor-widget-container {
+  padding: 0px;
+}
+
+.elementor-widget-container p a{
+  color: #c36;
+}
+
+.elementor-widget-container p a:hover {
+  color: #336;
+}
+
 /*** Accept / Reject Cokie Notification --  END ******/
+
+
