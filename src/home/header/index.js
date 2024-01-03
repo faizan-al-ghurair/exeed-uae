@@ -737,6 +737,27 @@ export const Header = () => {
                 </li>
               </ul>
             </li>
+            <li class="nav-item  dropdown header-nav-link">
+              <a
+                class="nav-link  dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                {"PREOWNED"}
+              </a>
+              <ul class="dropdown-menu other-dropdown bg-app-black">
+                <li class="p-3">
+                  <a class="dropdown-item nav-font-color" href="#">
+                    {"LANDING PAGE"}
+                  </a>
+                </li>
+                <li class="p-3">
+                  <a class="dropdown-item nav-font-color" href="/car-details">
+                    {"CAR DETAILS"}
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>

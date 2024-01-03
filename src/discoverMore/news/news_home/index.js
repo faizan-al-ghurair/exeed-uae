@@ -28,7 +28,20 @@ export const NewsHome = () => {
         }
       );
   });
+
   const Cards = ({ img }) => {
+    $(document).ready(function () {
+      var paragraph = $(".ptest");
+      var text = paragraph.text();
+
+      if (text.length > 100) {
+        // Truncate the text to 100 characters
+        var truncatedText = text.substring(0, 100);
+
+        // Replace the content of the paragraph
+        paragraph.text(truncatedText + "...");
+      }
+    });
     return (
       <div class="card-cont">
         <div class="mb-2 card-img">
@@ -39,20 +52,23 @@ export const NewsHome = () => {
             class="attachment-full size-full wp-image-3094"
           />{" "}
         </div>
-        <div class="text-inverse text-disappear">
-          <p class="ptest">
-            Innovative showcase to two additional pop-up events
-          </p>{" "}
-        </div>
+        <div class="card-news-body">
+          <div class="text-inverse text-disappear">
+            <p class="ptest" id="newsText">
+              Innovative showcase to two additional pop-up events I dont know
+              what im wriiting but this is just for testing purposes
+            </p>{" "}
+          </div>
 
-        <div class="out-line-btn-large-news ">
-          <a
-            href="/newsdetails"
-            type="submit"
-            class="btn btn-outline-primary linkButton"
-          >
-            <span class="">READ MORE</span>
-          </a>
+          <div class="out-line-btn-large-news ">
+            <a
+              href="/newsdetails"
+              type="submit"
+              class="btn btn-outline-primary linkButton"
+            >
+              <span class="">READ MORE</span>
+            </a>
+          </div>
         </div>
       </div>
     );

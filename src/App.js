@@ -19,6 +19,7 @@ import { LeaseRate } from "./financial/leaserate";
 import { NewsHome } from "./discoverMore/news/news_home";
 import { TestDrive } from "./testDrive";
 import { FinancialCalculator } from "./financial/financialCalculator";
+import { PreownedCarDetails } from "./preowned/carDetails";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="lease-rate" element={<LeaseRate />} />
         <Route path="financial-calculator" element={<FinancialCalculator />} />
         <Route path="test-drive" element={<TestDrive />} />
+        <Route path="car-details" element={<PreownedCarDetails />} />
       </Routes>
     </BrowserRouter>
   );

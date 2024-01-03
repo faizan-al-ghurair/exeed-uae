@@ -897,7 +897,40 @@
 
 /* news cards */
 .card-cont {
-  margin: 1rem 0;
+  background-color: #121212;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+
+  @media (min-width: 1800px) and (max-width: 3000px) {
+    height: 500px;
+  }
+  @media (min-width: 1300px) and (max-width: 1800px) {
+    height: 450px;
+  }
+  @media (min-width: 767px) and (max-width: 1000px) {
+    height: 330px;
+  }
+  @media (min-width: 450px) and (max-width: 767px) {
+    height: 450px;
+  }
+  @media (min-width: 10px) and (max-width: 450px) {
+    height: 340px;
+  }
+  @media (min-width: 10px) and (max-width: 767px) {
+    margin-bottom: 2rem;
+  }
+  /* @media (min-width: 450px) and (max-width: 767px) {
+    height: 370px !important;
+  }
+  @media (min-width: 10px) and (max-width: 450px) {
+    height: 300px !important;
+  } */
+
+  /* margin: 1rem 0;
   height: 500px;
   font-weight: bold;
   text-transform: capitalize;
@@ -920,38 +953,66 @@
 
   @media (min-width: 10px) and (max-width: 450px) {
     height: 310px;
-  }
+  } */
 }
 
-.card-img {
+.card-news-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 50%;
-  overflow: hidden;
+
   @media (min-width: 1000px) and (max-width: 1200px) {
-    height: 45%;
+    height: 50%;
+  }
+  @media (min-width: 767px) and (max-width: 1000px) {
+    height: 55%;
+  }
+  @media (min-width: 450px) and (max-width: 767px) {
+    height: 30%;
+  }
+  @media (min-width: 10px) and (max-width: 450px) {
+    height: 40%;
+  }
+}
+.card-img {
+  height: 300px;
+  width: 100%;
+  /* height: 400px; */
+  overflow: hidden;
+
+  @media (min-width: 1800px) and (max-width: 3000px) {
+    height: 60%;
+  }
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    /* height: 45%; */
+    height: 200px;
   }
   @media (min-width: 767px) and (max-width: 1000px) {
     height: 40%;
+    /* height: 200px; */
   }
   @media (min-width: 450px) and (max-width: 767px) {
-    height: 60%;
+    height: 70%;
   }
   @media (min-width: 10px) and (max-width: 450px) {
-    height: 50%;
+    height: 60%;
   }
 }
 
 .card-img img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
   position: relative;
 }
 
 .text-disappear {
-  height: 25%;
+  /* height: 25%; */
   overflow: hidden;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 
-  @media (min-width: 1000px) and (max-width: 1200px) {
+  /* @media (min-width: 1000px) and (max-width: 1200px) {
     height: 35%;
   }
   @media (min-width: 767px) and (max-width: 1000px) {
@@ -963,13 +1024,40 @@
 
   @media (min-width: 10px) and (max-width: 450px) {
     height: 40%;
-  }
+  } */
 }
 .out-line-btn-large-news {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 10%;
+  height: 10%; */
+}
+
+.ptest {
+  margin-bottom: 0.5rem;
+
+  @media (min-width: 1300px) and (max-width: 3000px) {
+    font-size: 22px;
+    margin-bottom: 0.8rem;
+  }
+  @media (min-width: 1000px) and (max-width: 1300px) {
+    font-size: 18px;
+  }
+  @media (min-width: 767px) and (max-width: 1000px) {
+    font-size: 16px;
+  }
+  /* @media (min-width: 450px) and (max-width: 767px) {
+    font-size: 20px;
+  } */
+  @media (min-width: 10px) and (max-width: 450px) {
+    font-size: 14px;
+  }
+}
+
+/* jan 3 2024 */
+.car-details-sec1-header {
+  width: 30%;
+  justify-content: space-between;
 }
 
 /* End of Khadija's code */
