@@ -6,6 +6,7 @@ import { Section4 } from "./section4";
 import { Section5 } from "./section5";
 import { Footer } from "./section6";
 import { Header } from "./header";
+import { CookieSection } from "./section7";
 
 export const Home = () => {
   return (
@@ -17,6 +18,7 @@ export const Home = () => {
       <Section4 />
       <Section5 />
       <Footer />
+      <CookieSection/>
     </div>
   );
 };
