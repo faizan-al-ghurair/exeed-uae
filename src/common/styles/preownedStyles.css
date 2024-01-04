@@ -1,0 +1,336 @@
+/* jan 3 2024 */
+.car-details-sec1-header {
+  width: 30%;
+  align-items: center;
+
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    width: 35%;
+  }
+  @media (min-width: 800px) and (max-width: 1024px) {
+    width: 43%;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    width: 60%;
+  }
+  @media (min-width: 10px) and (max-width: 500px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.car-details-sec1-header h1 {
+  margin-right: 2rem;
+  margin-bottom: 0;
+
+  @media (min-width: 10px) and (max-width: 500px) {
+    margin: 0;
+  }
+}
+
+.car-details-sec1-header h2 {
+  margin: 0;
+}
+
+.car-details-container-styles .title-white-wrapper .out-line-btn-large {
+  @media (min-width: 10px) and (max-width: 500px) {
+    display: none;
+  }
+}
+
+.car-details-images {
+  justify-content: space-between;
+  height: 75vh;
+  margin-top: 3rem;
+  transition: height 0.5s ease; /* Add a smooth transition effect */
+
+  @media (min-width: 2000px) and (max-width: 2400px) {
+    height: 85vh;
+  }
+  @media (min-width: 1600px) and (max-width: 1800px) {
+    height: 70vh;
+  }
+  @media (min-width: 1400px) and (max-width: 1600px) {
+    height: 60vh;
+  }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    height: 50vh;
+  }
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    height: 45vh;
+  }
+  @media (min-width: 900px) and (max-width: 1024px) {
+    height: 35vh;
+  }
+  @media (min-width: 800px) and (max-width: 900px) {
+    height: 33vh;
+  }
+  @media (min-width: 700px) and (max-width: 800px) {
+    height: 30vh;
+  }
+  @media (min-width: 600px) and (max-width: 700px) {
+    height: 33vh;
+  }
+  @media (min-width: 500px) and (max-width: 600px) {
+    height: 33vh;
+  }
+  @media (min-width: 400px) and (max-width: 500px) {
+    height: 22vh;
+  }
+  @media (min-width: 300px) and (max-width: 400px) {
+    height: 20vh;
+  }
+  @media (min-width: 280px) and (max-width: 300px) {
+    height: 17vh;
+  }
+}
+
+/* Apply a smaller height as the screen size decreases */
+
+.car-details-active-img {
+  width: 73%;
+  position: relative;
+  @media (min-width: 10px) and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.car-details-main-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  cursor: pointer;
+}
+
+.car-details-images-carousel {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  overflow-y: auto; /* Enable vertical scrollbar */
+
+  /* Style for the scrollbar */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #c28a6c transparent; /* Firefox */
+
+  @media (min-width: 10px) and (max-width: 1024px) {
+    display: none !important;
+  }
+}
+
+.testing-div-new {
+  height: 100%;
+  margin-right: 0.5rem;
+}
+
+.testing-div-new img {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+
+.testing-div-new img:last-child {
+  margin-bottom: 0;
+}
+
+/* Style for the active image in the carousel */
+.carousel-img.active {
+  border: 2px solid #ff5733; /* Add a border or any other style to indicate the active image */
+}
+
+/* Webkit browsers (Chrome, Safari) */
+.car-details-images-carousel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.car-details-images-carousel::-webkit-scrollbar-thumb {
+  background-color: #c28a6c;
+}
+
+.car-details-container-styles {
+  padding: 2rem;
+  @media (min-width: 100px) and (max-width: 600px) {
+    padding: 1rem;
+  }
+}
+
+.car-details-accordian-info {
+  width: 100%;
+}
+
+.car-details-accordian-info table {
+  width: 100%;
+}
+
+.car-details-accordian-info table tr {
+  border-bottom: 1px solid #707070;
+}
+
+.car-details-accordian-info table tr:last-child {
+  border-bottom: none;
+}
+.car-details-accordian-info table td {
+  width: 50%;
+  padding: 1rem 0;
+}
+
+.car-details-accordian-info table tr:last-child td {
+  padding-bottom: 0;
+}
+
+.car-details-accord-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.car-details-accordian-info {
+  display: none;
+}
+
+.cars-details-accord-wrapper {
+  margin-bottom: 2rem;
+}
+
+.cars-details-accord-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.car-details-prev,
+.car-details-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  color: #c28a6c;
+  font-size: 3rem;
+
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 10px) and (max-width: 500px) {
+    font-size: 1rem;
+    padding: 10px 10px;
+  }
+}
+
+.car-details-prev:hover,
+.car-details-next:hover {
+  font-size: 3.5rem;
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 10px) and (max-width: 500px) {
+    font-size: 2rem;
+  }
+}
+
+.car-details-prev {
+  left: 6px;
+}
+
+.car-details-next {
+  right: 6px;
+}
+
+.car-imgs-amount {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  @media (min-width: 10px) and (max-width: 500px) {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+.car-imgs-amount img {
+  height: 25px;
+  @media (min-width: 10px) and (max-width: 500px) {
+    height: 15px;
+  }
+}
+.car-imgs-amount p {
+  margin: 0;
+  font-size: 20px;
+
+  @media (min-width: 10px) and (max-width: 500px) {
+    font-size: 14px;
+  }
+}
+
+/* Lightbox styles */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  position: absolute;
+  max-width: 80%;
+  max-height: 80%;
+  display: block;
+  margin: auto;
+  z-index: 13;
+}
+
+#lightbox-close {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  color: #fff;
+  font-size: 60px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+#lightbox-close:hover {
+  color: #c28a6c;
+  transform: scale(1.5);
+}
+
+#lightbox-prev,
+#lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 12;
+  color: #c28a6c;
+}
+
+#lightbox-prev {
+  left: 5%;
+}
+
+#lightbox-prev:hover,
+#lightbox-next:hover {
+  font-size: 70px;
+}
+
+#lightbox-next {
+  right: 5%;
+}
