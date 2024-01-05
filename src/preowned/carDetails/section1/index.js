@@ -14,21 +14,19 @@ import $ from "jquery";
 
 export const Section1 = () => {
   $(document).ready(function () {
+    $("#lightbox").hide();
     // Set the source of the main big image to be the source of the first image in the carousel
     var firstImageSrc = $(".car-details-images-carousel img:first").attr("src");
     $(".car-details-main-img").attr("src", firstImageSrc);
 
     // Handle click on carousel images
     $(".cars-details-carousel-img").on("click", function () {
-      // Remove the 'active' class from all carousel images
       $(".cars-details-carousel-img").removeClass("active");
-
       // Add the 'active' class to the clicked image
       $(this).addClass("active");
 
       // Reset opacity for all carousel images
       $(".cars-details-carousel-img").css("opacity", 1);
-
       // Reduce opacity for the clicked image
       $(this).css("opacity", 0.7);
 
@@ -44,7 +42,7 @@ export const Section1 = () => {
     // Check the number of carousel images
     checkScrollbar();
 
-    // Function to toggle the visibility of the scrollbar based on the number of images
+    // Function to toggle the visibility of the scrollbar if the carousel has more than 3 images
     function checkScrollbar() {
       var numImages = $(".car-details-images-carousel img").length;
       var showScrollbar = numImages > 3;
@@ -63,9 +61,9 @@ export const Section1 = () => {
     function showImage(index) {
       // Reset opacity for all carousel images
       images.css("opacity", 1);
-
       // Set the opacity for the clicked image
       images.eq(index).css("opacity", 0.7);
+
       mainImage.attr("src", images.eq(index).attr("src"));
       currentIndex = index;
 
@@ -98,17 +96,17 @@ export const Section1 = () => {
     // Show the first image initially
     showImage(currentIndex);
 
-    // Handle click on the previous arrow
+    // Handle click on the carousel arrows
     $(".car-details-prev").on("click", function () {
       prevImage();
     });
 
-    // Handle click on the next arrow
     $(".car-details-next").on("click", function () {
       nextImage();
+      console.log("Tapping one");
     });
 
-    // Toggle visibility of arrow buttons based on the number of images
+    // Toggle visibility of arrow buttons if there is more than one image
     function toggleArrowVisibility() {
       var numImages = images.length;
 
@@ -119,9 +117,9 @@ export const Section1 = () => {
       }
     }
 
-    // Handle click on main image to open the lightbox
+    //Handle click on main image to open the lightbox
     $(".car-details-main-img").on("click", function () {
-      console.log("opening lihtbox");
+      console.log("opening lihgtbox");
       var imgSrc = mainImage.attr("src");
       $("#lightbox-img").attr("src", imgSrc);
       $("#lightbox").fadeIn();
@@ -137,24 +135,10 @@ export const Section1 = () => {
       $("#lightbox").fadeOut(50);
     });
 
-    // Handle click on previous arrow in lightbox
-    $("#lightbox-prev").on("click", function (e) {
-      e.stopPropagation();
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(currentIndex);
-    });
-
     // Handle click on the image in lightbox
     $("#lightbox-img").on("click", function (event) {
       event.stopPropagation();
       // Add any additional behavior if needed
-    });
-
-    // Handle click on next arrow in lightbox
-    $("#lightbox-next").on("click", function (e) {
-      e.stopPropagation();
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage(currentIndex);
     });
   });
   return (
@@ -166,8 +150,6 @@ export const Section1 = () => {
               <div id="lightbox">
                 <span id="lightbox-close">&times;</span>
                 <img id="lightbox-img" alt="lightbox-image" />
-                <span id="lightbox-prev">❮</span>
-                <span id="lightbox-next">❯</span>
               </div>
               <div class="car-details-container-styles col-md-10 col-sm-10 col-10 bg-color-black">
                 <div class="title-white-wrapper d-flex align-items-center justify-content-between">
